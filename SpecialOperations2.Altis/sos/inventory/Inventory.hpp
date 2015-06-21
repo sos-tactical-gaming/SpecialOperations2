@@ -53,7 +53,7 @@ class WestPlatoonMarksman {
 	items[] = {
 	};
 	linkedItems[] = {
-		"ItemMap",
+        "ItemMap",
         "ItemCompass",
         "ItemWatch",
         "ItemGPS"
