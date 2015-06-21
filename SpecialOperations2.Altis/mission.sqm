@@ -15,7 +15,8 @@ class Mission
 		"ace_zeus",
 		"ace_weather",
 		"ace_medical",
-		"task_force_radio_items"
+		"task_force_radio_items",
+		"A3_Supplies_F_Heli_CargoNets"
 	};
 	addOnsAuto[]=
 	{
@@ -31,6 +32,7 @@ class Mission
 		"ace_weather",
 		"ace_medical",
 		"task_force_radio_items",
+		"A3_Supplies_F_Heli_CargoNets",
 		"a3_map_altis"
 	};
 	randomSeed=11045919;
@@ -64,7 +66,7 @@ class Mission
 				class Item0
 				{
 					position[]={15192.777,17.937038,17291.547};
-					azimut=146.19121;
+					azimut=146.19099;
 					id=0;
 					side="WEST";
 					vehicle="B_Soldier_SL_F";
@@ -79,7 +81,7 @@ class Mission
 				class Item1
 				{
 					position[]={15191.023,17.934698,17290.104};
-					azimut=146.19121;
+					azimut=146.19099;
 					id=1;
 					side="WEST";
 					vehicle="B_medic_F";
@@ -92,7 +94,7 @@ class Mission
 				class Item2
 				{
 					position[]={15194.485,17.939316,17293.051};
-					azimut=146.19121;
+					azimut=146.19099;
 					id=2;
 					side="WEST";
 					vehicle="B_soldier_M_F";
@@ -751,6 +753,20 @@ class Mission
 					skill=0.60000002;
 				};
 			};
+		};
+	};
+	class Vehicles
+	{
+		items=1;
+		class Item0
+		{
+			position[]={15199.607,17.940001,17284.459};
+			azimut=-43.752201;
+			id=15;
+			side="EMPTY";
+			vehicle="B_CargoNet_01_ammo_F";
+			skill=0.60000002;
+			text="sos_ammo1";
 		};
 	};
 };

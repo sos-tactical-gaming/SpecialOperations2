@@ -1,3 +1,6 @@
+#include                    "sos\inventory\VirtualWeaponCargo.hpp"
+#include                    "sos\inventory\VirtualArsenal.hpp"
+
 onLoadName                  = "Special Operations 2";
 onLoadMission               = "New Tactical Gaming!";
 onLoadMissionTime           = 0;

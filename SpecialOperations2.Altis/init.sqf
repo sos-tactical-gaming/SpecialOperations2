@@ -1,10 +1,13 @@
 /*
-	Author: Joe Redfearn (Legman [S.O.S. Major])
-
-	Description:.
-
-	Parameter(s):
-*/
+ * Author: Legman [S.O.S. Major]
+ *
+ * Arguments:
+ *
+ * Return Value:
+ * Nothing
+ *
+ * Example:
+ */
 
 enableSaving [false, false];
 

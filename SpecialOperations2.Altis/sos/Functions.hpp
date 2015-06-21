@@ -8,6 +8,8 @@ class SOS_Functions {
     class Inventory {
         file = "sos\inventory";
         class initInventory {};
+        class addVirtualArsenal {};
+        class getVirtualWeaponCargo {};
     };
     class Respawn {
         file = "sos\respawn";
