@@ -1,9 +1,9 @@
-onLoadName					= "Special Operations 2";
-onLoadMission				= "New Tactical Gaming!";
-onLoadMissionTime			= 0;
-onLoadIntroTime				= 0;
-loadScreen					= "sos\textures\sos.paa";
-overviewPicture				= "sos\textures\sos.paa";
+onLoadName                  = "Special Operations 2";
+onLoadMission               = "New Tactical Gaming!";
+onLoadMissionTime           = 0;
+onLoadIntroTime             = 0;
+loadScreen                  = "sos\textures\sos.paa";
+overviewPicture             = "sos\textures\sos.paa";
 author                      = "[S.O.S. Major] Legman";
 
 respawn                     = "BASE";
