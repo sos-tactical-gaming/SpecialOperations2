@@ -35,7 +35,7 @@ class WestPlatoonMedic {
         "ItemCompass",
         "ItemWatch",
         "ItemGPS"
-    }; 
+    };
     uniformClass = "U_B_CombatUniform_mcam_tshirt";
     backpack = "";
 };
@@ -57,7 +57,7 @@ class WestPlatoonMarksman {
         "ItemCompass",
         "ItemWatch",
         "ItemGPS"
-	};
+    };
 	uniformClass = "U_B_CombatUniform_mcam";
 	backpack = "";
 };

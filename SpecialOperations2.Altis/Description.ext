@@ -4,36 +4,36 @@ onLoadMissionTime			= 0;
 onLoadIntroTime				= 0;
 loadScreen					= "sos\textures\sos.paa";
 overviewPicture				= "sos\textures\sos.paa";
-author						= "[S.O.S. Major] Legman";
+author                      = "[S.O.S. Major] Legman";
 
-respawn						= "BASE";
+respawn                     = "BASE";
 respawnTemplates[]          = {"SOS_Respawn", "Counter"};
 
-disabledAI					= 1;
-saving						= 0;
-enableItemsDropping			= 0;
-enableDebugConsole			= 1;
-disableChannels[]			= {0, 1, 2, 4, 5};
-forceRotorLibSimulation		= 0;
+disabledAI= 1;
+saving= 0;
+enableItemsDropping         = 0;
+enableDebugConsole          = 1;
+disableChannels[]           = {0, 1, 2, 4, 5};
+forceRotorLibSimulation     = 0;
 
 class Header {
-	gameType				= COOP;
-	minPlayers				= 1;
-	maxPlayers				= 60;
-	playerCountMultipleOf	= 1;
+    gameType                = COOP;
+    minPlayers              = 1;
+    maxPlayers              = 60;
+    playerCountMultipleOf   = 1;
 };
 
 class Params {
 };
 
 class CfgFunctions {
-	#include "sos\Functions.hpp"
+    #include "sos\Functions.hpp"
 };
 
 class CfgRespawnTemplates {
-	#include "sos\respawn\Respawn.hpp"
+    #include "sos\respawn\Respawn.hpp"
 };
 
 class CfgRespawnInventory {
-	#include "sos\inventory\Inventory.hpp"
+    #include "sos\inventory\Inventory.hpp"
 };
