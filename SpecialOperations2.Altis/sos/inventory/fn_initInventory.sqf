@@ -20,5 +20,4 @@ waitUntil {!isNull player};
 
 _side = side player;
 _role = player getVariable "sos_inventory_role";
-[player, "WestPlatoonLeader"] call BIS_fnc_addRespawnInventory;
-
+[player, format ["%1%2", _side, _role]] call BIS_fnc_addRespawnInventory;
