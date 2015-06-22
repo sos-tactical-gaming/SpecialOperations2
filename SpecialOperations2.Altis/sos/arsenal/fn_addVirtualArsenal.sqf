@@ -23,4 +23,7 @@ _unit = _this select 0;
 _side = side player;
 _role = player getVariable "sos_inventory_role";
 
+[_unit, [_side, _role] call SOS_fnc_getVirtualBackpackCargo] call BIS_fnc_addVirtualBackpackCargo;
+[_unit, [_side, _role] call SOS_fnc_getVirtualItemCargo] call BIS_fnc_addVirtualItemCargo;
+[_unit, [_side, _role] call SOS_fnc_getVirtualMagazineCargo] call BIS_fnc_addVirtualMagazineCargo;
 [_unit, [_side, _role] call SOS_fnc_getVirtualWeaponCargo] call BIS_fnc_addVirtualWeaponCargo;

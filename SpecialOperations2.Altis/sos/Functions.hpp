@@ -1,16 +1,27 @@
 class SOS_Functions {
-    tag = "SOS";    
+    tag = "SOS";
+
+    class Arsenal {
+        file = "sos\arsenal";
+        class addVirtualArsenal {};
+        class getVirtualBackpackCargo {};
+        class getVirtualItemCargo {};
+        class getVirtualMagazineCargo {};
+        class getVirtualWeaponCargo {};
+    };
+    
     class Common {
         file = "sos\common";
         class init {};
         class initUnit {};
-    };    
+    };
+    
     class Inventory {
         file = "sos\inventory";
         class initInventory {};
-        class addVirtualArsenal {};
-        class getVirtualWeaponCargo {};
+        
     };
+    
     class Respawn {
         file = "sos\respawn";
         class respawn {};
