@@ -42,22 +42,22 @@ class WestPlatoonMedic {
 
 
 class WestPlatoonMarksman {
-	displayName = "Platoon Marksman";
-	icon = "\A3\Ui_f\data\GUI\Cfg\Ranks\private_gs.paa";
+    displayName = "Platoon Marksman";
+    icon = "\A3\Ui_f\data\GUI\Cfg\Ranks\private_gs.paa";
 
-	weapons[] = {
-		"Rangefinder"
-	};
-	magazines[] = {
-	};
-	items[] = {
-	};
-	linkedItems[] = {
+    weapons[] = {
+        "Rangefinder"
+    };
+    magazines[] = {
+    };
+    items[] = {
+    };
+    linkedItems[] = {
         "ItemMap",
         "ItemCompass",
         "ItemWatch",
         "ItemGPS"
     };
-	uniformClass = "U_B_CombatUniform_mcam";
-	backpack = "";
+    uniformClass = "U_B_CombatUniform_mcam";
+    backpack = "";
 };
