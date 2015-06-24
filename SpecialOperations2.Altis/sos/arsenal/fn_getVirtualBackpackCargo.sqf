@@ -20,12 +20,10 @@ _side   = _this select 0;
 _role   = _this select 1;
 
 _result = [];
-_config = missionConfigFile >> format ["SOS_%1VirtualArsenal", _side] >> format ["%1", _role];
 {
-    _config = missionConfigFile >> format ["SOS_%1VirtualBackpackCargo", _side] >> _x;
     {
         _result pushBack _x;
-    } forEach getArray (_config >> "items");
-} forEach getArray (_config >> "backpacks");
+    } forEach getArray (missionConfigFile >> format ["SOS_%1VirtualBackpackCargo", _side] >> _x >> "items");
+} forEach getArray (missionConfigFile >> format ["SOS_%1VirtualArsenal", _side] >> format ["%1", _role] >> "backpacks");
 
 _result
