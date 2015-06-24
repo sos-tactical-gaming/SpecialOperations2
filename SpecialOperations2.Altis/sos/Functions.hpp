@@ -26,4 +26,10 @@ class SOS_Functions {
         file = "sos\respawn";
         class respawn {};
     };
+    
+    class Vehicle {
+        file = "sos\vehicle";
+        class addVehicleSpawn {};
+        class spawnVehicle {};
+    };
 };

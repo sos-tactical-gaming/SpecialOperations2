@@ -1,4 +1,5 @@
 #include                    "sos\arsenal\VirtualArsenal.hpp"
+#include                    "sos\vehicle\VehicleSpawn.hpp"
 
 onLoadName                  = "Special Operations 2";
 onLoadMission               = "New Tactical Gaming!";
@@ -40,4 +41,8 @@ class CfgRespawnTemplates {
 
 class CfgRespawnInventory {
     #include "sos\inventory\Inventory.hpp"
+};
+
+class CfgSounds {
+	#include "sos\sounds\Sounds.hpp"
 };

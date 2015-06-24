@@ -16,7 +16,8 @@ class Mission
 		"ace_weather",
 		"ace_medical",
 		"task_force_radio_items",
-		"A3_Supplies_F_Heli_CargoNets"
+		"A3_Supplies_F_Heli_CargoNets",
+		"A3_Structures_F_Civ_InfoBoards"
 	};
 	addOnsAuto[]=
 	{
@@ -33,6 +34,7 @@ class Mission
 		"ace_medical",
 		"task_force_radio_items",
 		"A3_Supplies_F_Heli_CargoNets",
+		"A3_Structures_F_Civ_InfoBoards",
 		"a3_map_altis"
 	};
 	randomSeed=11045919;
@@ -114,7 +116,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={15206.99,17.911396,17251.047};
+					position[]={15233.528,17.998629,17361.764};
 					class args
 					{
 						items=10;
@@ -196,7 +198,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={15224.711,17.917994,17260.496};
+					position[]={15251.249,17.971764,17371.213};
 					class args
 					{
 						items=2;
@@ -230,7 +232,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={15224.369,17.91,17245.938};
+					position[]={15250.907,17.987793,17356.654};
 					class args
 					{
 						items=2;
@@ -264,7 +266,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={15211.695,17.927195,17262.895};
+					position[]={15238.233,17.970259,17373.611};
 					class args
 					{
 						items=2;
@@ -298,7 +300,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={15225.106,17.941982,17273.986};
+					position[]={15251.645,17.917109,17384.703};
 					class args
 					{
 						items=1;
@@ -326,7 +328,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={15240.982,17.915806,17267.176};
+					position[]={15267.521,17.951729,17377.893};
 					class args
 					{
 						items=1;
@@ -354,7 +356,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={15236.017,17.91,17254.332};
+					position[]={15262.555,17.969851,17365.049};
 					class args
 					{
 						items=4;
@@ -400,7 +402,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={15226.416,17.950001,17284.986};
+					position[]={15252.954,17.907272,17395.703};
 					class args
 					{
 						items=5;
@@ -452,7 +454,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={15250.574,17.91,17254.332};
+					position[]={15277.112,17.930517,17365.049};
 					class args
 					{
 						items=6;
@@ -510,7 +512,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={15238.414,17.948229,17279.334};
+					position[]={15264.952,17.919792,17390.051};
 					class args
 					{
 						items=13;
@@ -610,7 +612,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={15255.883,17.91,17267.004};
+					position[]={15282.421,17.913437,17377.721};
 					class args
 					{
 						items=11;
@@ -698,7 +700,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={15252.874,17.925762,17280.023};
+					position[]={15279.412,17.899591,17390.74};
 					class args
 					{
 						items=7;
@@ -757,7 +759,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=1;
+		items=2;
 		class Item0
 		{
 			position[]={15201.081,17.940001,17283.102};
@@ -767,6 +769,26 @@ class Mission
 			vehicle="B_CargoNet_01_ammo_F";
 			skill=0.60000002;
 			text="sos_ammo1";
+		};
+		class Item1
+		{
+			position[]={15193.056,17.934303,17297.328};
+			azimut=-1.21358;
+			id=16;
+			side="EMPTY";
+			vehicle="Land_Noticeboard_F";
+			skill=0.60000002;
+			text="sos_spawn1";
+		};
+	};
+	class Markers
+	{
+		items=1;
+		class Item0
+		{
+			position[]={15192.417,17.919643,17307.686};
+			name="sos_spawn_position1";
+			type="Empty";
 		};
 	};
 };
