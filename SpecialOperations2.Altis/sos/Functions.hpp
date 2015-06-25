@@ -29,7 +29,9 @@ class SOS_Functions {
     
     class Vehicle {
         file = "sos\vehicle";
-        class addVehicleSpawn {};
+        class initVehicle {};
         class spawnVehicle {};
+        class addVehicleSpawn {};        
+        class canDriveVehicle {};
     };
 };

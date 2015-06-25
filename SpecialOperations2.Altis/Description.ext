@@ -1,5 +1,6 @@
 #include                    "sos\arsenal\VirtualArsenal.hpp"
 #include                    "sos\vehicle\VehicleSpawn.hpp"
+#include                    "sos\vehicle\VehicleProtection.hpp"
 
 onLoadName                  = "Special Operations 2";
 onLoadMission               = "New Tactical Gaming!";

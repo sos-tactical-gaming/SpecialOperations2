@@ -28,11 +28,6 @@ _direction      = _this select 3;
 
 _vehicle = createVehicle [_name, _position, [], _radius, "NONE"];
 _vehicle setDir _direction;
-
-// clear vehicle inventory
-clearMagazineCargoGlobal _vehicle;
-clearWeaponCargoGlobal _vehicle;
-clearItemCargoGlobal _vehicle;
-clearBackpackCargoGlobal _vehicle;
+[_vehicle] call SOS_fnc_initVehicle;
 
 _vehicle

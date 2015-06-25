@@ -16,4 +16,16 @@ class SOS_VehicleSpawn {
             "B_MRAP_01_gmg_F"
         };
     };
+    
+    class HeloSpawn {
+        vehicles[] = {
+            "B_Heli_Light_01_F",
+            "B_Heli_Light_01_armed_F",
+            "B_Heli_Attack_01_F",
+            "B_Heli_Transport_01_F",
+            "B_Heli_Transport_01_camo_F",
+            "B_Heli_Transport_03_F",
+            "B_Heli_Transport_03_black_F"
+        };        
+    };
 };
