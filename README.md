@@ -1,5 +1,5 @@
 # SpecialOperations2
-A remake of the original *Special Operations* missions.
+A remake of the original *Special Operations* mission.
 
 - *ACE3* support
 - *TFR* support
