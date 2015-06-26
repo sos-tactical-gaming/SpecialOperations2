@@ -1,43 +1,43 @@
 class SOS_WestVirtualMagazineCargo {
-    class AssaultRiflesAmmo {
+    class AssaultRifles {
         items[] = {           
             "30Rnd_65x39_caseless_mag",
             "30Rnd_65x39_caseless_mag_Tracer"            
         };
     };
 	
-	class MarksmanRiflesAmmo {
+    class MarksmanRifles {
         items[] = {        
-			"200Rnd_65x39_cased_Box",
-			"200Rnd_65x39_cased_Box_Tracer",
-			"150Rnd_762x54_Box",
-			"150Rnd_762x54_Box_Tracer",
-			"100Rnd_65x39_caseless_mag",
-			"100Rnd_65x39_caseless_mag_Tracer",
+            "200Rnd_65x39_cased_Box",
+            "200Rnd_65x39_cased_Box_Tracer",
+            "150Rnd_762x54_Box",
+            "150Rnd_762x54_Box_Tracer",
+            "100Rnd_65x39_caseless_mag",
+            "100Rnd_65x39_caseless_mag_Tracer",
             "150Rnd_93x64_Mag",
             "130Rnd_338_Mag" 
         };
     };  
 	
-	class MachineGunsAmmo {
+    class MachineGuns {
         items[] = {        
-			"30Rnd_65x39_caseless_mag",
+            "30Rnd_65x39_caseless_mag",
             "30Rnd_65x39_caseless_mag_Tracer", 
-			"10Rnd_338_Mag",
-			"20Rnd_762x51_Mag",
-			"10Rnd_93x64_DMR_05_Mag",
-			"20Rnd_762x51_Mag"          
+            "10Rnd_338_Mag",
+            "20Rnd_762x51_Mag",
+            "10Rnd_93x64_DMR_05_Mag",
+            "20Rnd_762x51_Mag"          
         };
     };
-
-	class SubMachineGunsAmmo {
+    
+    class SubMachineGuns {
         items[] = {        
-			"30Rnd_9x21_Mag",
-			"30Rnd_45ACP_Mag_SMG_01",
-			"30Rnd_45ACP_Mag_SMG_01_tracer_green"
+            "30Rnd_9x21_Mag",
+            "30Rnd_45ACP_Mag_SMG_01",
+            "30Rnd_45ACP_Mag_SMG_01_tracer_green"
         };
     }; 	
-
+    
     class GL {
         items[] = {           
             "1Rnd_HE_Grenade_shell",
@@ -68,14 +68,14 @@ class SOS_WestVirtualMagazineCargo {
             "3Rnd_SmokeOrange_Grenade_shell"         
         };
     };
-	
-	class LaunchersAmmo {
+    
+    class Launchers {
         items[] = {        
-			"NLAW_F",
-			"Titan_AT"
+            "NLAW_F",
+            "Titan_AT"
         };
     }; 
-
+    
     class Thrown {
         items[] = {           
             "HandGrenade",
@@ -92,17 +92,17 @@ class SOS_WestVirtualMagazineCargo {
             "Chemlight_blue"       
         };
     }; 	
-	
-	class Explosives {
+    
+    class Explosives {
         items[] = {           
             "SatchelCharge_Remote_Mag",
-			"DemoCharge_Remote_Mag",
-			"ATMine_Range_Mag",
-			"APERSMine_Range_Mag",
-			"APERSBoundingMine_Range_Mag",
-			"SLAMDirectionalMine_Wire_Mag",
-			"APERSTripMine_Wire_Mag",
-			"ClaymoreDirectionalMine_Remote_Mag"
+            "DemoCharge_Remote_Mag",
+            "ATMine_Range_Mag",
+            "APERSMine_Range_Mag",
+            "APERSBoundingMine_Range_Mag",
+            "SLAMDirectionalMine_Wire_Mag",
+            "APERSTripMine_Wire_Mag",
+            "ClaymoreDirectionalMine_Remote_Mag"
         };
     }; 	
 };

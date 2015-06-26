@@ -6,21 +6,21 @@
 class SOS_WestVirtualArsenal {    
     class PlatoonLeader {
         backpacks[] = {
-            "LongRangeRadios"
+        "LongRangeRadios"
         };
         items[] = {
             "Vests",
             "BasicItems",
-			"Rangefinders",
+            "Rangefinders",
             "BasicMedical",
             "NightVisionGoggles",
             "ShortRangeRadios",
             "Berets",
             "Goggles"
         };
-        magazines[] = {
+            magazines[] = {
             "Thrown",
-            "AssaultRiflesAmmo",
+            "AssaultRifles",
             "GL"
         };
         weapons[] = {
@@ -28,7 +28,7 @@ class SOS_WestVirtualArsenal {
             "AssaultRiflesGL"
         };    
     };
-    
+
     class PlatoonMedic {
         backpacks[] = {
             "AssaultBackpacks"
@@ -44,13 +44,13 @@ class SOS_WestVirtualArsenal {
         };
         magazines[] = {
             "Thrown",
-            "AssaultRiflesAmmo"
+            "AssaultRifles"
         };
         weapons[] = {
             "AssaultRiflesC"
         };    
     };
-    
+
     class PlatoonMarksman {
         backpacks[] = {
             "AssaultBackpacks"            
@@ -58,7 +58,7 @@ class SOS_WestVirtualArsenal {
         items[] = {
             "Vests",
             "BasicItems",
-			"Rangefinders",
+            "Rangefinders",
             "BasicMedical",
             "NightVisionGoggles",
             "ShortRangeRadios",
@@ -66,39 +66,39 @@ class SOS_WestVirtualArsenal {
         };
         magazines[] = {
             "Thrown",
-            "MarksmanRiflesAmmo"
+            "MarksmanRifles"
         };
         weapons[] = {
             "MarksmanRifles"
         };    
     };
-	
-	class GhostLeader {
+
+    class GhostLeader {
         backpacks[] = {
             "LongRangeRadios"            
         };
         items[] = {
             "Vests",
             "BasicItems",
-			"Rangefinders",
+            "Rangefinders",
             "BasicMedical",
             "NightVisionGoggles",
             "ShortRangeRadios",
-			"Berets",
+            "Berets",
             "Goggles"
         };
         magazines[] = {
             "Thrown",
-            "AssaultRiflesAmmo",
-			"GL"
+            "AssaultRifles",
+            "GL"
         };
         weapons[] = {
             "AssaultRifles",
-			"AssaultRiflesGL"
+            "AssaultRiflesGL"
         };    
     };
-	
-	class GhostMachinegunner {
+
+    class GhostMachinegunner {
         backpacks[] = {
             "AssaultBackpacks"            
         };
@@ -112,14 +112,14 @@ class SOS_WestVirtualArsenal {
         };
         magazines[] = {
             "Thrown",
-            "MachineGunsAmmo"
+            "MachineGuns"
         };
         weapons[] = {
             "MachineGuns"
         };    
     };
-	
-	class GhostAT {
+
+    class GhostAT {
         backpacks[] = {
             "AssaultBackpacks"            
         };
@@ -133,18 +133,19 @@ class SOS_WestVirtualArsenal {
         };
         magazines[] = {
             "Thrown",
-            "AssaultRiflesAmmo"
+            "AssaultRifles",
+            "Launchers"
         };
         weapons[] = {
             "AssaultRifles",
-			"Launchers"
+            "Launchers"
         };    
     };
-	
-	class GhostCombatEngineer {
+
+    class GhostCombatEngineer {
         backpacks[] = {
             "AssaultBackpacks",
-			"CarryallBackpacks"
+            "CarryallBackpacks"
         };
         items[] = {
             "Vests",
@@ -153,22 +154,22 @@ class SOS_WestVirtualArsenal {
             "NightVisionGoggles",
             "ShortRangeRadios",
             "Goggles",
-			"Tools"
+            "Tools"
         };
         magazines[] = {
             "Thrown",
-            "AssaultRiflesAmmo",
-			"Explosives"
+            "AssaultRifles",
+            "Explosives"
         };
         weapons[] = {
             "AssaultRifles"
         };    
     };
-	
-	class GhostAssistantMachinegunner {
+
+    class GhostAssistantMachinegunner {
         backpacks[] = {
             "AssaultBackpacks",
-			"CarryallBackpacks"
+            "CarryallBackpacks"
         };
         items[] = {
             "Vests",
@@ -180,14 +181,14 @@ class SOS_WestVirtualArsenal {
         };
         magazines[] = {
             "Thrown",
-            "AssaultRiflesAmmo"
+            "AssaultRifles"
         };
         weapons[] = {
             "AssaultRifles"
         };    
     };
-	
-	class GhostMedic {
+
+    class GhostMedic {
         backpacks[] = {
             "AssaultBackpacks"
         };
@@ -202,46 +203,46 @@ class SOS_WestVirtualArsenal {
         };
         magazines[] = {
             "Thrown",
-            "AssaultRiflesAmmo"
+            "AssaultRifles"
         };
         weapons[] = {
             "AssaultRiflesC"
         };    
     };
-	
-		class GhostReconLeader {
+
+    class GhostReconLeader {
         backpacks[] = {
             "LongRangeRadios"            
         };
         items[] = {
             "Vests",
             "BasicItems",
-			"Rangefinders",
+            "Rangefinders",
             "BasicMedical",
             "NightVisionGoggles",
             "ShortRangeRadios",
-			"Berets",
+            "Berets",
             "Goggles"
         };
         magazines[] = {
             "Thrown",
-            "AssaultRiflesAmmo",
-			"GL"
+            "AssaultRifles",
+            "GL"
         };
         weapons[] = {
             "AssaultRifles",
-			"AssaultRiflesGL"
+            "AssaultRiflesGL"
         };    
     };
-	
-	class GhostReconScout {
+
+    class GhostReconScout {
         backpacks[] = {
             "AssaultBackpacks"
         };
         items[] = {
             "Vests",
             "BasicItems",
-			"Rangefinders",
+            "Rangefinders",
             "BasicMedical",
             "NightVisionGoggles",
             "ShortRangeRadios",
@@ -249,21 +250,21 @@ class SOS_WestVirtualArsenal {
         };
         magazines[] = {
             "Thrown",
-            "AssaultRiflesAmmo"
+            "AssaultRifles"
         };
         weapons[] = {
             "AssaultRifles"
         };    
     };
-	
-	class GhostReconMarksman {
+
+    class GhostReconMarksman {
         backpacks[] = {
             "AssaultBackpacks"            
         };
         items[] = {
             "Vests",
             "BasicItems",
-			"Rangefinders",
+            "Rangefinders",
             "BasicMedical",
             "NightVisionGoggles",
             "ShortRangeRadios",
@@ -271,14 +272,14 @@ class SOS_WestVirtualArsenal {
         };
         magazines[] = {
             "Thrown",
-            "MarksmanRiflesAmmo"
+            "MarksmanRifles"
         };
         weapons[] = {
             "MarksmanRifles"
         };    
     };
-	
-	class GhostReconMedic {
+
+    class GhostReconMedic {
         backpacks[] = {
             "AssaultBackpacks"
         };
@@ -293,47 +294,47 @@ class SOS_WestVirtualArsenal {
         };
         magazines[] = {
             "Thrown",
-            "AssaultRiflesAmmo"
+            "AssaultRifles"
         };
         weapons[] = {
             "AssaultRifles"
         };    
     };
-	
-	class HWTLeader {
+
+    class HWTLeader {
         backpacks[] = {
             "LongRangeRadios"            
         };
         items[] = {
             "Vests",
             "BasicItems",
-			"Rangefinders",
+            "Rangefinders",
             "BasicMedical",
             "NightVisionGoggles",
             "ShortRangeRadios",
-			"Berets",
+            "Berets",
             "Goggles"
         };
         magazines[] = {
             "Thrown",
-            "AssaultRiflesAmmo",
-			"GL"
+            "AssaultRifles",
+            "GL"
         };
         weapons[] = {
             "AssaultRifles",
-			"AssaultRiflesGL"
+            "AssaultRiflesGL"
         };    
     };
-	
-	class HWTStaticOperator {
+
+    class HWTStaticOperator {
         backpacks[] = {
             "WeaponBackpacks",
-			"CarryallBackpacks"
+            "CarryallBackpacks"
         };
         items[] = {
             "Vests",
             "BasicItems",
-			"Rangefinders",
+            "Rangefinders",
             "BasicMedical",
             "NightVisionGoggles",
             "ShortRangeRadios",
@@ -341,22 +342,22 @@ class SOS_WestVirtualArsenal {
         };
         magazines[] = {
             "Thrown",
-            "AssaultRiflesAmmo"
+            "AssaultRifles"
         };
         weapons[] = {
             "AssaultRifles"
         };    
     };
-	
-	class HWTStaticAssistant {
+
+    class HWTStaticAssistant {
         backpacks[] = {
             "WeaponBackpacks",
-			"CarryallBackpacks"
+            "CarryallBackpacks"
         };
         items[] = {
             "Vests",
             "BasicItems",
-			"Rangefinders",
+            "Rangefinders",
             "BasicMedical",
             "NightVisionGoggles",
             "ShortRangeRadios",
@@ -364,14 +365,14 @@ class SOS_WestVirtualArsenal {
         };
         magazines[] = {
             "Thrown",
-            "AssaultRiflesAmmo"
+            "AssaultRifles"
         };
         weapons[] = {
             "AssaultRifles"
         };    
     };
-	
-	class HWTMissileSpecialist { //Needs launchers
+
+    class HWTMissileSpecialist {
         backpacks[] = {
             "AssaultBackpacks"            
         };
@@ -385,38 +386,40 @@ class SOS_WestVirtualArsenal {
         };
         magazines[] = {
             "Thrown",
-            "AssaultRiflesAmmo"
+            "AssaultRifles",
+            "Launchers"
         };
         weapons[] = {
-            "AssaultRifles"
+            "AssaultRifles",
+            "Launchers"
         };    
     };
-	
-	class AnvilCommander {
+
+    class AnvilCommander {
         backpacks[] = {
             "LongRangeRadios"            
         };
         items[] = {
             "BasicItems",
-			"Rangefinders",
+            "Rangefinders",
             "BasicMedical",
             "NightVisionGoggles",
             "ShortRangeRadios",
-			"Berets",
+            "Berets",
             "Goggles"
         };
         magazines[] = {
             "Thrown",
-            "AssaultRiflesAmmo",
-			"SubMachineGunsAmmo"
+            "AssaultRifles",
+            "SubMachineGuns"
         };
         weapons[] = {
             "AssaultRiflesC",
-			"SubMachineGuns"
+            "SubMachineGuns"
         }; 
     };
-	
-	class AnvilDriver {
+
+    class AnvilDriver {
         backpacks[] = {            
         };
         items[] = {
@@ -428,16 +431,16 @@ class SOS_WestVirtualArsenal {
         };
         magazines[] = {
             "Thrown",
-            "AssaultRiflesAmmo",
-			"SubMachineGunsAmmo"
+            "AssaultRifles",
+            "SubMachineGuns"
         };
         weapons[] = {
             "AssaultRiflesC",
-			"SubMachineGuns"
+            "SubMachineGuns"
         }; 
     };
-	
-	class AnvilGunner {
+
+    class AnvilGunner {
         backpacks[] = {            
         };
         items[] = {
@@ -449,66 +452,66 @@ class SOS_WestVirtualArsenal {
         };
         magazines[] = {
             "Thrown",
-            "AssaultRiflesAmmo",
-			"SubMachineGunsAmmo"
+            "AssaultRifles",
+            "SubMachineGuns"
         };
         weapons[] = {
             "AssaultRiflesC",
-			"SubMachineGuns"
+            "SubMachineGuns"
         }; 
     };
-	
-	class ReaperPilot {
+
+    class ReaperPilot {
         backpacks[] = {
             "LongRangeRadios",
-			"Parachutes"
+            "Parachutes"
         };
         items[] = {
             "BasicItems",
             "BasicMedical",
             "NightVisionGoggles",
             "ShortRangeRadios",
-			"Berets",
+            "Berets",
             "Goggles"
         };
         magazines[] = {
             "Thrown",
-            "AssaultRiflesAmmo",
-			"SubMachineGunsAmmo"
+            "AssaultRifles",
+            "SubMachineGuns"
         };
         weapons[] = {
             "AssaultRiflesC",
-			"SubMachineGuns"
+            "SubMachineGuns"
         }; 
     };
-	
-	class ReaperCoPilot {
+
+    class ReaperCoPilot {
         backpacks[] = {
             "LongRangeRadios",
-			"Parachutes"
+            "Parachutes"
         };
         items[] = {
             "BasicItems",
             "BasicMedical",
             "NightVisionGoggles",
             "ShortRangeRadios",
-			"Berets",
+            "Berets",
             "Goggles"
         };
         magazines[] = {
             "Thrown",
-            "AssaultRiflesAmmo",
-			"SubMachineGunsAmmo"
+            "AssaultRifles",
+            "SubMachineGuns"
         };
         weapons[] = {
             "AssaultRiflesC",
-			"SubMachineGuns"
+            "SubMachineGuns"
         }; 
     };
-	
-	class ReaperCrew {
+
+    class ReaperCrew {
         backpacks[] = {   
-			"Parachutes"		
+            "Parachutes"		
         };
         items[] = {
             "BasicItems",
@@ -519,60 +522,60 @@ class SOS_WestVirtualArsenal {
         };
         magazines[] = {
             "Thrown",
-            "AssaultRiflesAmmo",
-			"SubMachineGunsAmmo"
+            "AssaultRifles",
+            "SubMachineGuns"
         };
         weapons[] = {
             "AssaultRiflesC",
-			"SubMachineGuns"
+            "SubMachineGuns"
         }; 
     };
-	
-	class ReaperMedic {
+
+    class ReaperMedic {
         backpacks[] = { 
-			"AssaultBackpacks",		
-			"Parachutes"		
+            "AssaultBackpacks",		
+            "Parachutes"		
         };
         items[] = {
             "BasicItems",
             "BasicMedical",
-			"AdvancedMedical",
+            "AdvancedMedical",
             "NightVisionGoggles",
             "ShortRangeRadios",
             "Goggles"
         };
         magazines[] = {
             "Thrown",
-            "AssaultRiflesAmmo",
-			"SubMachineGunsAmmo"
+            "AssaultRifles",
+            "SubMachineGuns"
         };
         weapons[] = {
             "AssaultRiflesC",
-			"SubMachineGuns"
+            "SubMachineGuns"
         }; 
     };
-	
-	class HavocPilot {
+
+    class HavocPilot {
         backpacks[] = {
             "LongRangeRadios",
-			"Parachutes"
+            "Parachutes"
         };
         items[] = {
             "BasicItems",
             "BasicMedical",
             "NightVisionGoggles",
             "ShortRangeRadios",
-			"Berets",
+            "Berets",
             "Goggles"
         };
         magazines[] = {
             "Thrown",
-            "AssaultRiflesAmmo",
-			"SubMachineGunsAmmo"
+            "AssaultRifles",
+            "SubMachineGuns"
         };
         weapons[] = {
             "AssaultRiflesC",
-			"SubMachineGuns"
+            "SubMachineGuns"
         }; 
     };
 };
