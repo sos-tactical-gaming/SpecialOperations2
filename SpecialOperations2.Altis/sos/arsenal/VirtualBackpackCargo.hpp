@@ -28,6 +28,24 @@ class SOS_WestVirtualBackpackCargo {
             "tf_rt1523g",
             "tf_rt1523g_big"
         };
-    };    
+    };
+
+	class WeaponBackpacks {
+        items[] = {
+            "B_Mortar_01_support_F",
+            "B_Mortar_01_weapon_F",
+			"B_HMG_01_support_F",
+			"B_HMG_01_weapon_F",
+			"O_GMG_01_weapon_F",
+			"B_AA_01_weapon_F",
+			"B_AT_01_weapon_F"
+        };
+    };
+	
+	class Parachutes {
+        items[] = {
+            "B_Parachute"
+        };
+    };
 };
 
