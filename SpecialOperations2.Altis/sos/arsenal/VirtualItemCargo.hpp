@@ -17,10 +17,17 @@ class SOS_WestVirtualItemCargo {
             "ItemCompass",
             "ItemMap",
             "ItemWatch",
-            "ACE_EarPlugs"            
+            "ACE_EarPlugs"
         };
     };
-
+    
+    class Rangefinders {
+        items[] = {
+            "ACE_Vector",
+            "ACE_Kestrel4500"
+        };
+    };
+    
     class NightVisionGoggles {
         items[] = {
             "NVGoggles",
@@ -28,7 +35,7 @@ class SOS_WestVirtualItemCargo {
             "NVGoggles_INDEP"
         };
     };
-
+    
     class BasicMedical {
         items[] = {
             "ACE_fieldDressing",
@@ -36,8 +43,7 @@ class SOS_WestVirtualItemCargo {
             "ACE_tourniquet",
             "ACE_morphine",
             "ACE_epinephrine"
-        };
-        
+        };        
     };
     
     class AdvancedMedical {
@@ -107,6 +113,14 @@ class SOS_WestVirtualItemCargo {
             "G_Bandanna_blk",
             "G_Bandanna_oli",
             "G_Bandanna_shades"
+        };
+    };
+    
+    class Tools {
+        items[] = {
+            "ACE_Clacker",
+            "ACE_DefusalKit",
+            "ACE_wirecutter"
         };
     };
 };
