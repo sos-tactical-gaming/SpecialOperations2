@@ -1,4 +1,68 @@
 class SOS_WestVirtualItemCargo {
+    class BasicHelmets {
+        items[] = {
+            "H_HelmetB_sand",
+            "H_HelmetB_camo",
+            "H_HelmetB_black"
+        };
+    };
+    
+    class ReconHelmets {
+        items[] = {
+            "H_Shemag_olive_hs",
+            "H_ShemagOpen_tan",
+            "H_ShemagOpen_khk"
+        };
+    };
+    
+    class AnvilHelmets {
+        items[] = {
+            "H_HelmetCrew_B",
+            "H_HelmetCrew_I"
+        };
+    };
+    
+    class ReaperHelmets {
+        items[] = {
+            "H_CrewHelmetHeli_B",
+            "H_PilotHelmetHeli_B"
+        };
+    };
+    
+    class HavocHelmets {
+        items[] = {
+            "H_PilotHelmetFighter_B"
+        };
+    };
+    
+    class BasicUniforms {
+        items[] = {
+            "U_B_CombatUniform_mcam",
+            "U_B_CombatUniform_mcam_tshirt",
+            "U_BG_Guerrilla_6_1"
+        };
+    };
+    
+    class ReconUniforms {
+        items[] = {
+            "U_B_CombatUniform_mcam_vest",
+            "U_B_FullGhillie_lsh",
+            "U_B_GhillieSuit"
+        };
+    };
+    
+    class ReaperUniforms {
+        items[] = {
+            "U_B_HeliPilotCoveralls"
+        };
+    };
+    
+    class HavocUniforms {
+        items[] = {
+            "U_B_PilotCoveralls"
+        };
+    };
+    
     class Vests {
         items[] = {
             "V_PlateCarrier1_rgr",
@@ -17,7 +81,8 @@ class SOS_WestVirtualItemCargo {
             "ItemCompass",
             "ItemMap",
             "ItemWatch",
-            "ACE_EarPlugs"
+            "ACE_EarPlugs",
+            "Binocular"
         };
     };
     
@@ -121,6 +186,53 @@ class SOS_WestVirtualItemCargo {
             "ACE_Clacker",
             "ACE_DefusalKit",
             "ACE_wirecutter"
+        };
+    };
+    
+    class SmallOptics {
+        items[] = {
+            "optic_Aco",
+            "optic_Holosight"
+        };
+    };
+    
+    class MediumOptics {
+        items[] = {
+            "optic_Arco",
+            "optic_Hamr",
+            "optic_MRCO"
+        };
+    };
+    
+    class LargeOptics {
+        items[] = {
+            "optic_SOS",
+            "optic_tws",
+            "optic_DMS",
+            "optic_LRPS"
+        };
+    };
+    
+    class Bipods {
+        items[] = {
+            "bipod_01_F_snd",
+            "bipod_01_F_blk"
+        };
+    };
+    
+    class Suppressors {
+        items[] = {
+            "muzzle_snds_H",
+            "muzzle_snds_M",
+            "muzzle_snds_B",
+            "muzzle_snds_L"
+        };
+    };
+    
+    class Attachments {
+        items[] = {
+            "acc_pointer_IR",
+            "acc_flashlight"
         };
     };
 };
