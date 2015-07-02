@@ -215,7 +215,6 @@ class SOS_WestVirtualItemCargo {
     class LongRangeOptics {
         items[] = {
             "optic_SOS",
-            "optic_tws",
             "optic_DMS",
             "optic_LRPS"
         };
