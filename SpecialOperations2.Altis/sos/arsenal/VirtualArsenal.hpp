@@ -18,8 +18,8 @@ class SOS_WestVirtualArsenal {
             "ShortRangeRadios",
             "Berets",
             "Goggles",
-            "SmallOptics",
-            "MediumOptics",
+            "ShortRangeOptics",
+            "MidRangeOptics",
             "Suppressors",
             "Attachments"
         };
@@ -39,7 +39,7 @@ class SOS_WestVirtualArsenal {
             "AssaultBackpacks"
         };
         items[] = {
-            "BasicHelmets",
+            "MedicHelmets",
             "BasicUniforms",
             "Vests",
             "BasicItems",
@@ -48,8 +48,8 @@ class SOS_WestVirtualArsenal {
             "NightVisionGoggles",
             "ShortRangeRadios",
             "Goggles",
-            "SmallOptics",
-            "MediumOptics",
+            "ShortRangeOptics",
+            "MidRangeOptics",
             "Suppressors",
             "Attachments"
         };
@@ -76,9 +76,10 @@ class SOS_WestVirtualArsenal {
             "NightVisionGoggles",
             "ShortRangeRadios",
             "Goggles",
-            "SmallOptics",
-            "MediumOptics",
-            "LargeOptics",
+            "ShortRangeOptics",
+            "MidRangeOptics",
+            "LongRangeOptics",
+            "ThermalOptics",
             "Bipods",
             "Suppressors",
             "Attachments"
@@ -107,8 +108,8 @@ class SOS_WestVirtualArsenal {
             "ShortRangeRadios",
             "Berets",
             "Goggles",
-            "SmallOptics",
-            "MediumOptics",
+            "ShortRangeOptics",
+            "MidRangeOptics",
             "Suppressors",
             "Attachments"
         };
@@ -136,8 +137,8 @@ class SOS_WestVirtualArsenal {
             "NightVisionGoggles",
             "ShortRangeRadios",
             "Goggles",
-            "SmallOptics",
-            "MediumOptics",
+            "ShortRangeOptics",
+            "MidRangeOptics",
             "Bipods",
             "Attachments"
         };
@@ -163,8 +164,8 @@ class SOS_WestVirtualArsenal {
             "NightVisionGoggles",
             "ShortRangeRadios",
             "Goggles",
-            "SmallOptics",
-            "MediumOptics",
+            "ShortRangeOptics",
+            "MidRangeOptics",
             "Suppressors",
             "Attachments"
         };
@@ -194,8 +195,8 @@ class SOS_WestVirtualArsenal {
             "ShortRangeRadios",
             "Goggles",
             "Tools",
-            "SmallOptics",
-            "MediumOptics",
+            "ShortRangeOptics",
+            "MidRangeOptics",
             "Suppressors",
             "Attachments"
         };
@@ -223,8 +224,8 @@ class SOS_WestVirtualArsenal {
             "NightVisionGoggles",
             "ShortRangeRadios",
             "Goggles",
-            "SmallOptics",
-            "MediumOptics",
+            "ShortRangeOptics",
+            "MidRangeOptics",
             "Suppressors",
             "Attachments"
         };
@@ -242,7 +243,7 @@ class SOS_WestVirtualArsenal {
             "AssaultBackpacks"
         };
         items[] = {
-            "BasicHelmets",
+            "MedicHelmets",
             "BasicUniforms",
             "Vests",
             "BasicItems",
@@ -251,8 +252,8 @@ class SOS_WestVirtualArsenal {
             "NightVisionGoggles",
             "ShortRangeRadios",
             "Goggles",
-            "SmallOptics",
-            "MediumOptics",
+            "ShortRangeOptics",
+            "MidRangeOptics",
             "Suppressors",
             "Attachments"
         };
@@ -272,6 +273,7 @@ class SOS_WestVirtualArsenal {
         items[] = {
             "ReconHelmets",
             "ReconUniforms",
+            "GhillieUniforms",
             "Vests",
             "BasicItems",
             "Rangefinders",
@@ -280,8 +282,8 @@ class SOS_WestVirtualArsenal {
             "ShortRangeRadios",
             "Berets",
             "Goggles",
-            "SmallOptics",
-            "MediumOptics",
+            "ShortRangeOptics",
+            "MidRangeOptics",
             "Suppressors",
             "Attachments"
         };
@@ -303,6 +305,7 @@ class SOS_WestVirtualArsenal {
         items[] = {
             "ReconHelmets",
             "ReconUniforms",
+            "GhillieUniforms",
             "Vests",
             "BasicItems",
             "Rangefinders",
@@ -310,8 +313,8 @@ class SOS_WestVirtualArsenal {
             "NightVisionGoggles",
             "ShortRangeRadios",
             "Goggles",
-            "SmallOptics",
-            "MediumOptics",
+            "ShortRangeOptics",
+            "MidRangeOptics",
             "Suppressors",
             "Attachments"
         };
@@ -331,6 +334,7 @@ class SOS_WestVirtualArsenal {
         items[] = {
             "ReconHelmets",
             "ReconUniforms",
+            "GhillieUniforms",
             "Vests",
             "BasicItems",
             "Rangefinders",
@@ -338,9 +342,10 @@ class SOS_WestVirtualArsenal {
             "NightVisionGoggles",
             "ShortRangeRadios",
             "Goggles",
-            "SmallOptics",
-            "MediumOptics",
-            "LargeOptics",
+            "ShortRangeOptics",
+            "MidRangeOptics",
+            "LongRangeOptics",
+            "ThermalOptics",
             "Bipods",
             "Suppressors",
             "Attachments"
@@ -360,7 +365,9 @@ class SOS_WestVirtualArsenal {
         };
         items[] = {
             "ReconHelmets",
+            "MedicHelmets",
             "ReconUniforms",
+            "GhillieUniforms",
             "Vests",
             "BasicItems",
             "BasicMedical",
@@ -368,8 +375,8 @@ class SOS_WestVirtualArsenal {
             "NightVisionGoggles",
             "ShortRangeRadios",
             "Goggles",
-            "SmallOptics",
-            "MediumOptics",
+            "ShortRangeOptics",
+            "MidRangeOptics",
             "Suppressors",
             "Attachments"
         };
@@ -397,8 +404,8 @@ class SOS_WestVirtualArsenal {
             "ShortRangeRadios",
             "Berets",
             "Goggles",
-            "SmallOptics",
-            "MediumOptics",
+            "ShortRangeOptics",
+            "MidRangeOptics",
             "Suppressors",
             "Attachments"
         };
@@ -428,8 +435,8 @@ class SOS_WestVirtualArsenal {
             "NightVisionGoggles",
             "ShortRangeRadios",
             "Goggles",
-            "SmallOptics",
-            "MediumOptics",
+            "ShortRangeOptics",
+            "MidRangeOptics",
             "Suppressors",
             "Attachments"
         };
@@ -457,8 +464,8 @@ class SOS_WestVirtualArsenal {
             "NightVisionGoggles",
             "ShortRangeRadios",
             "Goggles",
-            "SmallOptics",
-            "MediumOptics",
+            "ShortRangeOptics",
+            "MidRangeOptics",
             "Suppressors",
             "Attachments"
         };
@@ -484,8 +491,8 @@ class SOS_WestVirtualArsenal {
             "NightVisionGoggles",
             "ShortRangeRadios",
             "Goggles",
-            "SmallOptics",
-            "MediumOptics",
+            "ShortRangeOptics",
+            "MidRangeOptics",
             "Suppressors",
             "Attachments"
         };
@@ -514,7 +521,7 @@ class SOS_WestVirtualArsenal {
             "ShortRangeRadios",
             "Berets",
             "Goggles",
-            "SmallOptics",
+            "ShortRangeOptics",
             "Attachments"
         };
         magazines[] = {
@@ -539,7 +546,7 @@ class SOS_WestVirtualArsenal {
             "NightVisionGoggles",
             "ShortRangeRadios",
             "Goggles",
-            "SmallOptics",
+            "ShortRangeOptics",
             "Attachments"
         };
         magazines[] = {
@@ -564,7 +571,7 @@ class SOS_WestVirtualArsenal {
             "NightVisionGoggles",
             "ShortRangeRadios",
             "Goggles",
-            "SmallOptics",
+            "ShortRangeOptics",
             "Attachments"
         };
         magazines[] = {
@@ -592,7 +599,7 @@ class SOS_WestVirtualArsenal {
             "ShortRangeRadios",
             "Berets",
             "Goggles",
-            "SmallOptics",
+            "ShortRangeOptics",
             "Attachments"
         };
         magazines[] = {
@@ -618,7 +625,7 @@ class SOS_WestVirtualArsenal {
             "NightVisionGoggles",
             "ShortRangeRadios",
             "Goggles",
-            "SmallOptics",
+            "ShortRangeOptics",
             "Attachments"
         };
         magazines[] = {
@@ -646,7 +653,7 @@ class SOS_WestVirtualArsenal {
             "NightVisionGoggles",
             "ShortRangeRadios",
             "Goggles",
-            "SmallOptics",
+            "ShortRangeOptics",
             "Attachments"
         };
         magazines[] = {
@@ -674,7 +681,7 @@ class SOS_WestVirtualArsenal {
             "ShortRangeRadios",
             "Berets",
             "Goggles",
-            "SmallOptics",
+            "ShortRangeOptics",
             "Attachments"
         };
         magazines[] = {

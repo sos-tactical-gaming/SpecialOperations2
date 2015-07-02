@@ -7,6 +7,9 @@ class SOS_WestVirtualItemCargo {
         };
     };
     
+    class MedicHelmets : BasicHelmets {
+    };
+    
     class ReconHelmets {
         items[] = {
             "H_Shemag_olive_hs",
@@ -45,7 +48,12 @@ class SOS_WestVirtualItemCargo {
     
     class ReconUniforms {
         items[] = {
-            "U_B_CombatUniform_mcam_vest",
+            "U_B_CombatUniform_mcam_vest"
+        };
+    };
+    
+    class GhillieUniforms {
+        items[] = {
             "U_B_FullGhillie_lsh",
             "U_B_GhillieSuit"
         };
@@ -189,14 +197,14 @@ class SOS_WestVirtualItemCargo {
         };
     };
     
-    class SmallOptics {
+    class ShortRangeOptics {
         items[] = {
             "optic_Aco",
             "optic_Holosight"
         };
     };
     
-    class MediumOptics {
+    class MidRangeOptics {
         items[] = {
             "optic_Arco",
             "optic_Hamr",
@@ -204,12 +212,18 @@ class SOS_WestVirtualItemCargo {
         };
     };
     
-    class LargeOptics {
+    class LongRangeOptics {
         items[] = {
             "optic_SOS",
             "optic_tws",
             "optic_DMS",
             "optic_LRPS"
+        };
+    };
+    
+    class ThermalOptics {
+        items[] = {
+            "optic_tws"
         };
     };
     
