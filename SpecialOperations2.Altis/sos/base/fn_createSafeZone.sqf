@@ -26,7 +26,7 @@ _position = getMarkerPos "base";
 _trigger = createTrigger ["EmptyDetector", _position, false];
 _trigger setTriggerArea[250, 250, 0, true];
 _trigger setTriggerActivation["WEST", "PRESENT", true];
-_trigger setTriggerStatements["player in thisList", _activation, _deactivation];
+_trigger setTriggerStatements["player in thisList", "[player] call SOS_fnc_activateSafeZone", "[player] call SOS_fnc_deactivateSafeZone"];
 
 
 
