@@ -14,12 +14,24 @@ class SOS_Functions {
         file = "sos\common";
         class init {};
         class initUnit {};
+        class sendMessage {};
+        class isMember {};
     };
     
     class Inventory {
         file = "sos\inventory";
-        class initInventory {};
-        
+        class initInventory {};        
+    };
+    
+    class Mission {
+        file = "sos\mission";
+        class createAO {};
+        class createFOB {};
+        class findSafePosition {};
+        class getRandomLocation {};
+        class getRoadDirection {};
+        class randomBuildingPositions {};
+        class spawnFOB {};        
     };
     
     class Respawn {
