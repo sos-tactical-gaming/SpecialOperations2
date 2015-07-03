@@ -46,4 +46,11 @@ class SOS_Functions {
         class addVehicleSpawn {};        
         class canDriveVehicle {};
     };
+	
+	class Base {
+		file = "sos\base";
+		class createSafeZone {};
+		class activateSafeZone {};
+		class deactivateSafeZone {};
+	};
 };
