@@ -18,8 +18,7 @@
 
 _position = getMarkerPos "SafeZone";
 _size = getMarkerSize "SafeZone";
-_angle = markerDir "SafeZone";
-[_position, _size select 0, _size select 1, _angle] call SOS_fnc_createSafeZone;
+[_position, _size] call SOS_fnc_createSafeZone;
 
 [sos_ammo1] call SOS_fnc_addVirtualArsenal;
 

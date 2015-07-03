@@ -5,27 +5,23 @@
  *
  * Arguments:
  * 0: position <OBJECT>
- * 1: x <INTEGER>
- * 2: y <INTEGER>
- * 3: angle <INTEGER>
+ * 1: size <ARRAY>
  *
  * Return Value:
  * Nothing
  *
  * Example:
- * [_position, _x, _y] call SOS_fnc_createSafeZone;
+ * [_position, _size] call SOS_fnc_createSafeZone;
  *
  */
  
-private ["_trigger", "_position", "_x", "_y", "_angle"];
+private ["_position", "_size", "_trigger"];
 
 _position = _this select 0;
-_x = _this select 1;
-_y = _this select 2;
-_angle = _this select 3;
+_size = _this select 1;
 
 _trigger = createTrigger ["EmptyDetector", _position, false];
-_trigger setTriggerArea[_x, _y, _angle, true];
+_trigger setTriggerArea[_size select 0, _size select 1, 0, false];
 _trigger setTriggerActivation["WEST", "PRESENT", true];
 _trigger setTriggerStatements["player in thisList", "[player] call SOS_fnc_activateSafeZone", "[player] call SOS_fnc_deactivateSafeZone"];
 
