@@ -792,9 +792,14 @@ class Mission
 		};
 		class Item1
 		{
-			position[]={15162.828,17.907106,17268.262};
-			name="base";
+			position[]={15156.34,17.865686,17333.416};
+			name="SafeZone";
+			markerType="RECTANGLE";
 			type="Empty";
+			colorName="ColorRed";
+			a=15;
+			b=25;
+			angle=137;
 		};
 	};
 };

@@ -4,27 +4,28 @@
  * more idiot proof :)
  *
  * Arguments:
- * Nothing
+ * 0: position <OBJECT>
+ * 1: x <INTEGER>
+ * 2: y <INTEGER>
+ * 3: angle <INTEGER>
  *
  * Return Value:
  * Nothing
  *
  * Example:
- * [] call SOS_fnc_createSafeZone;
+ * [_position, _x, _y] call SOS_fnc_createSafeZone;
  *
  */
  
-private ["_trigger", "_position", "_activation", "_deactivation"];
+private ["_trigger", "_position", "_x", "_y", "_angle"];
 
-_activation = "player addEventHandler ['Fired', {
-	deleteVehicle (_this select 6); 
-	hintC 'Do not fire at base!';
-}]";
-_deactivation = "player removeAllEventHandlers 'Fired'";
-_position = getMarkerPos "base";
+_position = _this select 0;
+_x = _this select 1;
+_y = _this select 2;
+_angle = _this select 3;
 
 _trigger = createTrigger ["EmptyDetector", _position, false];
-_trigger setTriggerArea[250, 250, 0, true];
+_trigger setTriggerArea[_x, _y, _angle, true];
 _trigger setTriggerActivation["WEST", "PRESENT", true];
 _trigger setTriggerStatements["player in thisList", "[player] call SOS_fnc_activateSafeZone", "[player] call SOS_fnc_deactivateSafeZone"];
 

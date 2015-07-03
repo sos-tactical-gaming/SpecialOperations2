@@ -13,7 +13,13 @@
  */
  
 [] call SOS_fnc_initInventory;
-[] call SOS_fnc_createSafeZone;
+
+"SafeZone" setMarkerAlpha 0; //Makes the marker invisible
+
+_position = getMarkerPos "SafeZone";
+_size = getMarkerSize "SafeZone";
+_angle = markerDir "SafeZone";
+[_position, _size select 0, _size select 1, _angle] call SOS_fnc_createSafeZone;
 
 [sos_ammo1] call SOS_fnc_addVirtualArsenal;
 
@@ -23,4 +29,3 @@ _delay      = 20.0;
 [sos_spawn1, "BasicSpawn", _position, _radius, _delay, []] call SOS_fnc_addVehicleSpawn;
 [sos_spawn1, "AdvancedSpawn", _position, _radius, _delay, ["PlatoonLeader"]] call SOS_fnc_addVehicleSpawn;
 [sos_spawn1, "HeloSpawn", _position, _radius, _delay, []] call SOS_fnc_addVehicleSpawn;
- 
