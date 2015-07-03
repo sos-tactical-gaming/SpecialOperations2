@@ -18,7 +18,7 @@
 private ["_position", "_size", "_trigger"];
 
 _position = _this select 0;
-_size = _this select 1;
+_size = if (count _this > 1) then {_this select 1} else {[75, 75]};
 
 _trigger = createTrigger ["EmptyDetector", _position, false];
 _trigger setTriggerArea[_size select 0, _size select 1, 0, false];

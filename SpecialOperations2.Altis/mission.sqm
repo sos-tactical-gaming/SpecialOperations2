@@ -792,8 +792,8 @@ class Mission
 		};
 		class Item1
 		{
-			position[]={15158.893,17.86611,17335.418};
-			name="SafeZone";
+			position[]={15194.372,17.93445,17298.535};
+			name="sos_safe_zone1";
 			markerType="ELLIPSE";
 			type="Empty";
 			colorName="ColorGrey";

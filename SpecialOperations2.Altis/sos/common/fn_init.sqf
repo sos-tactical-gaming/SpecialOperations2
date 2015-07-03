@@ -14,10 +14,10 @@
  
 [] call SOS_fnc_initInventory;
 
-"SafeZone" setMarkerAlpha 0; //Makes the marker invisible
+"sos_safe_zone1" setMarkerAlpha 0; //Makes the marker invisible
 
-_position = getMarkerPos "SafeZone";
-_size = getMarkerSize "SafeZone";
+_position = getMarkerPos "sos_safe_zone1";
+_size = getMarkerSize "sos_safe_zone1";
 [_position, _size] call SOS_fnc_createSafeZone;
 
 [sos_ammo1] call SOS_fnc_addVirtualArsenal;
