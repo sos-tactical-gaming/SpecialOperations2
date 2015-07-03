@@ -13,6 +13,7 @@
  */
  
 [] call SOS_fnc_initInventory;
+[] call SOS_fnc_createSafeZone;
 
 [sos_ammo1] call SOS_fnc_addVirtualArsenal;
 

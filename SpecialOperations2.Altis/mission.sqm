@@ -783,11 +783,17 @@ class Mission
 	};
 	class Markers
 	{
-		items=1;
+		items=2;
 		class Item0
 		{
 			position[]={15192.417,17.919643,17307.686};
 			name="sos_spawn_position1";
+			type="Empty";
+		};
+		class Item1
+		{
+			position[]={15162.828,17.907106,17268.262};
+			name="base";
 			type="Empty";
 		};
 	};
