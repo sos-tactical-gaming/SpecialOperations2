@@ -9,6 +9,13 @@ class SOS_Functions {
         class getVirtualMagazineCargo {};
         class getVirtualWeaponCargo {};
     };
+	
+	class Base {
+		file = "sos\base";
+		class createSafeZone {};
+		class activateSafeZone {};
+		class deactivateSafeZone {};
+	};
     
     class Common {
         file = "sos\common";
@@ -46,11 +53,4 @@ class SOS_Functions {
         class addVehicleSpawn {};        
         class canDriveVehicle {};
     };
-	
-	class Base {
-		file = "sos\base";
-		class createSafeZone {};
-		class activateSafeZone {};
-		class deactivateSafeZone {};
-	};
 };
