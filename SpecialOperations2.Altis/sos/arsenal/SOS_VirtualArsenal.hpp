@@ -1,7 +1,7 @@
-#include "VirtualBackpackCargo.hpp"
-#include "VirtualItemCargo.hpp"
-#include "VirtualMagazineCargo.hpp"
-#include "VirtualWeaponCargo.hpp"
+#include "SOS_VirtualBackpackCargo.hpp"
+#include "SOS_VirtualItemCargo.hpp"
+#include "SOS_VirtualMagazineCargo.hpp"
+#include "SOS_VirtualWeaponCargo.hpp"
 
 class SOS_WestVirtualArsenal {    
     class PlatoonLeader {
