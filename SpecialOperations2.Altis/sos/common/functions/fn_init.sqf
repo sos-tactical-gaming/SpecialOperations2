@@ -14,6 +14,10 @@
  
 if (!isDedicated) then {        
     [] call SOS_fnc_initInventory;
+	
+	_position = getMarkerPos "sos_safe_zone1";
+	_size = getMarkerSize "sos_safe_zone1";
+	[_position, _size] call SOS_fnc_createSafeZone;
 
     // virtual arsenal
     [sos_ammo1] call SOS_fnc_addVirtualArsenal;

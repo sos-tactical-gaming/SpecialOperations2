@@ -11,10 +11,11 @@ class SOS_Functions {
     };
 	
 	class Base {
-		file = "sos\base";
+		file = "sos\base\functions";
 		class createSafeZone {};
 		class activateSafeZone {};
 		class deactivateSafeZone {};
+		class createVehicleSafeZone {};
 	};
     
     class Common {

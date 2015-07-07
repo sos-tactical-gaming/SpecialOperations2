@@ -16,11 +16,9 @@
 private ["_unit"];
  
 _unit = _this select 0;
- 
+
 _unit addEventHandler ["Fired", {
 	deleteVehicle (_this select 6); //Deletes the bullet
 	hintC "Do not fire in base!";
 	playSound "sos_warning";
 }];
- 
- 
