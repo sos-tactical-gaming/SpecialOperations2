@@ -1,6 +1,6 @@
-#include                    "sos\arsenal\VirtualArsenal.hpp"
-#include                    "sos\vehicle\VehicleSpawn.hpp"
-#include                    "sos\vehicle\VehicleProtection.hpp"
+#include                    "sos\arsenal\SOS_VirtualArsenal.hpp"
+#include                    "sos\vehicle\SOS_VehicleSpawn.hpp"
+#include                    "sos\vehicle\SOS_VehicleProtection.hpp"
 
 onLoadName                  = "Special Operations 2";
 onLoadMission               = "New Tactical Gaming!";
@@ -33,17 +33,17 @@ class Params {
 };
 
 class CfgFunctions {
-    #include "sos\Functions.hpp"
+    #include "sos\CfgFunctions.hpp"
 };
 
 class CfgRespawnTemplates {
-    #include "sos\respawn\Respawn.hpp"
+    #include "sos\respawn\CfgRespawnTemplates.hpp"
 };
 
 class CfgRespawnInventory {
-    #include "sos\inventory\Inventory.hpp"
+    #include "sos\inventory\CfgRespawnInventory.hpp"
 };
 
 class CfgSounds {
-	#include "sos\sounds\Sounds.hpp"
+	#include "sos\sounds\CfgSounds.hpp"
 };

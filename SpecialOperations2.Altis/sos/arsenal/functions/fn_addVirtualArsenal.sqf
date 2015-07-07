@@ -16,9 +16,19 @@
 if (isDedicated) exitWith {};
 waitUntil {!isNull player};
 
-private ["_unit", "_side", "_role"];
+private [
+    "_unit",
+    "_side",
+    "_role"
+];
 
 _unit = _this select 0;
+if (isPlayer _unit) exitWith {};
+
+clearMagazineCargoGlobal    _unit;
+clearWeaponCargoGlobal      _unit;
+clearItemCargoGlobal        _unit;
+clearBackpackCargoGlobal    _unit;
 
 _side = side player;
 _role = player getVariable "sos_inventory_role";

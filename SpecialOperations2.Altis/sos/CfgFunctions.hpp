@@ -2,7 +2,7 @@ class SOS_Functions {
     tag = "SOS";
 
     class Arsenal {
-        file = "sos\arsenal";
+        file = "sos\arsenal\functions";
         class addVirtualArsenal {};
         class getVirtualBackpackCargo {};
         class getVirtualItemCargo {};
@@ -18,7 +18,7 @@ class SOS_Functions {
 	};
     
     class Common {
-        file = "sos\common";
+        file = "sos\common\functions";
         class init {};
         class initUnit {};
         class sendMessage {};
@@ -26,28 +26,35 @@ class SOS_Functions {
     };
     
     class Inventory {
-        file = "sos\inventory";
+        file = "sos\inventory\functions";
         class initInventory {};        
     };
     
     class Mission {
-        file = "sos\mission";
+        file = "sos\mission\functions";
         class createAO {};
         class createFOB {};
+        class createZone {};
         class findSafePosition {};
         class getRandomLocation {};
         class getRoadDirection {};
-        class randomBuildingPositions {};
-        class spawnFOB {};        
+        class initMissionGenerator {};
+        class planFOB {};        
     };
     
     class Respawn {
-        file = "sos\respawn";
+        file = "sos\respawn\functions";
         class respawn {};
     };
     
+    class Utils {
+        file = "sos\utils\functions";
+        class arrayPickRandom {};
+        class numberPhonetic {};
+    };
+    
     class Vehicle {
-        file = "sos\vehicle";
+        file = "sos\vehicle\functions";
         class initVehicle {};
         class spawnVehicle {};
         class addVehicleSpawn {};        
