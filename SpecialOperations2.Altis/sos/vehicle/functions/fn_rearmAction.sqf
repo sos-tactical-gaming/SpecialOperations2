@@ -41,7 +41,7 @@ if (player isKindOf "man") then {playSound "sos_warning"; titleText ["You must b
 
 	if ((damage _veh) > 0) then {
 	
-    	while {true} do {
+        while {true} do {
 	   
             scopeName "repairLoop";
             _damagePercent = (damage _veh) * 100;
@@ -51,10 +51,10 @@ if (player isKindOf "man") then {playSound "sos_warning"; titleText ["You must b
             hintSilent format["Damage: %1", Round _damagePercent];
             if ((damage _veh) == 0) then {hintSilent "REPAIR COMPLETE"; sleep 1; breakOut "repairLoop";};
     	    sleep 0.1;
-    	
-		};
+            
+        };
     
-	};
+    };
     
     //Refuelling Loop.
 	
