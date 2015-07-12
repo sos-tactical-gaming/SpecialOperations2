@@ -29,15 +29,15 @@ if (player isKindOf "man") then {playSound "sos_warning"; titleText ["You must b
 
     //Security measures (moving everyone out locking and making invincible and removing action)
     
-	{moveOut _x} forEach _vehCrew;
+    {moveOut _x} forEach _vehCrew;
     _veh removeAction _action;
     _veh setVehicleLock "LOCKED";
     _veh allowDamage False;	
     playSound "sos_confirm";
 
-	titleText ["VEHICLE IS NOW SERVICING...", "PLAIN",0.3];
+    titleText ["VEHICLE IS NOW SERVICING...", "PLAIN",0.3];
    
-   //Repair Loop.
+    //Repair Loop.
 
 	if ((getDammage _veh) > 0) then {
 	
@@ -56,37 +56,37 @@ if (player isKindOf "man") then {playSound "sos_warning"; titleText ["You must b
     
 	};
     
-	//Refuelling Loop.
+    //Refuelling Loop.
 	
-	if ((fuel _veh) < 0.99) then {
+    if ((fuel _veh) < 0.99) then {
 	
-	    while {true} do {
+        while {true} do {
 	   
-    		scopeName "reFuelLoop";
-    	    _fuelPercent = (fuel _veh) * 100;
-			_addFuelAmount = (fuel _veh) + 0.01;
+            scopeName "reFuelLoop";
+            _fuelPercent = (fuel _veh) * 100;
+            _addFuelAmount = (fuel _veh) + 0.01;
     	   
-		    _veh setFuel _addFuelAmount;
-    	    hintSilent format["Fuel: %1", Round _fuelPercent];
- 		    if ((fuel _veh) == 1) then {hintSilent "REFUEL COMPLETE"; sleep 1; breakOut "reFuelLoop";};
-    	    sleep 0.1;
+            _veh setFuel _addFuelAmount;
+            hintSilent format["Fuel: %1", Round _fuelPercent];
+            if ((fuel _veh) == 1) then {hintSilent "REFUEL COMPLETE"; sleep 1; breakOut "reFuelLoop";};
+            sleep 0.1;
     	
-		};	
+        };	
 	
-	};
+    };
     
-	//Rearming. (in the process for making a check for ammo (not simple!))
+    //Rearming. (in the process for making a check for ammo (not simple!))
 
     hintSilent "REARMING...";	
     sleep 7.5; 
     _veh setVehicleAmmo 1;
     hintSilent "REARMING COMPLETE";
-	Sleep 1;
+    Sleep 1;
 	
-	//Undoing security and notifying player of completion.
+    //Undoing security and notifying player of completion.
     
-	hintSilent "VEHICLE SERVICING COMPLETE";
-	_veh setVehicleLock "UNLOCKED";
+    hintSilent "VEHICLE SERVICING COMPLETE";
+    _veh setVehicleLock "UNLOCKED";
     _veh allowDamage True;	
     playSound "sos_confirm";
 

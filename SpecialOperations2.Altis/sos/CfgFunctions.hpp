@@ -52,8 +52,8 @@ class SOS_Functions {
         class spawnVehicle {};
         class addVehicleSpawn {};        
         class canDriveVehicle {};
-		class createRearmPoint {};		
-		class addRearmAction {};
-		class rearmAction {};
+        class createRearmPoint {};		
+        class addRearmAction {};
+        class rearmAction {};
     };
 };
