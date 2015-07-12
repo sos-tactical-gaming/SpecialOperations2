@@ -20,7 +20,7 @@
 _veh = vehicle player;   
 _vehCrew = crew _veh;
 _action = _this select 2;
-_vehDamage = getDammage _veh;
+_vehDamage = damage _veh;
 
 
 //Check if you are in that Vehicle. (incase of multiple Vehicles being on the pad, and more complicated absurdities)
@@ -39,17 +39,17 @@ if (player isKindOf "man") then {playSound "sos_warning"; titleText ["You must b
    
     //Repair Loop.
 
-	if ((getDammage _veh) > 0) then {
+	if ((damage _veh) > 0) then {
 	
     	while {true} do {
 	   
-    		scopeName "repairLoop";
-		    _damagePercent = (getDammage _veh) * 100;
-			_repairAmount = (getDammage _veh) - 0.01;
+            scopeName "repairLoop";
+            _damagePercent = (damage _veh) * 100;
+            _repairAmount = (damage _veh) - 0.01;
     	   
-		    _veh setDamage _repairAmount;
-    	    hintSilent format["Damage: %1", Round _damagePercent];
- 		    if ((getDammage _veh) == 0) then {hintSilent "REPAIR COMPLETE"; sleep 1; breakOut "repairLoop";};
+            _veh setDamage _repairAmount;
+            hintSilent format["Damage: %1", Round _damagePercent];
+            if ((damage _veh) == 0) then {hintSilent "REPAIR COMPLETE"; sleep 1; breakOut "repairLoop";};
     	    sleep 0.1;
     	
 		};
