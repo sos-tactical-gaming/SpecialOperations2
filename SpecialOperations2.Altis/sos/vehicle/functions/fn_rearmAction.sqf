@@ -30,10 +30,10 @@ if (player isKindOf "man") then {playSound "sos_warning"; titleText ["You must b
     //Security measures (moving everyone out locking and making invincible and removing action)
     
     {moveOut _x} forEach _vehCrew;
-    _veh removeAction _action;
-    _veh setVehicleLock "LOCKED";
-    _veh allowDamage False;	
-    playSound "sos_confirm";
+	_veh removeAction _action;
+	_veh setVehicleLock "LOCKED";
+	_veh allowDamage False;	
+	playSound "sos_confirm";
 
     titleText ["VEHICLE IS NOW SERVICING...", "PLAIN",0.3];
    
@@ -50,7 +50,7 @@ if (player isKindOf "man") then {playSound "sos_warning"; titleText ["You must b
             _veh setDamage _repairAmount;
             hintSilent format["Damage: %1", Round _damagePercent];
             if ((damage _veh) == 0) then {hintSilent "REPAIR COMPLETE"; sleep 1; breakOut "repairLoop";};
-    	    sleep 0.1;
+            sleep 0.1;
             
         };
     
