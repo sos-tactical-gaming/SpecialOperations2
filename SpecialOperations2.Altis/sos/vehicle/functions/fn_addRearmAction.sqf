@@ -15,7 +15,7 @@
  */
 
  
-_vehicleicle = vehicle player;
+_vehicle = vehicle player;
 
 //Checks for damage, fuel and touching ground (cant move people out of flying choppers, also ammo later on)
 

@@ -28,11 +28,13 @@ if (player isKindOf "man") then {playSound "sos_warning"; titleText ["You must b
 
     //Security measures (moving everyone out locking and making invincible and removing action)
     
+
     {moveOut _x} forEach _vehicleCrew;
     _vehicle removeAction _action;
     _vehicle setVehicleLock "LOCKED";
     _vehicle allowDamage False;	
     playSound "sos_confirm";
+
 
     titleText ["VEHICLE IS NOW SERVICING...", "PLAIN",0.3];
    
