@@ -1,7 +1,7 @@
 /*
  * Rearm Trigger (Made use of Enquiring Stone's Trigger Spawn)
- * Author: EnquiringStone [S.O.S. Captain]
- * Edited: Catshannon [S.O.S Major]
+ * Author: Catshannon [S.O.S Major]
+ * Thanks: EnquiringStone [S.O.S. Captain]
  *
  * Creates a Trigger and Helipad for rearming of all vehicles
  * Checks for Fuel, Damage and whether or not you are grounded.
