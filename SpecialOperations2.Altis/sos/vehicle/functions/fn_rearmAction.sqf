@@ -19,15 +19,12 @@
 _vehicle = vehicle player;   
 _vehicleCrew = crew _vehicle;
 _action = _this select 2;
-_vehicleDamage = damage _vehicle;
+_vehicleName = format["Service %1", getText (configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayName")];
+
+if !(isTouchingGround _vehicle) then {playSound "sos_confirm"; hint format["You must land your %1 to repair it!", _vehicleName]} else {
 
 
-//Check if you are in that Vehicle. (incase of multiple Vehicles being on the pad, and more complicated absurdities)
-
-if (player isKindOf "man") then {playSound "sos_warning"; titleText ["You must be in the vehicle to repair it", "PLAIN",0.3];} else {
-
-    //Security measures (moving everyone out locking and making invincible and removing action)
-    
+    //Security measures (moving everyone out locking and making invincible and removing action)    
 
     {moveOut _x} forEach _vehicleCrew;
     _vehicle removeAction _action;
@@ -36,11 +33,11 @@ if (player isKindOf "man") then {playSound "sos_warning"; titleText ["You must b
     playSound "sos_confirm";
 
 
-    titleText ["VEHICLE IS NOW SERVICING...", "PLAIN",0.3];
+    titleText ["SERVICING VEHICLE...", "PLAIN",0.3];
    
     //Repair Loop.
 
-	if ((damage _vehicle) > 0) then {
+    if ((damage _vehicle) > 0) then {
 	
         while {true} do {
 	   
@@ -50,7 +47,7 @@ if (player isKindOf "man") then {playSound "sos_warning"; titleText ["You must b
     	   
             _vehicle setDamage _repairAmount;
             hintSilent format["Damage: %1", Round _damagePercent];
-            if ((damage _vehicle) == 0) then {hintSilent "REPAIR COMPLETE"; sleep 1; breakOut "repairLoop";};
+            if ((damage _vehicle) == 0) then {hint "REPAIR COMPLETE"; sleep 1; breakOut "repairLoop";};
             sleep 0.1;
             
         };
@@ -69,26 +66,36 @@ if (player isKindOf "man") then {playSound "sos_warning"; titleText ["You must b
     	   
             _vehicle setFuel _addFuelAmount;
             hintSilent format["Fuel: %1", Round _fuelPercent];
-            if ((fuel _vehicle) == 1) then {hintSilent "REFUEL COMPLETE"; sleep 1; breakOut "reFuelLoop";};
+            if ((fuel _vehicle) == 1) then {hint "REFUEL COMPLETE"; sleep 1; breakOut "reFuelLoop";};
             sleep 0.1;
     	
         };	
-	
+
     };
     
     //Rearming. (in the process for making a check for ammo (not simple!))
 
-    hintSilent "REARMING...";	
-    sleep 7.5; 
-    _vehicle setVehicleAmmo 1;
+    hint "REARMING...";	
+    
+    if (_vehicle isKindOf "Plane" || _vehicle isKindOf "Helicopter") then {
+    
+        sleep 15;_vehicle setVehicleAmmo 1;
+    
+    } else {
+        
+        sleep 7.5;_vehicle setVehicleAmmo 1;
+        
+    };
+    
     hintSilent "REARMING COMPLETE";
     Sleep 1;
 	
     //Undoing security and notifying player of completion.
     
-    hintSilent "VEHICLE SERVICING COMPLETE";
+    hint "VEHICLE SERVICING COMPLETE";
     _vehicle setVehicleLock "UNLOCKED";
     _vehicle allowDamage True;	
     playSound "sos_confirm";
 
 };
+
