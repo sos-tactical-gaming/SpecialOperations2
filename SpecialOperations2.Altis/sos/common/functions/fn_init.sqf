@@ -36,6 +36,6 @@ if (!isDedicated) then {
 
 // mission generator 
 if (isServer) then {
-    //[true] spawn SOS_fnc_initMissionGenerator;              
+    [true] spawn SOS_fnc_initMissionGenerator;              
 };
  
