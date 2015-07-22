@@ -23,6 +23,4 @@ _size = if (count _this > 1) then {_this select 1} else {[75, 75]};
 _trigger = createTrigger ["EmptyDetector", _position, false];
 _trigger setTriggerArea[_size select 0, _size select 1, 0, false];
 _trigger setTriggerActivation["WEST", "PRESENT", true];
-_trigger setTriggerStatements["player in thisList", "[player] call SOS_fnc_activateSafeZone", "[player] call SOS_fnc_deactivateSafeZone"];
-
-[_trigger] spawn SOS_fnc_createVehicleSafeZone;
+_trigger setTriggerStatements["player in thisList || (player in (crew (vehicle player)) && vehicle player != player && vehicle player in thisList)", "[player] call SOS_fnc_activateSafeZone", "[player] call SOS_fnc_deactivateSafeZone"];

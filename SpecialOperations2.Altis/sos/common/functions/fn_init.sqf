@@ -15,9 +15,12 @@
 if (!isDedicated) then {        
     [] call SOS_fnc_initInventory;
 	
-	_position = getMarkerPos "sos_safe_zone1";
-	_size = getMarkerSize "sos_safe_zone1";
-	[_position, _size] call SOS_fnc_createSafeZone;
+	safeZones = ["sos_safe_zone1"]; //Add safe zone markers to this array
+	{
+		_position = getMarkerPos _x;
+		_size = getMarkerSize _x;
+		[_position, _size] call SOS_fnc_createSafeZone;
+	} forEach safeZones;
 
     // virtual arsenal
     [sos_ammo1] call SOS_fnc_addVirtualArsenal;
@@ -33,6 +36,6 @@ if (!isDedicated) then {
 
 // mission generator 
 if (isServer) then {
-    [true] spawn SOS_fnc_initMissionGenerator;              
+    //[true] spawn SOS_fnc_initMissionGenerator;              
 };
  

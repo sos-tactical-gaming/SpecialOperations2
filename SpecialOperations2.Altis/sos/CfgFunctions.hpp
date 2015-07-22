@@ -15,7 +15,6 @@ class SOS_Functions {
 		class createSafeZone {};
 		class activateSafeZone {};
 		class deactivateSafeZone {};
-		class createVehicleSafeZone {};
 	};
     
     class Common {

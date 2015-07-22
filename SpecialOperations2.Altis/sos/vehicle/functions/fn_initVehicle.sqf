@@ -31,3 +31,15 @@ _vehicle addEventHandler ["GetIn", {
         };
     };
 }];
+
+_vehicle addEventHandler ["Fired", {
+	{
+		_inArea = [getPos player, _x] call CBA_fnc_inArea;
+		_flying = getPos player select 2 > 5;
+		if(_inArea && !_flying) then {
+			deleteVehicle (_this select 6);
+			hintC "Do not fire in base!";
+			playSound "sos_warning";
+		};
+	} forEach safeZones;
+}];
