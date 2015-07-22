@@ -14,13 +14,7 @@
  
 if (!isDedicated) then {        
     [] call SOS_fnc_initInventory;
-	
-	safeZones = ["sos_safe_zone1"]; //Add safe zone markers to this array
-	{
-		_position = getMarkerPos _x;
-		_size = getMarkerSize _x;
-		[_position, _size] call SOS_fnc_createSafeZone;
-	} forEach safeZones;
+	[] call SOS_fnc_initSafeZone;
 
     // virtual arsenal
     [sos_ammo1] call SOS_fnc_addVirtualArsenal;

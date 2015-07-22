@@ -13,7 +13,7 @@
  *
  */
  
-private ["_vehicle"];
+private ["_vehicle", "_member"];
 
 _vehicle = _this select 0;
 
@@ -32,14 +32,18 @@ _vehicle addEventHandler ["GetIn", {
     };
 }];
 
-_vehicle addEventHandler ["Fired", {
-	{
-		_inArea = [getPos player, _x] call CBA_fnc_inArea;
-		_flying = getPos player select 2 > 5;
-		if(_inArea && !_flying) then {
-			deleteVehicle (_this select 6);
-			hintC "Do not fire in base!";
-			playSound "sos_warning";
-		};
-	} forEach safeZones;
-}];
+//Checks if the vehicle is firing from within a safe zone
+
+_member = [] call SOS_fnc_isMember;
+if(!_member) then {
+	_vehicle addEventHandler ["Fired", {
+		{
+			_inArea = [getPosATL player, _x] call CBA_fnc_inArea;
+			_flying = getPosATL player select 2 > 5;
+			if(_inArea && !_flying) then {
+				deleteVehicle (_this select 6);
+				["Do not fire in base!", "WARNING", "sos_warning"] call SOS_fnc_showMessage;
+			};
+		} forEach SOS_MISSION_SAFE_ZONES;
+	}];
+};
