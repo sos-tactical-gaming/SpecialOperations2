@@ -33,7 +33,7 @@ _vehicle addEventHandler ["GetIn", {
 }];
 
 //Checks if the vehicle is firing from within a safe zone
-if(!([] call SOS_fnc_isMember)) then {
+if !([] call SOS_fnc_isMember) then {
 	_vehicle addEventHandler ["Fired", {
 		{
 			_inArea = [getPosATL player, _x] call CBA_fnc_inArea;
