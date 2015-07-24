@@ -31,3 +31,19 @@ _vehicle addEventHandler ["GetIn", {
         };
     };
 }];
+
+//Checks if the vehicle is firing from within a safe zone
+if !([] call SOS_fnc_isMember) then {
+	_vehicle addEventHandler ["Fired", {
+		{
+			_inArea = [getPosATL player, _x] call CBA_fnc_inArea;
+			_flying = getPosATL player select 2 > 5;
+			if(_inArea && !_flying) then {
+				deleteVehicle (_this select 6);
+				["Do not fire in base!", 
+				"WARNING", 
+				"sos_warning"] call SOS_fnc_showMessage;
+			};
+		} forEach SOS_MISSION_SAFE_ZONES;
+	}];
+};

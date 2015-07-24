@@ -14,6 +14,7 @@
  
 if (!isDedicated) then {        
     [] call SOS_fnc_initInventory;
+	[] call SOS_fnc_initSafeZone;
 
     // virtual arsenal
     [sos_ammo1] call SOS_fnc_addVirtualArsenal;

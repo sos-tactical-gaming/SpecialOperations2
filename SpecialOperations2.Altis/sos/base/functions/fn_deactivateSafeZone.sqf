@@ -13,8 +13,8 @@
  *
  */
  
- private ["_unit"];
+private ["_unit"];
  
- _unit = _this select 0;
+_unit = _this select 0;
  
- _unit removeAllEventHandlers "Fired";
+_unit removeAllEventHandlers "Fired";
