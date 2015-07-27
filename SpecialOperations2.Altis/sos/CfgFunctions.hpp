@@ -55,6 +55,6 @@ class SOS_Functions {
 	class addServicePoint {};		
 	class activateServicePoint {};      
 	class serviceVehicle {};
-        class deactivateServicePoint {};
+	class deactivateServicePoint {};
     };
 };
