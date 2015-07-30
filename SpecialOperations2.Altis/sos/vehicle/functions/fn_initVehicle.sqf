@@ -47,3 +47,11 @@ if !([] call SOS_fnc_isMember) then {
 		} forEach SOS_MISSION_SAFE_ZONES;
 	}];
 };
+
+if((typeOf _vehicle) in (getArray(missionConfigFile >> format ["SOS_VehicleTypes"] >> "TransportHelicopters" >> "vehicles"))) then {
+	_vehicle addAction ["Parachute", {
+		_heli = _this select 0;
+		_unit = _this select 1;
+		[_heli, _unit] call SOS_fnc_parachute;
+	}, nil, 5, false, true, "", "(((getPos _target) select 2) > 150) && (player in (assignedCargo _target))"];
+};
