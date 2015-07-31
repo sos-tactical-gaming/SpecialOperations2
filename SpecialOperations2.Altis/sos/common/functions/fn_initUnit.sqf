@@ -25,3 +25,5 @@ if !(isNull _unit) then {
     group _unit setGroupId [_groupId]; 
     _unit setVariable ["sos_inventory_role", _role, true];     
 };
+
+[] call SOS_fnc_roleProtection;
