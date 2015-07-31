@@ -37,5 +37,5 @@ if ((_this select 2) == "") then {
 _trigger = createTrigger ["EmptyDetector", _position, false];
 _trigger setTriggerArea[_size select 0, _size select 1, 0, false];
 _trigger setTriggerActivation["ANY", "PRESENT", true]; // Must be side any due to use of AAF Vehicles.
-_trigger setTriggerStatements["this",format ["if (vehicle player isKindOf ""%1"") then {[player] call SOS_fnc_activateServicePoint};",_vehicleType], "[player] call SOS_fnc_deactivateServicePoint"];
+_trigger setTriggerStatements["vehicle player in thisList",format ["if ((vehicle player isKindOf ""%1"") and (hasInterface)) then {[player] call SOS_fnc_activateServicePoint};",_vehicleType], "[player] call SOS_fnc_deactivateServicePoint"];
 "Land_HelipadCircle_F" createVehicle (getPos _trigger);
