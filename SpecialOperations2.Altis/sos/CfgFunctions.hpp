@@ -24,6 +24,7 @@ class SOS_Functions {
         class initUnit {};
         class sendMessage {};
         class isMember {};
+        class checkRole {};        
     };
     
     class Inventory {
