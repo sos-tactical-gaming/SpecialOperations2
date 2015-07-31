@@ -14,16 +14,24 @@
  * Example:
  * _position = getMarkerPos "desiredMarker";
  * _size = getMarkerSize "desiredMarker";
- * _vehicleType = "Plane","Helicopter" or "LandVehicle"; ect... (_vehicle isKindOf "Plane")
- * [_position, _size,_vehicleType] call SOS_fnc_addServicePoint;
+ * _vehicleType = ("" is the default = "LandVehicle") "Plane","Helicopter" or "Tank"; ect... (_vehicle isKindOf "Plane")
+ * _playerSide = WEST, EAST and GUE (future implementation on perhaps PvP).
+ * 
+ *[_position, _size, ""] call SOS_fnc_addServicePoint;
  *
  */
- 
- private ["_position", "_size"];
+
+private ["_position", "_size", "_vehicleType", "_trigger"];
 
 _position = _this select 0;
 _size = if (count _this > 1) then {_this select 1} else {[5.5, 5.5]};
-_vehicleType = _this select 2;
+
+_vehicleType = 
+if ((_this select 2) == "") then {
+    "landVehicle";
+    } else {
+        _this select 2;
+    };
 
 
 _trigger = createTrigger ["EmptyDetector", _position, false];
