@@ -16,6 +16,7 @@ class SOS_Functions {
         class initUnit {};
         class sendMessage {};
         class isMember {};
+        class roleProtection {};        
     };
     
     class Inventory {
