@@ -29,7 +29,7 @@ if (((damage _vehicle) > 0) or ((fuel _vehicle) < 1)) then {
         true,
         true,
         "",
-        "(_target == vehicle player) and (isTouchingGround vehicle player) and (isPlayer driver vehicle player)"
+        "(_target == vehicle player) and (isTouchingGround vehicle player) and (Player == driver vehicle player)"
     ];
     _vehicle setVariable ["sos_vehicle_service_action_id", _actionId];
 };
