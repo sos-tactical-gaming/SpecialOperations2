@@ -66,5 +66,9 @@ class SOS_Functions {
         class spawnVehicle {};
         class addVehicleSpawn {};        
         class canDriveVehicle {};
+        class addServicePoint {};		
+        class activateServicePoint {};      
+        class serviceVehicle {};
+        class deactivateServicePoint {};
     };
 };
