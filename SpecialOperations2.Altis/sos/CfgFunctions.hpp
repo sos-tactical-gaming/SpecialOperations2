@@ -24,6 +24,7 @@ class SOS_Functions {
         class initUnit {};
         class sendMessage {};
         class isMember {};
+        class roleProtection {};        
     };
     
     class Inventory {
@@ -65,5 +66,9 @@ class SOS_Functions {
         class spawnVehicle {};
         class addVehicleSpawn {};        
         class canDriveVehicle {};
+        class addServicePoint {};		
+        class activateServicePoint {};      
+        class serviceVehicle {};
+        class deactivateServicePoint {};
     };
 };
