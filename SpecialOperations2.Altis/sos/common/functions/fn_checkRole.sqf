@@ -19,6 +19,6 @@ private ["_protectedRoles"];
 
 _protectedRoles = getArray (missionConfigFile >> format ["SOS_ProtectedRoles"] >> "ProtectedRoles" >> "roles");
 
-if (((player getVariable "sos_inventory_role") in _protectedRoles) and (([] call SOS_fnc_isMember) isEqualTo false)) then {
+if ((player getVariable "sos_inventory_role") in _protectedRoles && !([] call SOS_fnc_isMember)) then {
    "end1" call BIS_fnc_endMission;
 };
