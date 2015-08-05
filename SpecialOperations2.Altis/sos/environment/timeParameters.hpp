@@ -12,7 +12,7 @@ class Time_Acceleration {
 };
 class RandomTime {
     title		= "Time: Random (Will override above settings by default)";
-    values[]	= {1, 0};
+    values[]		= {1, 0};
     texts[]		= {"True (Default)", "False"};
     default		= 1;
 };
