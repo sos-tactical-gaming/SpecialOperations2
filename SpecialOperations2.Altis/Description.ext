@@ -48,5 +48,5 @@ class CfgRespawnInventory {
 };
 
 class CfgSounds {
-	#include "sos\sounds\CfgSounds.hpp"
+    #include "sos\sounds\CfgSounds.hpp"
 };
