@@ -1,5 +1,10 @@
 class SOS_Functions {
     tag = "SOS";
+	
+	class Actions {
+		file = "sos\actions\functions";
+		class parachute {};
+	};
 
     class Arsenal {
         file = "sos\arsenal\functions";
