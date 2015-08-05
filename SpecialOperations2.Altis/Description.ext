@@ -1,7 +1,7 @@
 #include                    "sos\arsenal\SOS_VirtualArsenal.hpp"
 #include                    "sos\vehicle\SOS_VehicleSpawn.hpp"
 #include                    "sos\vehicle\SOS_VehicleProtection.hpp"
-#include					"sos\utils\SOS_VehicleTypes.hpp"
+#include					"sos\vehicle\SOS_VehicleTypes.hpp"
 #include                    "sos\common\SOS_ProtectedRoles.hpp"
 
 onLoadName                  = "Special Operations 2";
