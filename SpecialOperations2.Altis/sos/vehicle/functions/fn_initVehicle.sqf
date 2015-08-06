@@ -42,7 +42,7 @@ if !([] call SOS_fnc_isMember) then {
 				deleteVehicle (_this select 6);
 				["Do not fire in base!", 
 				"WARNING", 
-				"sos_warning"] call SOS_fnc_showMessage;
+				"sos_warning"] call SOS_fnc_showHint;
 			};
 		} forEach SOS_MISSION_SAFE_ZONES;
 	}];

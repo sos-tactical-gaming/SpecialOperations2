@@ -19,5 +19,5 @@ _unit = _this select 0;
 
 _unit addEventHandler ["Fired", {
 	deleteVehicle (_this select 6); //Deletes the bullet
-	["Do not fire in base!", "WARNING", "sos_warning"] call SOS_fnc_showMessage;
+	["Do not fire in base!", "WARNING", "sos_warning"] call SOS_fnc_showHint;
 }];

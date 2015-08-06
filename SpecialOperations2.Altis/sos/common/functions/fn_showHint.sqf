@@ -1,6 +1,6 @@
 /*
  * Author: EnquiringStone [S.O.S. Captain]
- * Creates a message with the given params
+ * Creates a hint with the given params
  *
  * Arguments:
  * 0: message <STRING>
@@ -11,7 +11,7 @@
  * Nothing
  *
  * Example:
- * [_message, _type, _sound] call SOS_fnc_showMessage;
+ * [_message, _type, _sound] call SOS_fnc_showHint;
  *
  */
 private ["_message", "_type", "_sound"];
