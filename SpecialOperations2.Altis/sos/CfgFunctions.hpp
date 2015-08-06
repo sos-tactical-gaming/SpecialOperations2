@@ -29,18 +29,14 @@ class SOS_Functions {
         class initUnit {};
         class sendMessage {};
         class isMember {};
-        class checkRole {};        
+        class checkRole {};
+        class showHint {};
     };
     
     class Inventory {
         file = "sos\inventory\functions";
         class initInventory {};        
     };
-	
-	class Message {
-		file = "sos\message\functions";
-		class showMessage {};
-	};
     
     class Mission {
         file = "sos\mission\functions";
