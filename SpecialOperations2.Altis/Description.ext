@@ -32,6 +32,8 @@ class Header {
 };
 
 class Params {
+    #include "sos\environment\SOS_TimeParams.hpp"
+    #include "sos\environment\SOS_WeatherParams.hpp"
 };
 
 class CfgFunctions {
@@ -47,5 +49,5 @@ class CfgRespawnInventory {
 };
 
 class CfgSounds {
-	#include "sos\sounds\CfgSounds.hpp"
+    #include "sos\sounds\CfgSounds.hpp"
 };
