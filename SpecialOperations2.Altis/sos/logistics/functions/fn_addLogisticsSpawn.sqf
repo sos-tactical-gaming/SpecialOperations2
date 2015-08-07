@@ -77,6 +77,3 @@ if (player getVariable "sos_inventory_role" in _whitelist || count _whitelist ==
         
     }, [_box, _position, _radius, _delay, _direction, _contents], 2.0, true, true];
 };
-
-
-//I_CargoNet_01_ammo_F
