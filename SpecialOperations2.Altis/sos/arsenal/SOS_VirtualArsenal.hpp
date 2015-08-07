@@ -26,11 +26,13 @@ class SOS_WestVirtualArsenal {
         magazines[] = {
             "Thrown",
             "AssaultRifles",
-            "GL"
+            "GL",
+            "Pistols"
         };
         weapons[] = {
             "AssaultRifles",
-            "AssaultRiflesGL"
+            "AssaultRiflesGL",
+            "Pistols"
         };    
     };
 
@@ -55,10 +57,12 @@ class SOS_WestVirtualArsenal {
         };
         magazines[] = {
             "Thrown",
-            "AssaultRifles"
+            "AssaultRifles",
+            "Pistols"
         };
         weapons[] = {
-            "AssaultRiflesC"
+            "AssaultRiflesC",
+            "Pistols"
         };    
     };
 
@@ -86,10 +90,12 @@ class SOS_WestVirtualArsenal {
         };
         magazines[] = {
             "Thrown",
-            "MarksmanRifles"
+            "MarksmanRifles",
+            "Pistols"
         };
         weapons[] = {
-            "MarksmanRifles"
+            "MarksmanRifles",
+            "Pistols"
         };    
     };
 
@@ -116,11 +122,13 @@ class SOS_WestVirtualArsenal {
         magazines[] = {
             "Thrown",
             "AssaultRifles",
-            "GL"
+            "GL",
+            "Pistols"
         };
         weapons[] = {
             "AssaultRifles",
-            "AssaultRiflesGL"
+            "AssaultRiflesGL",
+            "Pistols"
         };    
     };
 
@@ -144,10 +152,12 @@ class SOS_WestVirtualArsenal {
         };
         magazines[] = {
             "Thrown",
-            "MachineGuns"
+            "MachineGuns",
+            "Pistols"
         };
         weapons[] = {
-            "MachineGuns"
+            "MachineGuns",
+            "Pistols"
         };    
     };
 
@@ -172,11 +182,13 @@ class SOS_WestVirtualArsenal {
         magazines[] = {
             "Thrown",
             "AssaultRifles",
-            "Launchers"
+            "Launchers",
+            "Pistols"
         };
         weapons[] = {
             "AssaultRifles",
-            "Launchers"
+            "Launchers",
+            "Pistols"
         };    
     };
 
@@ -203,10 +215,41 @@ class SOS_WestVirtualArsenal {
         magazines[] = {
             "Thrown",
             "AssaultRifles",
-            "Explosives"
+            "Explosives",
+            "Pistols"
         };
         weapons[] = {
-            "AssaultRifles"
+            "AssaultRifles",
+            "Pistols"
+        };    
+    };
+    
+    class GhostAutorifleman {
+        backpacks[] = {
+            "AssaultBackpacks"            
+        };
+        items[] = {
+            "BasicHelmets",
+            "BasicUniforms",
+            "Vests",
+            "BasicItems",
+            "BasicMedical",
+            "NightVisionGoggles",
+            "ShortRangeRadios",
+            "Goggles",
+            "ShortRangeOptics",
+            "MidRangeOptics",
+            "Bipods",
+            "Attachments"
+        };
+        magazines[] = {
+            "Thrown",
+            "Autorifles",
+            "Pistols"
+        };
+        weapons[] = {
+            "Autorifles",
+            "Pistols"
         };    
     };
 
@@ -231,10 +274,12 @@ class SOS_WestVirtualArsenal {
         };
         magazines[] = {
             "Thrown",
-            "AssaultRifles"
+            "AssaultRifles",
+            "Pistols"
         };
         weapons[] = {
-            "AssaultRifles"
+            "AssaultRifles",
+            "Pistols"
         };    
     };
 
@@ -259,10 +304,12 @@ class SOS_WestVirtualArsenal {
         };
         magazines[] = {
             "Thrown",
-            "AssaultRifles"
+            "AssaultRifles",
+            "Pistols"
         };
         weapons[] = {
-            "AssaultRiflesC"
+            "AssaultRiflesC",
+            "Pistols"
         };    
     };
 
@@ -290,17 +337,20 @@ class SOS_WestVirtualArsenal {
         magazines[] = {
             "Thrown",
             "AssaultRifles",
-            "GL"
+            "GL",
+            "Pistols"
         };
         weapons[] = {
             "AssaultRifles",
-            "AssaultRiflesGL"
+            "AssaultRiflesGL",
+            "Pistols"
         };    
     };
 
     class GhostReconScout {
         backpacks[] = {
-            "AssaultBackpacks"
+            "AssaultBackpacks",
+            "UAVBackpacks"
         };
         items[] = {
             "ReconHelmets",
@@ -316,14 +366,17 @@ class SOS_WestVirtualArsenal {
             "ShortRangeOptics",
             "MidRangeOptics",
             "Suppressors",
-            "Attachments"
+            "Attachments",
+            "UAVTerminals"
         };
         magazines[] = {
             "Thrown",
-            "AssaultRifles"
+            "AssaultRifles",
+            "Pistols"
         };
         weapons[] = {
-            "AssaultRifles"
+            "AssaultRifles",
+            "Pistols"
         };    
     };
 
@@ -352,10 +405,12 @@ class SOS_WestVirtualArsenal {
         };
         magazines[] = {
             "Thrown",
-            "MarksmanRifles"
+            "MarksmanRifles",
+            "Pistols"
         };
         weapons[] = {
-            "MarksmanRifles"
+            "MarksmanRifles",
+            "Pistols"
         };    
     };
 
@@ -382,10 +437,12 @@ class SOS_WestVirtualArsenal {
         };
         magazines[] = {
             "Thrown",
-            "AssaultRifles"
+            "AssaultRifles",
+            "Pistols"
         };
         weapons[] = {
-            "AssaultRifles"
+            "AssaultRifles",
+            "Pistols"
         };    
     };
 
@@ -412,11 +469,13 @@ class SOS_WestVirtualArsenal {
         magazines[] = {
             "Thrown",
             "AssaultRifles",
-            "GL"
+            "GL",
+            "Pistols"
         };
         weapons[] = {
             "AssaultRifles",
-            "AssaultRiflesGL"
+            "AssaultRiflesGL",
+            "Pistols"
         };    
     };
 
@@ -442,10 +501,12 @@ class SOS_WestVirtualArsenal {
         };
         magazines[] = {
             "Thrown",
-            "AssaultRifles"
+            "AssaultRifles",
+            "Pistols"
         };
         weapons[] = {
-            "AssaultRifles"
+            "AssaultRifles",
+            "Pistols"
         };    
     };
 
@@ -471,10 +532,12 @@ class SOS_WestVirtualArsenal {
         };
         magazines[] = {
             "Thrown",
-            "AssaultRifles"
+            "AssaultRifles",
+            "Pistols"
         };
         weapons[] = {
-            "AssaultRifles"
+            "AssaultRifles",
+            "Pistols"
         };    
     };
 
@@ -499,11 +562,13 @@ class SOS_WestVirtualArsenal {
         magazines[] = {
             "Thrown",
             "AssaultRifles",
-            "Launchers"
+            "Launchers",
+            "Pistols"
         };
         weapons[] = {
             "AssaultRifles",
-            "Launchers"
+            "Launchers",
+            "Pistols"
         };    
     };
 
@@ -514,6 +579,7 @@ class SOS_WestVirtualArsenal {
         items[] = {
             "AnvilHelmets",
             "BasicUniforms",
+            "Vests",
             "BasicItems",
             "Rangefinders",
             "BasicMedical",
@@ -527,11 +593,13 @@ class SOS_WestVirtualArsenal {
         magazines[] = {
             "Thrown",
             "AssaultRifles",
-            "SubMachineGuns"
+            "SubMachineGuns",
+            "Pistols"
         };
         weapons[] = {
             "AssaultRiflesC",
-            "SubMachineGuns"
+            "SubMachineGuns",
+            "Pistols"
         }; 
     };
 
@@ -541,6 +609,7 @@ class SOS_WestVirtualArsenal {
         items[] = {
             "AnvilHelmets",
             "BasicUniforms",
+            "Vests",
             "BasicItems",
             "BasicMedical",
             "NightVisionGoggles",
@@ -552,11 +621,13 @@ class SOS_WestVirtualArsenal {
         magazines[] = {
             "Thrown",
             "AssaultRifles",
-            "SubMachineGuns"
+            "SubMachineGuns",
+            "Pistols"
         };
         weapons[] = {
             "AssaultRiflesC",
-            "SubMachineGuns"
+            "SubMachineGuns",
+            "Pistols"
         }; 
     };
 
@@ -566,6 +637,7 @@ class SOS_WestVirtualArsenal {
         items[] = {
             "AnvilHelmets",
             "BasicUniforms",
+            "Vests",
             "BasicItems",
             "BasicMedical",
             "NightVisionGoggles",
@@ -577,11 +649,13 @@ class SOS_WestVirtualArsenal {
         magazines[] = {
             "Thrown",
             "AssaultRifles",
-            "SubMachineGuns"
+            "SubMachineGuns",
+            "Pistols"
         };
         weapons[] = {
             "AssaultRiflesC",
-            "SubMachineGuns"
+            "SubMachineGuns",
+            "Pistols"
         }; 
     };
 
@@ -593,6 +667,7 @@ class SOS_WestVirtualArsenal {
         items[] = {
             "ReaperHelmets",
             "ReaperUniforms",
+            "ReaperVests",
             "BasicItems",
             "BasicMedical",
             "NightVisionGoggles",
@@ -605,11 +680,13 @@ class SOS_WestVirtualArsenal {
         magazines[] = {
             "Thrown",
             "AssaultRifles",
-            "SubMachineGuns"
+            "SubMachineGuns",
+            "Pistols"
         };
         weapons[] = {
             "AssaultRiflesC",
-            "SubMachineGuns"
+            "SubMachineGuns",
+            "Pistols"
         }; 
     };
 
@@ -620,6 +697,7 @@ class SOS_WestVirtualArsenal {
         items[] = {
             "ReaperHelmets",
             "ReaperUniforms",
+            "ReaperVests",
             "BasicItems",
             "BasicMedical",
             "NightVisionGoggles",
@@ -631,11 +709,13 @@ class SOS_WestVirtualArsenal {
         magazines[] = {
             "Thrown",
             "AssaultRifles",
-            "SubMachineGuns"
+            "SubMachineGuns",
+            "Pistols"
         };
         weapons[] = {
             "AssaultRiflesC",
-            "SubMachineGuns"
+            "SubMachineGuns",
+            "Pistols"
         }; 
     };
 
@@ -647,6 +727,7 @@ class SOS_WestVirtualArsenal {
         items[] = {
             "ReaperHelmets",
             "ReaperUniforms",
+            "ReaperVests",
             "BasicItems",
             "BasicMedical",
             "AdvancedMedical",
@@ -659,11 +740,13 @@ class SOS_WestVirtualArsenal {
         magazines[] = {
             "Thrown",
             "AssaultRifles",
-            "SubMachineGuns"
+            "SubMachineGuns",
+            "Pistols"
         };
         weapons[] = {
             "AssaultRiflesC",
-            "SubMachineGuns"
+            "SubMachineGuns",
+            "Pistols"
         }; 
     };
 
@@ -687,10 +770,12 @@ class SOS_WestVirtualArsenal {
         magazines[] = {
             "Thrown",
             "AssaultRifles",
-            "SubMachineGuns"
+            "SubMachineGuns",
+            "Pistols"
         };
         weapons[] = {
-            "SubMachineGuns"
+            "SubMachineGuns",
+            "Pistols"
         }; 
     };
 };
