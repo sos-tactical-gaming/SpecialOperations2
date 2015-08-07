@@ -6,15 +6,13 @@ class SOS_WestVirtualMagazineCargo {
             "30Rnd_556x45_Stanag",
             "30Rnd_556x45_Stanag_Tracer_Red"
         };
-    };
-	
+    };	
     class Autorifles {
         items[] = {
             "100Rnd_65x39_caseless_mag",
             "100Rnd_65x39_caseless_mag_Tracer"
         };
-    };  
-    
+    };    
     class MachineGuns {
         items[] = {        
             "150Rnd_93x64_Mag",
@@ -22,8 +20,7 @@ class SOS_WestVirtualMagazineCargo {
             "200Rnd_65x39_cased_Box",
             "200Rnd_65x39_cased_Box_Tracer"
         };
-    };
-	
+    };	
     class MarksmanRifles {
         items[] = {        
             "30Rnd_65x39_caseless_mag",
@@ -33,16 +30,14 @@ class SOS_WestVirtualMagazineCargo {
             "10Rnd_93x64_DMR_05_Mag",
             "20Rnd_762x51_Mag"          
         };
-    };
-    
+    };    
     class SubMachineGuns {
         items[] = {        
             "30Rnd_9x21_Mag",
             "30Rnd_45ACP_Mag_SMG_01",
             "30Rnd_45ACP_Mag_SMG_01_tracer_green"
         };
-    }; 	
-    
+    };    
     class GL {
         items[] = {           
             "1Rnd_HE_Grenade_shell",
@@ -73,7 +68,6 @@ class SOS_WestVirtualMagazineCargo {
             "3Rnd_SmokeOrange_Grenade_shell"         
         };
     };
-    
     class Launchers {
         items[] = {        
             "NLAW_F",
@@ -81,8 +75,7 @@ class SOS_WestVirtualMagazineCargo {
             "RPG32_F",
             "RPG32_HE_F"
         };
-    }; 
-    
+    };
     class Thrown {
         items[] = {           
             "HandGrenade",
@@ -98,8 +91,7 @@ class SOS_WestVirtualMagazineCargo {
             "Chemlight_yellow",
             "Chemlight_blue"       
         };
-    }; 	
-    
+    };
     class Explosives {
         items[] = {           
             "SatchelCharge_Remote_Mag",
@@ -112,7 +104,6 @@ class SOS_WestVirtualMagazineCargo {
             "ClaymoreDirectionalMine_Remote_Mag"
         };
     };
-
     class Pistols {
         items[] = {           
             "9Rnd_45ACP_Mag",

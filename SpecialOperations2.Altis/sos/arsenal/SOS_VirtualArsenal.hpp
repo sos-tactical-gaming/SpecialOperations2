@@ -41,6 +41,7 @@ class SOS_WestVirtualArsenal {
             "AssaultBackpacks"
         };
         items[] = {
+            "BasicHelmets",
             "MedicHelmets",
             "BasicUniforms",
             "Vests",
@@ -288,6 +289,7 @@ class SOS_WestVirtualArsenal {
             "AssaultBackpacks"
         };
         items[] = {
+            "BasicHelmets",
             "MedicHelmets",
             "BasicUniforms",
             "Vests",

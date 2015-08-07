@@ -1538,7 +1538,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=14;
+		items=16;
 		class Item0
 		{
 			position[]={15199.413,17.940001,17281.512};
@@ -1689,6 +1689,36 @@ class Mission
 			vehicle="B_CargoNet_01_ammo_F";
 			skill=0.60000002;
 			text="sos_ammo4";
+		};
+		class Item14
+		{
+			position[]={15160.506,17.91,17211.141};
+			azimut=-45.497898;
+			id=65;
+			side="EMPTY";
+			vehicle="Land_HelipadSquare_F";
+			skill=0.60000002;
+			text="sos_rearm_point2";
+		};
+		class Item15
+		{
+			position[]={15144.516,17.91,17194.395};
+			azimut=-45.497898;
+			id=66;
+			side="EMPTY";
+			vehicle="Land_HelipadSquare_F";
+			skill=0.60000002;
+			text="sos_rearm_point1";
+		};
+	};
+	class Markers
+	{
+		items=1;
+		class Item0
+		{
+			position[]={15154.75,17.91,17181.941};
+			name="sos_safe_zone1";
+			type="Empty";
 		};
 	};
 };

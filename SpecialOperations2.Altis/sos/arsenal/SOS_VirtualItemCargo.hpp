@@ -5,72 +5,65 @@ class SOS_WestVirtualItemCargo {
             "H_HelmetB_camo",
             "H_HelmetB_black"
         };
-    };
-    
-    class MedicHelmets : BasicHelmets {
-    };
-    
+    };    
+    class MedicHelmets {
+        items[] = {
+            "H_Cap_headphones"
+        };
+    };    
     class ReconHelmets {
         items[] = {
             "H_Shemag_olive_hs",
             "H_ShemagOpen_tan",
-            "H_ShemagOpen_khk"
+            "H_ShemagOpen_khk",
+            "H_Watchcap_blk"
         };
-    };
-    
+    };    
     class AnvilHelmets {
         items[] = {
             "H_HelmetCrew_B",
             "H_HelmetCrew_I"
         };
-    };
-    
+    };    
     class ReaperHelmets {
         items[] = {
             "H_CrewHelmetHeli_B",
             "H_PilotHelmetHeli_B"
         };
-    };
-    
+    };    
     class HavocHelmets {
         items[] = {
             "H_PilotHelmetFighter_B"
         };
-    };
-    
+    };    
     class BasicUniforms {
         items[] = {
             "U_B_CombatUniform_mcam",
             "U_B_CombatUniform_mcam_tshirt",
             "U_BG_Guerrilla_6_1"
         };
-    };
-    
+    };    
     class ReconUniforms {
         items[] = {
             "U_B_CombatUniform_mcam_vest"
         };
-    };
-    
+    };    
     class GhillieUniforms {
         items[] = {
             "U_B_FullGhillie_lsh",
             "U_B_GhillieSuit"
         };
-    };
-    
+    };    
     class ReaperUniforms {
         items[] = {
             "U_B_HeliPilotCoveralls"
         };
-    };
-    
+    };    
     class HavocUniforms {
         items[] = {
             "U_B_PilotCoveralls"
         };
-    };
-    
+    };    
     class Vests {
         items[] = {
             "V_PlateCarrier1_rgr",
@@ -80,14 +73,12 @@ class SOS_WestVirtualItemCargo {
             "V_PlateCarrierL_CTRG",
             "V_PlateCarrierH_CTRG"
         };
-    };
-    
+    };    
     class ReaperVests {
         items[] = {
             "V_Chestrig_rgr"
         };
-    };
-    
+    };    
     class BasicItems {
         items[] = {
             "ItemCompass",
@@ -97,24 +88,21 @@ class SOS_WestVirtualItemCargo {
             "ACE_MapTools",
             "Binocular"
         };
-    };
-    
+    };    
     class Rangefinders {
         items[] = {
             "ACE_Vector",
             "ACE_Kestrel4500",
             "ACE_RangeCard"
         };
-    };
-    
+    };    
     class NightVisionGoggles {
         items[] = {
             "NVGoggles",
             "NVGoggles_OPFOR",
             "NVGoggles_INDEP"
         };
-    };
-    
+    };    
     class BasicMedical {
         items[] = {
             "ACE_fieldDressing",
@@ -123,8 +111,7 @@ class SOS_WestVirtualItemCargo {
             "ACE_morphine",
             "ACE_epinephrine"
         };        
-    };
-    
+    };    
     class AdvancedMedical {
         items[] = {
             "ACE_elasticBandage",
@@ -143,23 +130,20 @@ class SOS_WestVirtualItemCargo {
             "ACE_surgicalKit",
             "ACE_bodyBag"    
         };                
-    };
-    
+    };    
     class ShortRangeRadios {
         items[] = {
             "tf_anprc152",
             "tf_rf7800str"
         };
-    };
-    
+    };    
     class Berets {
         items[] = {
             "H_Beret_blk",
             "H_Beret_02",
             "H_Beret_Colonel"
         };
-    };
-    
+    };    
     class Goggles {
         items[] = {
             "G_Shades_Black",
@@ -193,59 +177,51 @@ class SOS_WestVirtualItemCargo {
             "G_Bandanna_oli",
             "G_Bandanna_shades"
         };
-    };
-    
+    };    
     class Tools {
         items[] = {
             "ACE_Clacker",
             "ACE_DefusalKit",
             "ACE_wirecutter"
         };
-    };
-    
+    };    
     class UAVTerminals {
         items[] = {
             "B_UavTerminal"
         };
-    };
-    
+    };    
     class ShortRangeOptics {
         items[] = {
             "optic_Aco",
             "optic_Holosight"
         };
-    };
-    
+    };    
     class MidRangeOptics {
         items[] = {
             "optic_Arco",
             "optic_Hamr",
             "optic_MRCO"
         };
-    };
-    
+    };    
     class LongRangeOptics {
         items[] = {
             "optic_SOS",
             "optic_DMS",
             "optic_LRPS"
         };
-    };
-    
+    };    
     class ThermalOptics {
         items[] = {
             "optic_tws"
         };
-    };
-    
+    };    
     class Bipods {
         items[] = {
             "bipod_01_F_snd",
             "bipod_01_F_blk",
             "bipod_01_F_mtp"
         };
-    };
-    
+    };    
     class Suppressors {
         items[] = {
             "muzzle_snds_H",
@@ -253,8 +229,7 @@ class SOS_WestVirtualItemCargo {
             "muzzle_snds_B",
             "muzzle_snds_L"
         };
-    };
-    
+    };    
     class Attachments {
         items[] = {
             "acc_pointer_IR",

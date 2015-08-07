@@ -4,19 +4,19 @@ class SOS_WestVirtualWeaponCargo {
             "arifle_MX_F", 
             "arifle_MX_Black_F",
             "arifle_Mk20_F",
-            "arifle_Mk20_plain_F"
+            "arifle_Mk20_plain_F",
+            "arifle_TRG21_F"
         };
-    };
-    
+    };    
     class AssaultRiflesC {
         items[] = {
             "arifle_MXC_F",
             "arifle_MXC_Black_F",
             "arifle_Mk20C_F",
-            "arifle_Mk20C_plain_F"
+            "arifle_Mk20C_plain_F",
+            "arifle_TRG20_F"
         };        
-    };
-    
+    };    
     class AssaultRiflesGL {
         items[] = {
             "arifle_MX_GL_F",
@@ -24,8 +24,7 @@ class SOS_WestVirtualWeaponCargo {
             "arifle_Mk20_GL_F",
             "arifle_Mk20_GL_plain_F"
         };
-    };
-    
+    };    
     class MarksmanRifles {
         items[] = {
             "arifle_MXM_F",
@@ -44,15 +43,13 @@ class SOS_WestVirtualWeaponCargo {
             "srifle_DMR_06_camo_F",
             "srifle_DMR_06_olive_F"
         };
-    };
-    
+    };    
     class Autorifles {
         items[] = {
             "arifle_MX_SW_F",
             "arifle_MX_SW_Black_F"
         };
-    };
-    
+    };    
     class MachineGuns {
         items[] = {
             "MMG_01_hex_F",
@@ -62,23 +59,20 @@ class SOS_WestVirtualWeaponCargo {
             "MMG_02_sand_F",
             "LMG_Mk200_F",
         };
-    };
-    
+    };    
     class SubMachineGuns {
         items[] = {
             "hgun_PDW2000_F",
             "SMG_01_F"
         };
-    };
-    
+    };    
     class Launchers {
         items[] = {
             "launch_NLAW_F",
             "launch_B_Titan_short_F",
             "launch_RPG32_F"
         };
-    };
-    
+    };    
     class Pistols {
         items[] = {
             "hgun_ACPC2_F",

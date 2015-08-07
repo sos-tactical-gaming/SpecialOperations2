@@ -15,6 +15,10 @@
 if (!isDedicated) then {        
     [] call SOS_fnc_initInventory;
 	[] call SOS_fnc_initSafeZone;
+    
+    // add rearm points
+    [position sos_rearm_point1, [1.0, 1.0], "Helicopter"];
+    [position sos_rearm_point2, [1.0, 1.0], "Helicopter"];
 
     // virtual arsenal
     [sos_ammo1] call SOS_fnc_addVirtualArsenal;
