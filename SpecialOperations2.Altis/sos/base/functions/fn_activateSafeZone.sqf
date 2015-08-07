@@ -18,6 +18,9 @@ private ["_unit"];
 _unit = _this select 0;
 
 _unit addEventHandler ["Fired", {
-	deleteVehicle (_this select 6); //Deletes the bullet
-	["Do not fire in base!", "WARNING", "sos_warning"] call SOS_fnc_showHint;
+    _unit = _this select 0;
+    if(_unit == player) then {
+        deleteVehicle (_this select 6); //Deletes the bullet
+        ["Do not fire in base!", "WARNING", "sos_warning"] call SOS_fnc_showHint;
+    };
 }];
