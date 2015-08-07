@@ -10,8 +10,7 @@ class SOS_WestVirtualBackpackCargo {
             "B_AssaultPack_mcamo",
             "B_AssaultPack_ocamo"
         };
-    };
-    
+    };    
     class CarryallBackpacks {
         items[] = {
             "B_Carryall_ocamo",
@@ -21,15 +20,13 @@ class SOS_WestVirtualBackpackCargo {
             "B_Carryall_khk",
             "B_Carryall_cbr"
         };
-    }; 
-    
+    };    
     class LongRangeRadios {
         items[] = {
             "tf_rt1523g",
             "tf_rt1523g_big"
         };
-    };
-    
+    };    
     class WeaponBackpacks {
         items[] = {
             "B_Mortar_01_support_F",
@@ -40,15 +37,13 @@ class SOS_WestVirtualBackpackCargo {
             "B_AA_01_weapon_F",
             "B_AT_01_weapon_F"
         };
-    };
-    
+    };    
     class UAVBackpacks {
         items[] = {
             "B_Static_Designator_01_weapon_F",
             "B_UAV_01_backpack_F"
         };
-    };
-    
+    };    
     class Parachutes {
         items[] = {
             "B_Parachute"
