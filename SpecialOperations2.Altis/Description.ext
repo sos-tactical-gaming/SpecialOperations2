@@ -51,3 +51,7 @@ class CfgRespawnInventory {
 class CfgSounds {
     #include "sos\sounds\CfgSounds.hpp"
 };
+
+class CfgAISkill {
+    #include "sos\mission\CfgAISkill.hpp"
+};
