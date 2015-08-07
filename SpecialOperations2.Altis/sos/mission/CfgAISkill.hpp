@@ -1,0 +1,10 @@
+aimingAccuracy[] = {0, 0, 0.4, 0.2}; 
+aimingShake[] = {0, 0, 0.4, 0.3};
+aimingSpeed[] = {0, 0.2, 0.5, 0.7};
+commanding[] = {1, 1, 1, 1};
+courage[] = {1, 1, 1, 1};
+endurance[] = {0, 0, 1, 1};
+general[] = {0, 0, 1, 1};
+reloadSpeed[] = {0, 0, 1, 1};
+spotDistance[] = {0, 0.2, 1, 0.4};
+spotTime[] = {0, 0, 1, 0.7};
