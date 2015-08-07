@@ -36,14 +36,17 @@ _vehicle addEventHandler ["GetIn", {
 if !([] call SOS_fnc_isMember) then {
 	_vehicle addEventHandler ["Fired", {
 		{
-			_inArea = [getPosATL player, _x] call CBA_fnc_inArea;
-			_flying = getPosATL player select 2 > 5;
-			if(_inArea && !_flying) then {
-				deleteVehicle (_this select 6);
-				["Do not fire in base!", 
-				"WARNING", 
-				"sos_warning"] call SOS_fnc_showHint;
-			};
+            _unit = _this select 0;
+            if(_unit == vehicle player) then {
+                _inArea = [getPosATL player, _x] call CBA_fnc_inArea;
+                _flying = getPosATL player select 2 > 5;
+                if(_inArea && !_flying) then {
+                    deleteVehicle (_this select 6);
+                    ["Do not fire in base!", 
+                    "INFO", 
+                    "sos_warning"] call SOS_fnc_showHint;
+                };
+            };
 		} forEach SOS_MISSION_SAFE_ZONES;
 	}];
 };
