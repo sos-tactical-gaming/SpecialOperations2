@@ -3,7 +3,6 @@
 #include                    "sos\vehicle\SOS_VehicleProtection.hpp"
 #include                    "sos\vehicle\SOS_VehicleTypes.hpp"
 #include                    "sos\common\SOS_ProtectedRoles.hpp"
-#include                    "sos\common\corpseManager.hpp"
 
 onLoadName                  = "Special Operations 2";
 onLoadMission               = "New Tactical Gaming!";
@@ -24,6 +23,7 @@ enableItemsDropping         = 0;
 enableDebugConsole          = 1;
 disableChannels[]           = {0, 1, 2, 4, 5};
 forceRotorLibSimulation     = 0;
+
 corpseManagerMode           = 1; 
 corpseLimit                 = 24;
 corpseRemovalMinTime        = 300; 
