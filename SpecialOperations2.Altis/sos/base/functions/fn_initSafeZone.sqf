@@ -21,7 +21,7 @@ if (isNil "SOS_MISSION_SAFE_ZONES") then {
 SOS_MISSION_SAFE_ZONES pushBack "sos_safe_zone1";
 
 {
-	_position = getMarkerPos _x;
-	_size = getMarkerSize _x;
+	_position   = getMarkerPos _x;
+	_size       = getMarkerSize _x;
 	[_position, _size] call SOS_fnc_createSafeZone;
 } forEach SOS_MISSION_SAFE_ZONES;
