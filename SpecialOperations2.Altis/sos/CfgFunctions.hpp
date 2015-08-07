@@ -1,5 +1,10 @@
 class SOS_Functions {
     tag = "SOS";
+	
+	class Actions {
+		file = "sos\actions\functions";
+		class parachute {};
+	};
 
     class Arsenal {
         file = "sos\arsenal\functions";
@@ -9,6 +14,14 @@ class SOS_Functions {
         class getVirtualMagazineCargo {};
         class getVirtualWeaponCargo {};
     };
+	
+	class Base {
+		file = "sos\base\functions";
+		class createSafeZone {};
+		class activateSafeZone {};
+		class deactivateSafeZone {};
+		class initSafeZone {};
+	};
     
     class Common {
         file = "sos\common\functions";
@@ -16,6 +29,8 @@ class SOS_Functions {
         class initUnit {};
         class sendMessage {};
         class isMember {};
+        class checkRole {};
+        class showHint {};
     };
     
     class Inventory {
@@ -71,5 +86,9 @@ class SOS_Functions {
         class spawnVehicle {};
         class addVehicleSpawn {};        
         class canDriveVehicle {};
+        class addServicePoint {};		
+        class activateServicePoint {};      
+        class serviceVehicle {};
+        class deactivateServicePoint {};
     };
 };

@@ -65,8 +65,9 @@ _unit allowDamage false;
                     };
                 };            
             } else {
-                hintSilent format ["Please wait %1 seconds before you spawn another vehicle", (_unit getVariable ["sos_vehicle_spawn_delay", 0.0])];
-                playSound "sos_warning";
+				[format ["Please wait %1 seconds before you spawn another vehicle", (_unit getVariable ["sos_vehicle_spawn_delay", 0.0])], 
+				"SILENT", 
+				"sos_warning"] call SOS_fnc_showHint;
             };      
         }, [_x, _position, _radius, _delay, _direction], 2.0, true, true];
     };    

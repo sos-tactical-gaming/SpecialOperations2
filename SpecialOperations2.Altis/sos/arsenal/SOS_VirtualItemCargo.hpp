@@ -76,11 +76,15 @@ class SOS_WestVirtualItemCargo {
             "V_PlateCarrier1_rgr",
             "V_PlateCarrier2_rgr",
             "V_PlateCarrier3_rgr",
-            "V_PlateCarrierGL_rgr",
             "V_PlateCarrier1_blk",
-            "V_PlateCarrierSpec_rgr",
             "V_PlateCarrierL_CTRG",
             "V_PlateCarrierH_CTRG"
+        };
+    };
+    
+    class ReaperVests {
+        items[] = {
+            "V_Chestrig_rgr"
         };
     };
     
@@ -90,6 +94,7 @@ class SOS_WestVirtualItemCargo {
             "ItemMap",
             "ItemWatch",
             "ACE_EarPlugs",
+            "ACE_MapTools",
             "Binocular"
         };
     };
@@ -97,7 +102,8 @@ class SOS_WestVirtualItemCargo {
     class Rangefinders {
         items[] = {
             "ACE_Vector",
-            "ACE_Kestrel4500"
+            "ACE_Kestrel4500",
+            "ACE_RangeCard"
         };
     };
     
@@ -197,6 +203,12 @@ class SOS_WestVirtualItemCargo {
         };
     };
     
+    class UAVTerminals {
+        items[] = {
+            "B_UavTerminal"
+        };
+    };
+    
     class ShortRangeOptics {
         items[] = {
             "optic_Aco",
@@ -229,7 +241,8 @@ class SOS_WestVirtualItemCargo {
     class Bipods {
         items[] = {
             "bipod_01_F_snd",
-            "bipod_01_F_blk"
+            "bipod_01_F_blk",
+            "bipod_01_F_mtp"
         };
     };
     

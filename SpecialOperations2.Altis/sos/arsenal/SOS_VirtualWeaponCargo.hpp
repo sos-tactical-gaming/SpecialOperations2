@@ -2,14 +2,18 @@ class SOS_WestVirtualWeaponCargo {
     class AssaultRifles {
         items[] = {           
             "arifle_MX_F", 
-            "arifle_MX_Black_F"            
+            "arifle_MX_Black_F",
+            "arifle_Mk20_F",
+            "arifle_Mk20_plain_F"
         };
     };
     
     class AssaultRiflesC {
         items[] = {
             "arifle_MXC_F",
-            "arifle_MXC_Black_F"
+            "arifle_MXC_Black_F",
+            "arifle_Mk20C_F",
+            "arifle_Mk20C_plain_F"
         };        
     };
     
@@ -17,6 +21,8 @@ class SOS_WestVirtualWeaponCargo {
         items[] = {
             "arifle_MX_GL_F",
             "arifle_MX_GL_Black_F",
+            "arifle_Mk20_GL_F",
+            "arifle_Mk20_GL_plain_F"
         };
     };
     
@@ -40,17 +46,21 @@ class SOS_WestVirtualWeaponCargo {
         };
     };
     
+    class Autorifles {
+        items[] = {
+            "arifle_MX_SW_F",
+            "arifle_MX_SW_Black_F"
+        };
+    };
+    
     class MachineGuns {
         items[] = {
-            "LMG_Mk200_F",
-            "LMG_Zafir_F",
-            "arifle_MX_SW_F",
-            "arifle_MX_SW_Black_F",
             "MMG_01_hex_F",
             "MMG_01_tan_F",
             "MMG_02_camo_F",
             "MMG_02_black_F",
-            "MMG_02_sand_F"
+            "MMG_02_sand_F",
+            "LMG_Mk200_F",
         };
     };
     
@@ -64,7 +74,15 @@ class SOS_WestVirtualWeaponCargo {
     class Launchers {
         items[] = {
             "launch_NLAW_F",
-            "launch_B_Titan_short_F"
+            "launch_B_Titan_short_F",
+            "launch_RPG32_F"
+        };
+    };
+    
+    class Pistols {
+        items[] = {
+            "hgun_ACPC2_F",
+            "hgun_P07_F"
         };
     };
 };

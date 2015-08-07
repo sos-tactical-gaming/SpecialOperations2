@@ -14,6 +14,7 @@
  
 if (!isDedicated) then {        
     [] call SOS_fnc_initInventory;
+	[] call SOS_fnc_initSafeZone;
 
     // virtual arsenal
     [sos_ammo1] call SOS_fnc_addVirtualArsenal;
@@ -42,6 +43,8 @@ if (!isDedicated) then {
 
 // mission generator 
 if (isServer) then {
-    [true] spawn SOS_fnc_initMissionGenerator;              
+    [true] spawn SOS_fnc_initMissionGenerator;
+    [] call SOS_fnc_setTime;
+    [] call SOS_fnc_setWeather;    
 };
  

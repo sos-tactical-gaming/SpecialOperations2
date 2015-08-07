@@ -1,6 +1,8 @@
 #include                    "sos\arsenal\SOS_VirtualArsenal.hpp"
 #include                    "sos\vehicle\SOS_VehicleSpawn.hpp"
 #include                    "sos\vehicle\SOS_VehicleProtection.hpp"
+#include                    "sos\vehicle\SOS_VehicleTypes.hpp"
+#include                    "sos\common\SOS_ProtectedRoles.hpp"
 
 onLoadName                  = "Special Operations 2";
 onLoadMission               = "New Tactical Gaming!";
@@ -22,6 +24,15 @@ enableDebugConsole          = 1;
 disableChannels[]           = {0, 1, 2, 4, 5};
 forceRotorLibSimulation     = 0;
 
+corpseManagerMode           = 1; 
+corpseLimit                 = 24;
+corpseRemovalMinTime        = 300; 
+corpseRemovalMaxTime        = 1200;
+wreckManagerMode            = 1; 
+wreckLimit                  = 5;
+wreckRemovalMinTime         = 300;
+wreckRemovalMaxTime         = 1200;
+
 class Header {
     gameType                = COOP;
     minPlayers              = 1;
@@ -30,6 +41,12 @@ class Header {
 };
 
 class Params {
+    #include "sos\environment\SOS_TimeParams.hpp"
+    #include "sos\environment\SOS_WeatherParams.hpp"
+};
+
+class CfgAISkill {
+    #include "sos\mission\CfgAISkill.hpp"
 };
 
 class CfgFunctions {
@@ -49,7 +66,7 @@ class CfgRemoteExec {
 };
 
 class CfgSounds {
-	#include "sos\sounds\CfgSounds.hpp"
+    #include "sos\sounds\CfgSounds.hpp"
 };
 
 class CfgTaskDescriptions {

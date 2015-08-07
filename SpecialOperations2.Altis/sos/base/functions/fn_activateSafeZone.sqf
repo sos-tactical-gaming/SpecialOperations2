@@ -13,12 +13,14 @@
  *
  */
  
- private ["_unit"];
+private ["_unit"];
  
- _unit = _this select 0;
- 
- _unit addEventHandler ["Fired", {
-	deleteVehicle (_this select 6); //Deletes the bullet
-	hintC "Do not fire in base!";
-	playSound "sos_warning";
- }];
+_unit = _this select 0;
+
+_unit addEventHandler ["Fired", {
+    _unit = _this select 0;
+    if(_unit == player) then {
+        deleteVehicle (_this select 6); //Deletes the bullet
+        ["Do not fire in base!", "WARNING", "sos_warning"] call SOS_fnc_showHint;
+    };
+}];
