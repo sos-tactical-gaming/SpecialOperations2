@@ -24,15 +24,34 @@ class SOS_Functions {
     };
     
     class Mission {
-        file = "sos\mission\functions";
+        file = "sos\mission\functions"; 
+        class addTask {};        
+        class blacklistArea {};
+        class completeTask {};       
         class createAO {};
-        class createFOB {};
+        class createDefense {};        
+        class createTask {};
+        class createTower {};
         class createZone {};
+        class endMission {};
+        class findFOB {};
         class findSafePosition {};
+        class getRandomFOB {};
         class getRandomLocation {};
         class getRoadDirection {};
+        class getTaskName {};
+        class getUniqueMarkerId {};
+        class getUniqueZoneId {};
         class initMissionGenerator {};
-        class planFOB {};        
+        class isMissionComplete {}; 
+        class isTaskLimitReached {};
+        class taskDestroyAmmoCache {};
+        class taskDestroyArtilleryTank {};
+        class taskDestroyFPB {};        
+        class taskDestroyRadar {};        
+        class taskEliminateHVT {};        
+        class taskExfiltration {};        
+        class taskInvestigateCrashSite {};        
     };
     
     class Respawn {

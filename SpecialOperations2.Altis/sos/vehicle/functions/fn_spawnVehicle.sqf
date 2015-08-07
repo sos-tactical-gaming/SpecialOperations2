@@ -28,6 +28,6 @@ _direction      = _this select 3;
 
 _vehicle = createVehicle [_name, _position, [], _radius, "NONE"];
 _vehicle setDir _direction;
-[_vehicle] call SOS_fnc_initVehicle;
+[[_vehicle], "SOS_fnc_initVehicle", true, true, true] call BIS_fnc_MP;
 
 _vehicle

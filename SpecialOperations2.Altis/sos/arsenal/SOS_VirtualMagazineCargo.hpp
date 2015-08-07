@@ -106,4 +106,3 @@ class SOS_WestVirtualMagazineCargo {
         };
     }; 	
 };
-

@@ -68,4 +68,3 @@ class SOS_WestVirtualWeaponCargo {
         };
     };
 };
-

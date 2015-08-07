@@ -17,14 +17,27 @@ if (!isDedicated) then {
 
     // virtual arsenal
     [sos_ammo1] call SOS_fnc_addVirtualArsenal;
+    [sos_ammo2] call SOS_fnc_addVirtualArsenal;
+    [sos_ammo3] call SOS_fnc_addVirtualArsenal;
+    [sos_ammo4] call SOS_fnc_addVirtualArsenal;
 
     // vehicle spawn points
-    _position   = getMarkerPos "sos_spawn_position1";
     _radius     = 2.0;
-    _delay      = 20.0;
-    [sos_spawn1, "BasicSpawn", _position, _radius, _delay, []] call SOS_fnc_addVehicleSpawn;
-    [sos_spawn1, "AdvancedSpawn", _position, _radius, _delay, ["PlatoonLeader"]] call SOS_fnc_addVehicleSpawn;
-    [sos_spawn1, "HeloSpawn", _position, _radius, _delay, []] call SOS_fnc_addVehicleSpawn;
+    _delay      = 30.0;    
+    [sos_spawn1, "Basic", position sos_spawn_position1, _radius, _delay, []] call SOS_fnc_addVehicleSpawn;
+    [sos_spawn1, "Advanced", position sos_spawn_position1, _radius, _delay, ["PlatoonLeader", "GhostLeader", "GhostReconLeader"]] call SOS_fnc_addVehicleSpawn;
+    
+    [sos_spawn2, "Basic", position sos_spawn_position2, _radius, _delay, []] call SOS_fnc_addVehicleSpawn;
+    [sos_spawn2, "Advanced", position sos_spawn_position2, _radius, _delay, ["PlatoonLeader", "GhostLeader", "GhostReconLeader"]] call SOS_fnc_addVehicleSpawn;
+
+    [sos_spawn3, "Basic", position sos_spawn_position3, _radius, _delay, []] call SOS_fnc_addVehicleSpawn;
+    [sos_spawn3, "TransportHelo", position sos_spawn_position3, _radius, _delay, ["ReaperPilot"]] call SOS_fnc_addVehicleSpawn;
+
+    [sos_spawn4, "Basic", position sos_spawn_position4, _radius, _delay, []] call SOS_fnc_addVehicleSpawn;
+    [sos_spawn4, "AttackHelo", position sos_spawn_position4, _radius, _delay, ["ReaperPilot"]] call SOS_fnc_addVehicleSpawn;
+    
+    [sos_spawn6, "Basic", position sos_spawn_position6, _radius, _delay, []] call SOS_fnc_addVehicleSpawn;
+    [sos_spawn6, "FixedWing", position sos_spawn_position6, _radius, _delay, ["HavocPilot"]] call SOS_fnc_addVehicleSpawn;    
 };
 
 // mission generator 
