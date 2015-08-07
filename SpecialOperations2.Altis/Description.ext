@@ -46,6 +46,10 @@ class Params {
     #include "sos\environment\SOS_WeatherParams.hpp"
 };
 
+class CfgAISkill {
+    #include "sos\mission\CfgAISkill.hpp"
+};
+
 class CfgFunctions {
     #include "sos\CfgFunctions.hpp"
 };
@@ -58,10 +62,22 @@ class CfgRespawnInventory {
     #include "sos\inventory\CfgRespawnInventory.hpp"
 };
 
+class CfgRemoteExec {
+    #include "sos\common\CfgRemoteExec.hpp"
+};
+
 class CfgSounds {
     #include "sos\sounds\CfgSounds.hpp"
 };
 
-class CfgAISkill {
-    #include "sos\mission\CfgAISkill.hpp"
+class CfgTaskDescriptions {
+    #include "sos\mission\CfgTaskDescriptions.hpp"
+};
+
+class CfgTaskEnhancements {
+    enable       = 1;
+    3d           = 1;
+    3dDrawDist   = 10000;
+    share        = 1;
+    propagate    = 1;
 };

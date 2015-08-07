@@ -262,4 +262,3 @@ class SOS_WestVirtualItemCargo {
         };
     };
 };
-

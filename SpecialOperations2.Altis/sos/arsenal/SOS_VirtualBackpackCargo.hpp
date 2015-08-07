@@ -55,4 +55,3 @@ class SOS_WestVirtualBackpackCargo {
         };
     };
 };
-

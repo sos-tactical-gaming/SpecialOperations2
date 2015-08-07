@@ -3,6 +3,7 @@
  * Returns a random location from the current CfgWorld.
  *
  * Arguments:
+ * 0: whitelist <ARRAY>
  *
  * Return Value:
  * location <OBJECT>
@@ -13,6 +14,7 @@
  */
 
 private [
+    "_whitelist",
     "_children",
     "_config",
     "_type",
@@ -20,6 +22,7 @@ private [
     "_location"
 ];
 
+_whitelist  = if (count _this > 0) then {_this select 0} else {[]};
 _children   = [configFile >> "CfgWorlds" >> worldName >> "Names", true, true] call BIS_fnc_returnChildren;
 _config     = _children select random count _children;
 _type       = getText (_config >> "type");
