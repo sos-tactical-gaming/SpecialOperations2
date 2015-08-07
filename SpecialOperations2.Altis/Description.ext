@@ -25,6 +25,15 @@ enableDebugConsole          = 1;
 disableChannels[]           = {0, 1, 2, 4, 5};
 forceRotorLibSimulation     = 0;
 
+corpseManagerMode           = 1; 
+corpseLimit                 = 24;
+corpseRemovalMinTime        = 300; 
+corpseRemovalMaxTime        = 1200;
+wreckManagerMode            = 1; 
+wreckLimit                  = 5;
+wreckRemovalMinTime         = 300;
+wreckRemovalMaxTime         = 1200;
+
 class Header {
     gameType                = COOP;
     minPlayers              = 1;
