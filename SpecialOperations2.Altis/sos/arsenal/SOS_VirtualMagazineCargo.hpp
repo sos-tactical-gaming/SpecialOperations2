@@ -9,11 +9,7 @@ class SOS_WestVirtualMagazineCargo {
     };
 	
     class Autorifles {
-        items[] = {        
-            "200Rnd_65x39_cased_Box",
-            "200Rnd_65x39_cased_Box_Tracer",
-            "150Rnd_762x54_Box",
-            "150Rnd_762x54_Box_Tracer",
+        items[] = {
             "100Rnd_65x39_caseless_mag",
             "100Rnd_65x39_caseless_mag_Tracer"
         };
@@ -22,7 +18,9 @@ class SOS_WestVirtualMagazineCargo {
     class MachineGuns {
         items[] = {        
             "150Rnd_93x64_Mag",
-            "130Rnd_338_Mag" 
+            "130Rnd_338_Mag",
+            "200Rnd_65x39_cased_Box",
+            "200Rnd_65x39_cased_Box_Tracer"
         };
     };
 	

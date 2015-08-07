@@ -48,10 +48,8 @@ class SOS_WestVirtualWeaponCargo {
     
     class Autorifles {
         items[] = {
-            "LMG_Mk200_F",
-            "LMG_Zafir_F",
             "arifle_MX_SW_F",
-            "arifle_MX_SW_Black_F",
+            "arifle_MX_SW_Black_F"
         };
     };
     
@@ -61,7 +59,8 @@ class SOS_WestVirtualWeaponCargo {
             "MMG_01_tan_F",
             "MMG_02_camo_F",
             "MMG_02_black_F",
-            "MMG_02_sand_F"
+            "MMG_02_sand_F",
+            "LMG_Mk200_F",
         };
     };
     
