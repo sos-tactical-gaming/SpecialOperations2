@@ -26,6 +26,10 @@ if (!isDedicated) then {
     [sos_spawn1, "BasicSpawn", _position, _radius, _delay, []] call SOS_fnc_addVehicleSpawn;
     [sos_spawn1, "AdvancedSpawn", _position, _radius, _delay, ["PlatoonLeader"]] call SOS_fnc_addVehicleSpawn;
     [sos_spawn1, "HeloSpawn", _position, _radius, _delay, []] call SOS_fnc_addVehicleSpawn;
+    
+    _position = getMarkerPos "sos_spawn_logistics_position1";
+    [sos_logistics_spawn1, "AmmoDrop", _position, _radius, _delay, ["PlatoonLeader"]] call SOS_fnc_addLogisticsSpawn;
+    [sos_logistics_spawn1, "MedicSupplyDrop", _position, _radius, _delay, ["PlatoonLeader"]] call SOS_fnc_addLogisticsSpawn;
 };
 
 // mission generator 

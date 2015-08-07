@@ -38,6 +38,12 @@ class SOS_Functions {
         class initInventory {};        
     };
     
+    class Logistics {
+        file = "sos\logistics\functions";
+        class addLogisticsSpawn {};
+        class spawnBox {};
+    };
+    
     class Mission {
         file = "sos\mission\functions";
         class createAO {};
