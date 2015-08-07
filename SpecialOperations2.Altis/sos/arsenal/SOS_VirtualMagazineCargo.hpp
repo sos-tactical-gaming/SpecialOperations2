@@ -2,24 +2,31 @@ class SOS_WestVirtualMagazineCargo {
     class AssaultRifles {
         items[] = {           
             "30Rnd_65x39_caseless_mag",
-            "30Rnd_65x39_caseless_mag_Tracer"            
+            "30Rnd_65x39_caseless_mag_Tracer",
+            "30Rnd_556x45_Stanag",
+            "30Rnd_556x45_Stanag_Tracer_Red"
         };
     };
 	
-    class MarksmanRifles {
+    class Autorifles {
         items[] = {        
             "200Rnd_65x39_cased_Box",
             "200Rnd_65x39_cased_Box_Tracer",
             "150Rnd_762x54_Box",
             "150Rnd_762x54_Box_Tracer",
             "100Rnd_65x39_caseless_mag",
-            "100Rnd_65x39_caseless_mag_Tracer",
+            "100Rnd_65x39_caseless_mag_Tracer"
+        };
+    };  
+    
+    class MachineGuns {
+        items[] = {        
             "150Rnd_93x64_Mag",
             "130Rnd_338_Mag" 
         };
-    };  
+    };
 	
-    class MachineGuns {
+    class MarksmanRifles {
         items[] = {        
             "30Rnd_65x39_caseless_mag",
             "30Rnd_65x39_caseless_mag_Tracer", 
@@ -72,7 +79,9 @@ class SOS_WestVirtualMagazineCargo {
     class Launchers {
         items[] = {        
             "NLAW_F",
-            "Titan_AT"
+            "Titan_AT",
+            "RPG32_F",
+            "RPG32_HE_F"
         };
     }; 
     
@@ -104,6 +113,13 @@ class SOS_WestVirtualMagazineCargo {
             "APERSTripMine_Wire_Mag",
             "ClaymoreDirectionalMine_Remote_Mag"
         };
-    }; 	
+    };
+
+    class Pistols {
+        items[] = {           
+            "9Rnd_45ACP_Mag",
+            "16Rnd_9x21_Mag"
+        };
+    };  	
 };
 

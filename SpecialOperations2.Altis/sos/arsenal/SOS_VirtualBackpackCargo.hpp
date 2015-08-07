@@ -42,6 +42,13 @@ class SOS_WestVirtualBackpackCargo {
         };
     };
     
+    class UAVBackpacks {
+        items[] = {
+            "B_Static_Designator_01_weapon_F",
+            "B_UAV_01_backpack_F"
+        };
+    };
+    
     class Parachutes {
         items[] = {
             "B_Parachute"
