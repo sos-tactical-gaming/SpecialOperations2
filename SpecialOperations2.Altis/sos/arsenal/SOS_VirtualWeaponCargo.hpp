@@ -53,8 +53,6 @@ class SOS_WestVirtualWeaponCargo {
     };    
     class MachineGuns {
         items[] = {
-            "MMG_01_hex_F",
-            "MMG_01_tan_F",
             "MMG_02_camo_F",
             "MMG_02_black_F",
             "MMG_02_sand_F",
