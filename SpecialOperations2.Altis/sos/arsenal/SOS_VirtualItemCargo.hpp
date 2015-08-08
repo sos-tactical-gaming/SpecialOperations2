@@ -45,7 +45,8 @@ class SOS_WestVirtualItemCargo {
     };    
     class ReconUniforms {
         items[] = {
-            "U_B_CombatUniform_mcam_vest"
+            "U_B_CombatUniform_mcam_vest",
+            "U_BG_Guerrilla_6_1"
         };
     };    
     class GhillieUniforms {
@@ -88,7 +89,12 @@ class SOS_WestVirtualItemCargo {
             "ACE_MapTools",
             "Binocular"
         };
-    };    
+    };
+    class AdvancedItems {
+        items[] = {
+        "ACE_HuntIR_monitor"   
+        };
+    };     
     class Rangefinders {
         items[] = {
             "ACE_Vector",
@@ -109,7 +115,9 @@ class SOS_WestVirtualItemCargo {
             "ACE_packingBandage",
             "ACE_tourniquet",
             "ACE_morphine",
-            "ACE_epinephrine"
+            "ACE_epinephrine",
+            "ACE_elasticBandage",
+            "ACE_quikclot"
         };        
     };    
     class AdvancedMedical {
@@ -182,7 +190,8 @@ class SOS_WestVirtualItemCargo {
         items[] = {
             "ACE_Clacker",
             "ACE_DefusalKit",
-            "ACE_wirecutter"
+            "ACE_wirecutter",
+            "ToolKit"
         };
     };    
     class UAVTerminals {
@@ -207,7 +216,11 @@ class SOS_WestVirtualItemCargo {
         items[] = {
             "optic_SOS",
             "optic_DMS",
-            "optic_LRPS"
+            "optic_LRPS",
+            "optic_AMS",
+            "optic_AMS_snd",
+            "optic_KHS_blk",
+            "optic_KHS_tan"
         };
     };    
     class ThermalOptics {
@@ -227,6 +240,8 @@ class SOS_WestVirtualItemCargo {
             "muzzle_snds_H",
             "muzzle_snds_M",
             "muzzle_snds_B",
+            "muzzle_snds_L",
+            "muzzle_snds_acp",
             "muzzle_snds_L"
         };
     };    

@@ -22,7 +22,8 @@ class SOS_WestVirtualWeaponCargo {
             "arifle_MX_GL_F",
             "arifle_MX_GL_Black_F",
             "arifle_Mk20_GL_F",
-            "arifle_Mk20_GL_plain_F"
+            "arifle_Mk20_GL_plain_F",
+            "arifle_TRG21_GL_F"
         };
     };    
     class MarksmanRifles {
