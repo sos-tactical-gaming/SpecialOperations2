@@ -25,6 +25,9 @@ private [
 _unit = _this select 0;
 if (isPlayer _unit) exitWith {};
 
+_unit allowDamage false;
+_unit enableSimulationGlobal false;
+
 clearMagazineCargoGlobal    _unit;
 clearWeaponCargoGlobal      _unit;
 clearItemCargoGlobal        _unit;

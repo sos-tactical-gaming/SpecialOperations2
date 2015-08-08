@@ -35,7 +35,6 @@ class SOS_WestVirtualArsenal {
             "Pistols"
         };    
     };
-
     class PlatoonMedic {
         backpacks[] = {
             "AssaultBackpacks"
@@ -66,7 +65,6 @@ class SOS_WestVirtualArsenal {
             "Pistols"
         };    
     };
-
     class PlatoonMarksman {
         backpacks[] = {
             "AssaultBackpacks"            
@@ -99,7 +97,6 @@ class SOS_WestVirtualArsenal {
             "Pistols"
         };    
     };
-
     class GhostLeader {
         backpacks[] = {
             "LongRangeRadios"            
@@ -132,7 +129,6 @@ class SOS_WestVirtualArsenal {
             "Pistols"
         };    
     };
-
     class GhostMachinegunner {
         backpacks[] = {
             "AssaultBackpacks"            
@@ -161,7 +157,6 @@ class SOS_WestVirtualArsenal {
             "Pistols"
         };    
     };
-
     class GhostAT {
         backpacks[] = {
             "AssaultBackpacks"            
@@ -192,7 +187,6 @@ class SOS_WestVirtualArsenal {
             "Pistols"
         };    
     };
-
     class GhostCombatEngineer {
         backpacks[] = {
             "AssaultBackpacks",
@@ -223,8 +217,7 @@ class SOS_WestVirtualArsenal {
             "AssaultRifles",
             "Pistols"
         };    
-    };
-    
+    };    
     class GhostAutorifleman {
         backpacks[] = {
             "AssaultBackpacks"            
@@ -253,7 +246,6 @@ class SOS_WestVirtualArsenal {
             "Pistols"
         };    
     };
-
     class GhostAssistantMachinegunner {
         backpacks[] = {
             "AssaultBackpacks",
@@ -283,7 +275,6 @@ class SOS_WestVirtualArsenal {
             "Pistols"
         };    
     };
-
     class GhostMedic {
         backpacks[] = {
             "AssaultBackpacks"
@@ -314,7 +305,6 @@ class SOS_WestVirtualArsenal {
             "Pistols"
         };    
     };
-
     class GhostReconLeader {
         backpacks[] = {
             "LongRangeRadios"            
@@ -348,7 +338,6 @@ class SOS_WestVirtualArsenal {
             "Pistols"
         };    
     };
-
     class GhostReconScout {
         backpacks[] = {
             "AssaultBackpacks",
@@ -381,7 +370,6 @@ class SOS_WestVirtualArsenal {
             "Pistols"
         };    
     };
-
     class GhostReconMarksman {
         backpacks[] = {
             "AssaultBackpacks"            
@@ -415,7 +403,6 @@ class SOS_WestVirtualArsenal {
             "Pistols"
         };    
     };
-
     class GhostReconMedic {
         backpacks[] = {
             "AssaultBackpacks"
@@ -447,7 +434,6 @@ class SOS_WestVirtualArsenal {
             "Pistols"
         };    
     };
-
     class HWTLeader {
         backpacks[] = {
             "LongRangeRadios"            
@@ -480,7 +466,6 @@ class SOS_WestVirtualArsenal {
             "Pistols"
         };    
     };
-
     class HWTStaticOperator {
         backpacks[] = {
             "WeaponBackpacks",
@@ -511,7 +496,6 @@ class SOS_WestVirtualArsenal {
             "Pistols"
         };    
     };
-
     class HWTStaticAssistant {
         backpacks[] = {
             "WeaponBackpacks",
@@ -542,7 +526,6 @@ class SOS_WestVirtualArsenal {
             "Pistols"
         };    
     };
-
     class HWTMissileSpecialist {
         backpacks[] = {
             "AssaultBackpacks"            
@@ -573,7 +556,6 @@ class SOS_WestVirtualArsenal {
             "Pistols"
         };    
     };
-
     class AnvilCommander {
         backpacks[] = {
             "LongRangeRadios"            
@@ -604,7 +586,6 @@ class SOS_WestVirtualArsenal {
             "Pistols"
         }; 
     };
-
     class AnvilDriver {
         backpacks[] = {            
         };
@@ -632,7 +613,6 @@ class SOS_WestVirtualArsenal {
             "Pistols"
         }; 
     };
-
     class AnvilGunner {
         backpacks[] = {            
         };
@@ -660,7 +640,6 @@ class SOS_WestVirtualArsenal {
             "Pistols"
         }; 
     };
-
     class ReaperPilot {
         backpacks[] = {
             "LongRangeRadios",
@@ -691,7 +670,6 @@ class SOS_WestVirtualArsenal {
             "Pistols"
         }; 
     };
-
     class ReaperCrew {
         backpacks[] = {   
             "Parachutes"		
@@ -720,7 +698,6 @@ class SOS_WestVirtualArsenal {
             "Pistols"
         }; 
     };
-
     class ReaperMedic {
         backpacks[] = { 
             "AssaultBackpacks",		
@@ -751,7 +728,6 @@ class SOS_WestVirtualArsenal {
             "Pistols"
         }; 
     };
-
     class HavocPilot {
         backpacks[] = {
             "LongRangeRadios",

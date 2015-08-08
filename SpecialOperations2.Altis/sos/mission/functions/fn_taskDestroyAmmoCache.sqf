@@ -87,7 +87,9 @@ if (_inside) then {
         _ai = _group createUnit ["O_Soldier_F", [0.0, 0.0, 0.0], [], 0, "CAN_COLLIDE"];
         _ai setPosATL (_building buildingPos _x);
         _ai setUnitPos "UP";
+        _ai allowFleeing 0;
     } forEach _groundIndexes;
+    doStop (units _group);
 
     // create patrols
     _position = [position _building, 20.0, 60.0, 2.0, 2.0] call SOS_fnc_findSafePosition;

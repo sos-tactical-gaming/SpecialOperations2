@@ -22,17 +22,19 @@
 if (isDedicated) exitWith {};
 waitUntil {!isNull player};
 
-private ["_unit", "_configName", "_position", "_radius", "_delay", "_whitelist", "_direction"];
+private ["_unit", "_configName", "_position", "_direction", "_radius", "_delay", "_whitelist"];
 
 _unit           = _this select 0;
 _configName     = _this select 1;
 _position       = _this select 2;
-_radius         = if (count _this > 3) then {_this select 3} else {2.0};
-_delay          = if (count _this > 4) then {_this select 4} else {20.0};
-_whitelist      = if (count _this > 5) then {_this select 5} else {[]};
-_direction      = direction _unit + 180.0;  // opposite direction
+_direction      = if (count _this > 3) then {_this select 3} else {0.0};
+_radius         = if (count _this > 4) then {_this select 4} else {2.0};
+_delay          = if (count _this > 5) then {_this select 5} else {20.0};
+_whitelist      = if (count _this > 6) then {_this select 6} else {[]};
 
 _unit allowDamage false;
+_unit enableSimulationGlobal false;
+
 {
     // check the whitelist if its not empty
     if (player getVariable "sos_inventory_role" in _whitelist || count _whitelist == 0) then {
@@ -72,4 +74,3 @@ _unit allowDamage false;
         }, [_x, _position, _radius, _delay, _direction], 2.0, true, true];
     };    
 } forEach getArray (missionConfigFile >> format ["SOS_VehicleSpawn"] >> _configName >> "vehicles");
-
