@@ -1,5 +1,5 @@
 class SOS_Respawn {
     onPlayerRespawn     = "SOS_fnc_respawn";
-    respawnDelay        = 4;
+    respawnDelay        = 30;
     respawnOnStart      = 0;   
 };
