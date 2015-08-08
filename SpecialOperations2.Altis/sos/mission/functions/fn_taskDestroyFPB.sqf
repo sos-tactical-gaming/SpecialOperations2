@@ -55,11 +55,19 @@ _group = [_position, EAST, (configfile >> "CfgGroups" >> "East" >> "OPF_F" >> "I
 _group setVariable ["GAIA_ZONE_INTEND", [format ["%1", _zone], "NOFOLLOW"]];
 
 _position = [position _fob, 200.0, 400.0, 2.0, 2.0] call SOS_fnc_findSafePosition;
+_group = [_position, EAST, (configfile >> "CfgGroups" >> "East" >> "OPF_F" >> "Infantry" >> "OIA_InfTeam_AA")] call BIS_fnc_spawnGroup;
+_group setVariable ["GAIA_ZONE_INTEND", [format ["%1", _zone], "NOFOLLOW"]];
+
+_position = [position _fob, 200.0, 400.0, 2.0, 2.0] call SOS_fnc_findSafePosition;
 _group = [_position, EAST, (configfile >> "CfgGroups" >> "East" >> "OPF_F" >> "Infantry" >> "OIA_InfSquad")] call BIS_fnc_spawnGroup;
 _group setVariable ["GAIA_ZONE_INTEND", [format ["%1", _zone], "NOFOLLOW"]];
 
 _position = [position _fob, 200.0, 400.0, 2.0, 2.0] call SOS_fnc_findSafePosition;
 _group = [_position, EAST, (configfile >> "CfgGroups" >> "East" >> "OPF_F" >> "Infantry" >> "OIA_InfSquad")] call BIS_fnc_spawnGroup;
+_group setVariable ["GAIA_ZONE_INTEND", [format ["%1", _zone], "NOFOLLOW"]];
+
+_position = [position _fob, 200.0, 400.0, 2.0, 2.0] call SOS_fnc_findSafePosition;
+_group = [_position, EAST, (configfile >> "CfgGroups" >> "East" >> "OPF_F" >> "Infantry" >> "OIA_InfAssault")] call BIS_fnc_spawnGroup;
 _group setVariable ["GAIA_ZONE_INTEND", [format ["%1", _zone], "NOFOLLOW"]];
 
 _position = [position _fob, 200.0, 400.0, 2.0, 2.0] call SOS_fnc_findSafePosition;
@@ -73,6 +81,39 @@ _group setVariable ["GAIA_ZONE_INTEND", [format ["%1", _zone], "NOFOLLOW"]];
 _position = [position _fob, 200.0, 400.0, 2.0, 2.0] call SOS_fnc_findSafePosition;
 _group = [_position, EAST, (configfile >> "CfgGroups" >> "East" >> "OPF_F" >> "Mechanized" >> "OIA_MechInf_Support")] call BIS_fnc_spawnGroup;
 _group setVariable ["GAIA_ZONE_INTEND", [format ["%1", _zone], "NOFOLLOW"]];
+
+// quads
+_position = [position _fob, 200.0, 400.0, 2.0, 2.0] call SOS_fnc_findSafePosition;
+_ai = ([_position, random 360.0, "O_Quadbike_01_F", east] call BIS_fnc_spawnVehicle) select 0;
+group _ai setVariable ["GAIA_ZONE_INTEND", [format ["%1", _zone], "NOFOLLOW"]];
+
+_position = [position _fob, 200.0, 400.0, 2.0, 2.0] call SOS_fnc_findSafePosition;
+_ai = ([_position, random 360.0, "O_Quadbike_01_F", east] call BIS_fnc_spawnVehicle) select 0;
+group _ai setVariable ["GAIA_ZONE_INTEND", [format ["%1", _zone], "NOFOLLOW"]];
+
+_position = [position _fob, 200.0, 400.0, 2.0, 2.0] call SOS_fnc_findSafePosition;
+_ai = ([_position, random 360.0, "O_Quadbike_01_F", east] call BIS_fnc_spawnVehicle) select 0;
+group _ai setVariable ["GAIA_ZONE_INTEND", [format ["%1", _zone], "NOFOLLOW"]];
+
+// truck
+_position = [position _fob, 200.0, 400.0, 2.0, 2.0] call SOS_fnc_findSafePosition;
+_ai = ([_position, random 360.0, "O_Truck_02_transport_F", east] call BIS_fnc_spawnVehicle) select 0;
+group _ai setVariable ["GAIA_ZONE_INTEND", [format ["%1", _zone], "NOFOLLOW"]];
+
+// chance to spawn ifrit or btr
+if (random 1.0 < 0.8) then {
+    _position = [position _fob, 200.0, 400.0, 2.0, 2.0] call SOS_fnc_findSafePosition;
+    _ai = ([_position, random 360.0, "O_MRAP_02_hmg_F", east] call BIS_fnc_spawnVehicle) select 0;
+    group _ai setVariable ["GAIA_ZONE_INTEND", [format ["%1", _zone], "NOFOLLOW"]];
+    
+    _position = [position _fob, 200.0, 400.0, 2.0, 2.0] call SOS_fnc_findSafePosition;
+    _ai = ([_position, random 360.0, "O_MRAP_02_hmg_F", east] call BIS_fnc_spawnVehicle) select 0;
+    group _ai setVariable ["GAIA_ZONE_INTEND", [format ["%1", _zone], "NOFOLLOW"]];
+} else {
+    _position = [position _fob, 200.0, 400.0, 2.0, 2.0] call SOS_fnc_findSafePosition;
+    _ai = ([_position, random 360.0, "O_APC_Tracked_02_cannon_F", east] call BIS_fnc_spawnVehicle) select 0;
+    group _ai setVariable ["GAIA_ZONE_INTEND", [format ["%1", _zone], "NOFOLLOW"]];
+};
 
 // create task
 _task = ["DestroyFPB", position _fob] call SOS_fnc_addTask;
