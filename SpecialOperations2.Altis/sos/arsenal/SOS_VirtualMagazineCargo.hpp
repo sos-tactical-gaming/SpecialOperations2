@@ -73,6 +73,7 @@ class SOS_WestVirtualMagazineCargo {
         items[] = {        
             "NLAW_F",
             "Titan_AT",
+            "Titan_AP",
             "RPG32_F",
             "RPG32_HE_F"
         };
