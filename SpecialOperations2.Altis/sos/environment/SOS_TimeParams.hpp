@@ -7,7 +7,7 @@ class MissionTime {
 class TimeAcceleration {
     title   = "Time Acceleration";
     values[]= {1, 2};
-    texts[] = {"Default 1x","Time 2x"};
+    texts[] = {"Default x1","Time x2"};
     default = 1;
 };
 class RandomTime {
