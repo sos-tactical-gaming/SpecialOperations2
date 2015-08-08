@@ -33,6 +33,7 @@ _roofIndexes    = [[4, 5, 6, 7, 8], 4] call SOS_fnc_arrayPickRandom;
     _ai = _group createUnit ["O_Soldier_F", [0.0, 0.0, 0.0], [], 0, "CAN_COLLIDE"];
     _ai setPosATL (_fob buildingPos _x);
     _ai setUnitPos "UP";
+    _ai allowFleeing 0;
 } forEach _groundIndexes;
 
 // create roof units
@@ -40,28 +41,29 @@ _roofIndexes    = [[4, 5, 6, 7, 8], 4] call SOS_fnc_arrayPickRandom;
     _ai = _group createUnit ["O_Soldier_F", [0.0, 0.0, 0.0], [], 0, "CAN_COLLIDE"];
     _ai setPosATL (_fob buildingPos _x);
     _ai setUnitPos "UP";
+    _ai allowFleeing 0;
 } forEach _roofIndexes;
 doStop (units _group);
 
 // create patrols
 _position = [position _fob, 200.0, 400.0, 2.0, 2.0] call SOS_fnc_findSafePosition;
-_group = [_position, EAST, (configfile >> "CfgGroups" >> "East" >> "OPF_F" >> "Infantry" >> "OIA_InfSentry")] call BIS_fnc_spawnGroup;
-_group setVariable ["GAIA_ZONE_INTEND", [format ["%1", _zone], "NOFOLLOW"]];
-
-_position = [position _fob, 200.0, 400.0, 2.0, 2.0] call SOS_fnc_findSafePosition;
-_group = [_position, EAST, (configfile >> "CfgGroups" >> "East" >> "OPF_F" >> "Infantry" >> "OIA_InfSentry")] call BIS_fnc_spawnGroup;
-_group setVariable ["GAIA_ZONE_INTEND", [format ["%1", _zone], "NOFOLLOW"]];
-
-_position = [position _fob, 200.0, 400.0, 2.0, 2.0] call SOS_fnc_findSafePosition;
 _group = [_position, EAST, (configfile >> "CfgGroups" >> "East" >> "OPF_F" >> "Infantry" >> "OIA_InfTeam")] call BIS_fnc_spawnGroup;
 _group setVariable ["GAIA_ZONE_INTEND", [format ["%1", _zone], "NOFOLLOW"]];
 
 _position = [position _fob, 200.0, 400.0, 2.0, 2.0] call SOS_fnc_findSafePosition;
-_group = [_position, EAST, (configfile >> "CfgGroups" >> "East" >> "OPF_F" >> "Infantry" >> "OIA_InfTeam")] call BIS_fnc_spawnGroup;
+_group = [_position, EAST, (configfile >> "CfgGroups" >> "East" >> "OPF_F" >> "Infantry" >> "OIA_InfTeam_AA")] call BIS_fnc_spawnGroup;
 _group setVariable ["GAIA_ZONE_INTEND", [format ["%1", _zone], "NOFOLLOW"]];
 
 _position = [position _fob, 200.0, 400.0, 2.0, 2.0] call SOS_fnc_findSafePosition;
-_group = [_position, EAST, (configfile >> "CfgGroups" >> "East" >> "OPF_F" >> "Infantry" >> "OIA_InfTeam")] call BIS_fnc_spawnGroup;
+_group = [_position, EAST, (configfile >> "CfgGroups" >> "East" >> "OPF_F" >> "Infantry" >> "OIA_InfSquad")] call BIS_fnc_spawnGroup;
+_group setVariable ["GAIA_ZONE_INTEND", [format ["%1", _zone], "NOFOLLOW"]];
+
+_position = [position _fob, 200.0, 400.0, 2.0, 2.0] call SOS_fnc_findSafePosition;
+_group = [_position, EAST, (configfile >> "CfgGroups" >> "East" >> "OPF_F" >> "Infantry" >> "OIA_InfSquad")] call BIS_fnc_spawnGroup;
+_group setVariable ["GAIA_ZONE_INTEND", [format ["%1", _zone], "NOFOLLOW"]];
+
+_position = [position _fob, 200.0, 400.0, 2.0, 2.0] call SOS_fnc_findSafePosition;
+_group = [_position, EAST, (configfile >> "CfgGroups" >> "East" >> "OPF_F" >> "Infantry" >> "OIA_InfAssault")] call BIS_fnc_spawnGroup;
 _group setVariable ["GAIA_ZONE_INTEND", [format ["%1", _zone], "NOFOLLOW"]];
 
 _position = [position _fob, 200.0, 400.0, 2.0, 2.0] call SOS_fnc_findSafePosition;
@@ -69,7 +71,7 @@ _group = [_position, EAST, (configfile >> "CfgGroups" >> "East" >> "OPF_F" >> "I
 _group setVariable ["GAIA_ZONE_INTEND", [format ["%1", _zone], "NOFOLLOW"]];
 
 _position = [position _fob, 200.0, 400.0, 2.0, 2.0] call SOS_fnc_findSafePosition;
-_group = [_position, EAST, (configfile >> "CfgGroups" >> "East" >> "OPF_F" >> "Motorized_MTP" >> "OIA_MotInf_Team")] call BIS_fnc_spawnGroup;
+_group = [_position, EAST, (configfile >> "CfgGroups" >> "East" >> "OPF_F" >> "Mechanized" >> "OIA_MechInf_Support")] call BIS_fnc_spawnGroup;
 _group setVariable ["GAIA_ZONE_INTEND", [format ["%1", _zone], "NOFOLLOW"]];
 
 // create task

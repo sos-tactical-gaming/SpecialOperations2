@@ -38,6 +38,7 @@ _roofIndexes    = [0, 1];
     _ai = _group createUnit ["O_Soldier_F", [0.0, 0.0, 0.0], [], 0, "CAN_COLLIDE"];
     _ai setPosATL (_tower buildingPos _x);
     _ai setUnitPos "UP";
+    _ai allowFleeing 0;
 } forEach _roofIndexes;
 doStop (units _group);
 
