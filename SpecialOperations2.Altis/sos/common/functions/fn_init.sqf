@@ -25,24 +25,25 @@ if (!isDedicated) then {
     [sos_ammo2] call SOS_fnc_addVirtualArsenal;
     [sos_ammo3] call SOS_fnc_addVirtualArsenal;
     [sos_ammo4] call SOS_fnc_addVirtualArsenal;
+    [sos_ammo5] call SOS_fnc_addVirtualArsenal;
 
     // vehicle spawn points
     _radius     = 2.0;
     _delay      = 30.0;    
-    [sos_spawn1, "Basic", position sos_spawn_position1, _radius, _delay, []] call SOS_fnc_addVehicleSpawn;
-    [sos_spawn1, "Advanced", position sos_spawn_position1, _radius, _delay, ["PlatoonLeader", "GhostLeader", "GhostReconLeader"]] call SOS_fnc_addVehicleSpawn;
+    [sos_spawn1, "Basic", position sos_spawn_position1, direction sos_spawn_position1, _radius, _delay, []] call SOS_fnc_addVehicleSpawn;
+    [sos_spawn1, "Advanced", position sos_spawn_position1, direction sos_spawn_position1, _radius, _delay, ["PlatoonLeader", "GhostLeader", "GhostReconLeader"]] call SOS_fnc_addVehicleSpawn;
     
-    [sos_spawn2, "Basic", position sos_spawn_position2, _radius, _delay, []] call SOS_fnc_addVehicleSpawn;
-    [sos_spawn2, "Advanced", position sos_spawn_position2, _radius, _delay, ["PlatoonLeader", "GhostLeader", "GhostReconLeader"]] call SOS_fnc_addVehicleSpawn;
+    [sos_spawn2, "Basic", position sos_spawn_position2, direction sos_spawn_position2, _radius, _delay, []] call SOS_fnc_addVehicleSpawn;
+    [sos_spawn2, "Advanced", position sos_spawn_position2, direction sos_spawn_position2, _radius, _delay, ["PlatoonLeader", "GhostLeader", "GhostReconLeader"]] call SOS_fnc_addVehicleSpawn;
 
-    [sos_spawn3, "Basic", position sos_spawn_position3, _radius, _delay, []] call SOS_fnc_addVehicleSpawn;
-    [sos_spawn3, "TransportHelo", position sos_spawn_position3, _radius, _delay, ["ReaperPilot"]] call SOS_fnc_addVehicleSpawn;
+    [sos_spawn3, "Basic", position sos_spawn_position3, direction sos_spawn_position3, _radius, _delay, []] call SOS_fnc_addVehicleSpawn;
+    [sos_spawn3, "TransportHelo", position sos_spawn_position3, direction sos_spawn_position3, _radius, _delay, ["ReaperPilot"]] call SOS_fnc_addVehicleSpawn;
 
-    [sos_spawn4, "Basic", position sos_spawn_position4, _radius, _delay, []] call SOS_fnc_addVehicleSpawn;
-    [sos_spawn4, "AttackHelo", position sos_spawn_position4, _radius, _delay, ["ReaperPilot"]] call SOS_fnc_addVehicleSpawn;
+    [sos_spawn4, "Basic", position sos_spawn_position4, direction sos_spawn_position4, _radius, _delay, []] call SOS_fnc_addVehicleSpawn;
+    [sos_spawn4, "AttackHelo", position sos_spawn_position4, direction sos_spawn_position4, _radius, _delay, ["ReaperPilot"]] call SOS_fnc_addVehicleSpawn;
     
-    [sos_spawn6, "Basic", position sos_spawn_position6, _radius, _delay, []] call SOS_fnc_addVehicleSpawn;
-    [sos_spawn6, "FixedWing", position sos_spawn_position6, _radius, _delay, ["HavocPilot"]] call SOS_fnc_addVehicleSpawn;    
+    [sos_spawn6, "Basic", position sos_spawn_position6, direction sos_spawn_position6, _radius, _delay, []] call SOS_fnc_addVehicleSpawn;
+    [sos_spawn6, "FixedWing", position sos_spawn_position6, direction sos_spawn_position6, _radius, _delay, ["HavocPilot"]] call SOS_fnc_addVehicleSpawn;    
 };
 
 // mission generator 
