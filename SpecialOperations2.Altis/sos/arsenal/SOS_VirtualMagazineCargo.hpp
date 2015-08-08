@@ -14,8 +14,7 @@ class SOS_WestVirtualMagazineCargo {
         };
     };    
     class MachineGuns {
-        items[] = {        
-            "150Rnd_93x64_Mag",
+        items[] = {
             "130Rnd_338_Mag",
             "200Rnd_65x39_cased_Box",
             "200Rnd_65x39_cased_Box_Tracer"
