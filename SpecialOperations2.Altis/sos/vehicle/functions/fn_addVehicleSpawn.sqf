@@ -33,6 +33,8 @@ _whitelist      = if (count _this > 5) then {_this select 5} else {[]};
 _direction      = direction _unit + 180.0;  // opposite direction
 
 _unit allowDamage false;
+_unit enableSimulationGlobal false;
+
 {
     // check the whitelist if its not empty
     if (player getVariable "sos_inventory_role" in _whitelist || count _whitelist == 0) then {
