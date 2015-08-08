@@ -57,5 +57,5 @@ if((typeOf _vehicle) in (getArray(missionConfigFile >> format ["SOS_VehicleTypes
 		_heli = _this select 0;
 		_unit = _this select 1;
 		[_heli, _unit] call SOS_fnc_parachute;
-	}, nil, 5, false, true, "", "(((getPos _target) select 2) > 150) && (player in (assignedCargo _target))"];
+	}, nil, 8.0, false, true, "", "(((getPos _target) select 2) > 150) && (player in (assignedCargo _target))"];
 };

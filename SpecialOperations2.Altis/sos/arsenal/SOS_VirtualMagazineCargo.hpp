@@ -65,13 +65,15 @@ class SOS_WestVirtualMagazineCargo {
             "3Rnd_SmokeYellow_Grenade_shell",
             "3Rnd_SmokePurple_Grenade_shell",
             "3Rnd_SmokeBlue_Grenade_shell",
-            "3Rnd_SmokeOrange_Grenade_shell"         
+            "3Rnd_SmokeOrange_Grenade_shell",
+            "ACE_HuntIR_M203"
         };
     };
     class Launchers {
         items[] = {        
             "NLAW_F",
             "Titan_AT",
+            "Titan_AP",
             "RPG32_F",
             "RPG32_HE_F"
         };
