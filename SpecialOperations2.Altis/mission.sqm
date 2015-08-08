@@ -57,14 +57,14 @@ class Mission
 	randomSeed=11045919;
 	class Intel
 	{
-		timeOfChanges=1800.0002;
-		startWeather=0.30000001;
-		startWind=0.1;
-		startWaves=0.1;
-		forecastWeather=0.30000001;
-		forecastWind=0.1;
-		forecastWaves=0.1;
-		forecastLightnings=0.1;
+		briefingName="Special Operations 2 (v0.1.0)";
+		startWeather=0.29999998;
+		startWind=0.099999994;
+		startWaves=0.099999994;
+		forecastWeather=0.29999998;
+		forecastWind=0.099999994;
+		forecastWaves=0.099999994;
+		forecastLightnings=0.099999994;
 		year=2035;
 		month=6;
 		day=24;
@@ -1098,7 +1098,7 @@ class Mission
 					player="PLAY CDG";
 					skill=1;
 					text="sos_ghost1_autorifleman";
-					init="[this, ""Ghost 1"", ""GhostMachinegunner""] call SOS_fnc_initUnit;";
+					init="[this, ""Ghost 1"", ""GhostAutorifleman""] call SOS_fnc_initUnit;";
 					description="Ghost 1 - Autorifleman";
 				};
 				class Item2
@@ -1223,7 +1223,7 @@ class Mission
 					player="PLAY CDG";
 					skill=1;
 					text="sos_ghost2_autorifleman";
-					init="[this, ""Ghost 2"", ""GhostMachinegunner""] call SOS_fnc_initUnit;";
+					init="[this, ""Ghost 2"", ""GhostAutorifleman""] call SOS_fnc_initUnit;";
 					description="Ghost 2 - Machinegunner 1";
 				};
 				class Item2
@@ -1520,8 +1520,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={15086.653,17.91,17158.789};
-					azimut=243.717;
+					position[]={15210.861,17.91,16818.316};
+					azimut=226.39709;
 					id=50;
 					side="WEST";
 					vehicle="B_Pilot_F";
@@ -1538,7 +1538,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=16;
+		items=17;
 		class Item0
 		{
 			position[]={15199.413,17.940001,17281.512};
@@ -1548,6 +1548,7 @@ class Mission
 			vehicle="B_CargoNet_01_ammo_F";
 			skill=0.60000002;
 			text="sos_ammo1";
+			init="this enableRopeAttach false;";
 		};
 		class Item1
 		{
@@ -1573,7 +1574,7 @@ class Mission
 		};
 		class Item3
 		{
-			position[]={15132.167,17.91,17248.488};
+			position[]={15131.535,17.91,17248.584};
 			azimut=-45.534;
 			id=54;
 			side="EMPTY";
@@ -1628,7 +1629,7 @@ class Mission
 		};
 		class Item8
 		{
-			position[]={15110.774,17.91,17226.201};
+			position[]={15110.143,17.91,17226.297};
 			azimut=-44.750801;
 			id=59;
 			side="EMPTY";
@@ -1640,8 +1641,8 @@ class Mission
 		};
 		class Item9
 		{
-			position[]={15076.498,17.91,17160.779};
-			azimut=295;
+			position[]={15207.535,17.91,16814.324};
+			azimut=224.63519;
 			id=60;
 			side="EMPTY";
 			vehicle="Land_Noticeboard_F";
@@ -1651,8 +1652,8 @@ class Mission
 		};
 		class Item10
 		{
-			position[]={15060.716,17.91,17157.973};
-			azimut=117;
+			position[]={15198.416,17.91,16757.582};
+			azimut=-136.45436;
 			id=61;
 			side="EMPTY";
 			vehicle="Land_HelipadEmpty_F";
@@ -1669,16 +1670,18 @@ class Mission
 			vehicle="B_CargoNet_01_ammo_F";
 			skill=0.60000002;
 			text="sos_ammo2";
+			init="this enableRopeAttach false;";
 		};
 		class Item12
 		{
-			position[]={15203.099,17.940001,17285.115};
+			position[]={15203.215,17.940001,17285.232};
 			azimut=-43.752201;
 			id=63;
 			side="EMPTY";
 			vehicle="B_CargoNet_01_ammo_F";
 			skill=0.60000002;
 			text="sos_ammo3";
+			init="this enableRopeAttach false;";
 		};
 		class Item13
 		{
@@ -1689,6 +1692,7 @@ class Mission
 			vehicle="B_CargoNet_01_ammo_F";
 			skill=0.60000002;
 			text="sos_ammo4";
+			init="this enableRopeAttach false;";
 		};
 		class Item14
 		{
@@ -1709,6 +1713,17 @@ class Mission
 			vehicle="Land_HelipadSquare_F";
 			skill=0.60000002;
 			text="sos_rearm_point1";
+		};
+		class Item16
+		{
+			position[]={15204.913,17.91,16815.561};
+			azimut=261.14899;
+			id=67;
+			side="EMPTY";
+			vehicle="B_CargoNet_01_ammo_F";
+			skill=0.60000002;
+			text="sos_ammo5";
+			init="this enableRopeAttach false;";
 		};
 	};
 	class Markers
