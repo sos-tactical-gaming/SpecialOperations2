@@ -82,12 +82,11 @@ if (_inside) then {
     _zone = [position _building, [60.0, 60.0]] call SOS_fnc_createZone;
 
     // create ground units
-    _group = createGroup east;
     {   
-        _ai = _group createUnit ["O_Soldier_F", [0.0, 0.0, 0.0], [], 0, "CAN_COLLIDE"];
+        _ai = createGroup east createUnit ["O_Soldier_F", [0.0, 0.0, 0.0], [], 0, "CAN_COLLIDE"];
         _ai setPosATL (_building buildingPos _x);
         _ai setUnitPos "UP";
-        _ai allowFleeing 0;
+        _ai setDirection random 360.0;
     } forEach _groundIndexes;
     doStop (units _group);
 
@@ -97,7 +96,16 @@ if (_inside) then {
     _group setVariable ["GAIA_ZONE_INTEND", [format ["%1", _zone], "NOFOLLOW"]];
 } else {
     // there were no suitable buildings so we have to create the cache outside
-    _position = [_center, 200.0, SOS_MISSION_FOB_RADIUS * 0.5, 2.0, 0.4] call SOS_fnc_findSafePosition;
+    _position = [
+        _center,
+        200.0,
+        SOS_MISSION_FOB_RADIUS * 0.5,
+        2.0,
+        0.4,
+        3,
+        120.0,
+        200.0
+    ] call SOS_fnc_findSafePosition;
     _building = createVehicle ["CamoNet_OPFOR_big_F", _position, [], 0.0, "NONE"];
     _building setDir random 360.0;
     
