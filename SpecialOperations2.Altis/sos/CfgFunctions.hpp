@@ -59,6 +59,7 @@ class SOS_Functions {
         class initMissionGenerator {};
         class isMissionComplete {}; 
         class isTaskLimitReached {};
+        class taskDestroyAAA {};
         class taskDestroyAmmoCache {};
         class taskDestroyArtilleryTank {};
         class taskDestroyFPB {};        
