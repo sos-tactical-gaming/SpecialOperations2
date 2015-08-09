@@ -40,4 +40,22 @@ class SOS_VehicleSpawn {
             "I_Plane_Fighter_03_AA_F"
         };        
     };
+    class Armor {
+        vehicles[] = {
+            "B_APC_Tracked_01_rcws_F",
+            "B_APC_Wheeled_01_cannon_F",
+            "B_MBT_01_cannon_F",
+            "B_MBT_01_TUSK_F",
+            "B_MBT_01_arty_F",
+            "I_APC_Wheeled_03_cannon_F",
+            "I_APC_tracked_03_cannon_F",
+            "I_MBT_03_cannon_F"
+        };        
+    };
+    class UAV {
+        vehicles[] = {
+            "B_UAV_02_F",
+            "B_UAV_02_CAS_F"
+        };
+    };
 };
