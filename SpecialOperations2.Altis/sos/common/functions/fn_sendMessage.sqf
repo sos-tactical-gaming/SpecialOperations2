@@ -15,6 +15,8 @@
 
 private ["_message"];
 
+if !(SOS_MISSION_DEBUG) exitWith {};
+
 _message    = _this select 0;
 _prefix     = "SERVER";
 

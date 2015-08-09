@@ -22,7 +22,7 @@
 if (isDedicated) exitWith {};
 waitUntil {!isNull player};
 
-private ["_unit", "_configName", "_position", "_direction", "_radius", "_delay", "_whitelist"];
+private ["_unit", "_configName", "_position", "_direction", "_radius", "_delay", "_whitelist", "_member"];
 
 _unit           = _this select 0;
 _configName     = _this select 1;
@@ -31,13 +31,14 @@ _direction      = if (count _this > 3) then {_this select 3} else {0.0};
 _radius         = if (count _this > 4) then {_this select 4} else {2.0};
 _delay          = if (count _this > 5) then {_this select 5} else {20.0};
 _whitelist      = if (count _this > 6) then {_this select 6} else {[]};
+_member         = if (count _this > 7) then {_this select 7} else {false};
 
 _unit allowDamage false;
 _unit enableSimulationGlobal false;
 
 {
     // check the whitelist if its not empty
-    if (player getVariable "sos_inventory_role" in _whitelist || count _whitelist == 0) then {
+    if ((player getVariable "sos_inventory_role" in _whitelist || count _whitelist == 0) && ((_member && [] call SOS_fnc_isMember) || !_member)) then {
         _unit addAction [format ["Spawn %1", getText (configFile >> "CfgVehicles" >> _x >> "displayName")], {
             _unit       = _this select 0;
             _name       = _this select 3 select 0;

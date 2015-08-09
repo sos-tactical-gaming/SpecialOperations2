@@ -11,8 +11,8 @@ class WestPlatoonLeader {
         "ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing",
         "ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage",
         "ACE_tourniquet","ACE_tourniquet","ACE_tourniquet","ACE_tourniquet",
-        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
-        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
+        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
+        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
     };
     linkedItems[] = {
         "H_Beret_Colonel",
@@ -37,8 +37,8 @@ class WestPlatoonMedic {
         "ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing",
         "ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage",
         "ACE_tourniquet","ACE_tourniquet","ACE_tourniquet","ACE_tourniquet",
-        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
-        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
+        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
+        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
     };
     linkedItems[] = {
         "ItemMap",
@@ -62,8 +62,8 @@ class WestPlatoonMarksman {
         "ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing",
         "ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage",
         "ACE_tourniquet","ACE_tourniquet","ACE_tourniquet","ACE_tourniquet",
-        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
-        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
+        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
+        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
     };
     linkedItems[] = {
         "ItemMap",
@@ -87,8 +87,8 @@ class WestGhostLeader {
         "ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing",
         "ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage",
         "ACE_tourniquet","ACE_tourniquet","ACE_tourniquet","ACE_tourniquet",
-        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
-        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
+        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
+        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
     };
     linkedItems[] = {
         "H_Beret_blk",
@@ -112,8 +112,8 @@ class WestGhostAutorifleman {
         "ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing",
         "ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage",
         "ACE_tourniquet","ACE_tourniquet","ACE_tourniquet","ACE_tourniquet",
-        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
-        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
+        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
+        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
     };
     linkedItems[] = {
         "ItemMap",
@@ -135,8 +135,8 @@ class WestGhostAT {
         "ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing",
         "ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage",
         "ACE_tourniquet","ACE_tourniquet","ACE_tourniquet","ACE_tourniquet",
-        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
-        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
+        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
+        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
     };
     linkedItems[] = {
         "ItemMap",
@@ -159,8 +159,8 @@ class WestGhostCombatEngineer {
         "ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing",
         "ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage",
         "ACE_tourniquet","ACE_tourniquet","ACE_tourniquet","ACE_tourniquet",
-        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
-        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
+        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
+        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
     };
     linkedItems[] = {
         "ItemMap",
@@ -183,8 +183,8 @@ class WestGhostMachinegunner {
         "ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing",
         "ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage",
         "ACE_tourniquet","ACE_tourniquet","ACE_tourniquet","ACE_tourniquet",
-        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
-        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
+        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
+        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
     };
     linkedItems[] = {
         "ItemMap",
@@ -207,8 +207,8 @@ class WestGhostAssistantMachinegunner {
         "ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing",
         "ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage",
         "ACE_tourniquet","ACE_tourniquet","ACE_tourniquet","ACE_tourniquet",
-        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
-        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
+        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
+        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
     };
     linkedItems[] = {
         "ItemMap",
@@ -231,8 +231,8 @@ class WestGhostMedic {
         "ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing",
         "ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage",
         "ACE_tourniquet","ACE_tourniquet","ACE_tourniquet","ACE_tourniquet",
-        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
-        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
+        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
+        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
     };
     linkedItems[] = {
         "ItemMap",
@@ -257,8 +257,8 @@ class WestGhostReconLeader {
         "ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing",
         "ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage",
         "ACE_tourniquet","ACE_tourniquet","ACE_tourniquet","ACE_tourniquet",
-        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
-        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
+        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
+        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
     };
     linkedItems[] = {
         "H_Beret_blk",
@@ -283,8 +283,8 @@ class WestGhostReconScout {
         "ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing",
         "ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage",
         "ACE_tourniquet","ACE_tourniquet","ACE_tourniquet","ACE_tourniquet",
-        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
-        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
+        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
+        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
     };
     linkedItems[] = {
         "ItemMap",
@@ -307,8 +307,8 @@ class WestGhostReconMarksman {
         "ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing",
         "ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage",
         "ACE_tourniquet","ACE_tourniquet","ACE_tourniquet","ACE_tourniquet",
-        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
-        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
+        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
+        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
     };
     linkedItems[] = {
         "ItemMap",
@@ -331,8 +331,8 @@ class WestGhostReconMedic {
         "ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing",
         "ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage",
         "ACE_tourniquet","ACE_tourniquet","ACE_tourniquet","ACE_tourniquet",
-        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
-        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
+        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
+        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
     };
     linkedItems[] = {
         "ItemMap",
@@ -355,8 +355,8 @@ class WestHWTLeader {
         "ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing",
         "ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage",
         "ACE_tourniquet","ACE_tourniquet","ACE_tourniquet","ACE_tourniquet",
-        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
-        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
+        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
+        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
     };
     linkedItems[] = {
         "H_Beret_blk",
@@ -381,8 +381,8 @@ class WestHWTStaticOperator {
         "ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing",
         "ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage",
         "ACE_tourniquet","ACE_tourniquet","ACE_tourniquet","ACE_tourniquet",
-        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
-        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
+        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
+        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
     };
     linkedItems[] = {
         "ItemMap",
@@ -405,8 +405,8 @@ class WestHWTStaticAssistant {
         "ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing",
         "ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage",
         "ACE_tourniquet","ACE_tourniquet","ACE_tourniquet","ACE_tourniquet",
-        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
-        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
+        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
+        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
     };
     linkedItems[] = {
         "ItemMap",
@@ -429,8 +429,8 @@ class WestHWTMissileSpecialist {
         "ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing",
         "ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage",
         "ACE_tourniquet","ACE_tourniquet","ACE_tourniquet","ACE_tourniquet",
-        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
-        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
+        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
+        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
     };
     linkedItems[] = {
         "ItemMap",
@@ -444,7 +444,7 @@ class WestAnvilCommander {
     displayName = "Anvil Commander";
     icon = "\A3\Ui_f\data\GUI\Cfg\Ranks\captain_gs.paa";
     weapons[] = {
-        "Binocular"
+        "Rangefinder"
     };
     magazines[] = {
     };
@@ -453,11 +453,11 @@ class WestAnvilCommander {
         "ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing",
         "ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage",
         "ACE_tourniquet","ACE_tourniquet","ACE_tourniquet","ACE_tourniquet",
-        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
-        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
+        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
+        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
     };
     linkedItems[] = {
-        "H_Beret_blk",
+        "H_Beret_02",
         "ItemMap",
         "ItemCompass",
         "ItemWatch",
@@ -479,8 +479,8 @@ class WestAnvilDriver {
         "ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing",
         "ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage",
         "ACE_tourniquet","ACE_tourniquet","ACE_tourniquet","ACE_tourniquet",
-        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
-        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
+        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
+        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
     };
     linkedItems[] = {
         "ItemMap",
@@ -504,8 +504,8 @@ class WestAnvilGunner {
         "ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing",
         "ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage",
         "ACE_tourniquet","ACE_tourniquet","ACE_tourniquet","ACE_tourniquet",
-        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
-        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
+        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
+        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
     };
     linkedItems[] = {
         "ItemMap",
@@ -529,10 +529,11 @@ class WestReaperPilot {
         "ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing",
         "ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage",
         "ACE_tourniquet","ACE_tourniquet","ACE_tourniquet","ACE_tourniquet",
-        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
-        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
+        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
+        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
     };
     linkedItems[] = {
+        "H_Beret_02",
         "ItemMap",
         "ItemCompass",
         "ItemWatch",
@@ -554,8 +555,8 @@ class WestReaperCrew {
         "ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing",
         "ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage",
         "ACE_tourniquet","ACE_tourniquet","ACE_tourniquet","ACE_tourniquet",
-        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
-        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
+        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
+        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
     };
     linkedItems[] = {
         "ItemMap",
@@ -578,8 +579,8 @@ class WestReaperMedic {
         "ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing",
         "ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage",
         "ACE_tourniquet","ACE_tourniquet","ACE_tourniquet","ACE_tourniquet",
-        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
-        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
+        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
+        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
     };
     linkedItems[] = {
         "ItemMap",
@@ -603,10 +604,11 @@ class WestHavocPilot {
         "ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing",
         "ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage",
         "ACE_tourniquet","ACE_tourniquet","ACE_tourniquet","ACE_tourniquet",
-        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
-        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
+        "ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine",
+        "ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine"
     };
     linkedItems[] = {
+        "H_Beret_02",
         "ItemMap",
         "ItemCompass",
         "ItemWatch",
