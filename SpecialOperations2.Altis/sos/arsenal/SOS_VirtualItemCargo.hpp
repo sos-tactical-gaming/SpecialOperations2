@@ -92,16 +92,22 @@ class SOS_WestVirtualItemCargo {
     };
     class AdvancedItems {
         items[] = {
-        "ACE_HuntIR_monitor"   
+            "ACE_HuntIR_monitor"   
         };
     };     
     class Rangefinders {
         items[] = {
+            "Rangefinder",
             "ACE_Vector",
             "ACE_Kestrel4500",
             "ACE_RangeCard"
         };
-    };    
+    };
+    class LaserDesignators {        
+        items[] = {
+            "Laserdesignator"
+        };
+    };
     class NightVisionGoggles {
         items[] = {
             "NVGoggles",
@@ -145,13 +151,21 @@ class SOS_WestVirtualItemCargo {
             "tf_rf7800str"
         };
     };    
-    class Berets {
+    class BasicBerets {
         items[] = {
-            "H_Beret_blk",
+            "H_Beret_blk"
+        };
+    };
+    class AdvancedBerets {
+        items[] = {            
             "H_Beret_02",
+        };        
+    };
+    class ExpertBerets {
+        items[] = {            
             "H_Beret_Colonel"
         };
-    };    
+    };
     class Goggles {
         items[] = {
             "G_Shades_Black",
@@ -220,7 +234,8 @@ class SOS_WestVirtualItemCargo {
             "optic_AMS",
             "optic_AMS_snd",
             "optic_KHS_blk",
-            "optic_KHS_tan"
+            "optic_KHS_tan",
+            "optic_KHS_old"
         };
     };    
     class ThermalOptics {
@@ -242,7 +257,12 @@ class SOS_WestVirtualItemCargo {
             "muzzle_snds_B",
             "muzzle_snds_L",
             "muzzle_snds_acp",
-            "muzzle_snds_L"
+            "muzzle_snds_L",
+            "muzzle_snds_338_black",
+            "muzzle_snds_338_green",
+            "muzzle_snds_338_sand",
+            "ACE_muzzle_mzls_338",
+            "ACE_muzzle_mzls_B"
         };
     };    
     class Attachments {

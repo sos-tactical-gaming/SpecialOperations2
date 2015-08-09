@@ -17,7 +17,7 @@ class SOS_WestVirtualArsenal {
             "BasicMedical",
             "NightVisionGoggles",
             "ShortRangeRadios",
-            "Berets",
+            "ExpertBerets",
             "Goggles",
             "ShortRangeOptics",
             "MidRangeOptics",
@@ -112,7 +112,7 @@ class SOS_WestVirtualArsenal {
             "BasicMedical",
             "NightVisionGoggles",
             "ShortRangeRadios",
-            "Berets",
+            "BasicBerets",
             "Goggles",
             "ShortRangeOptics",
             "MidRangeOptics",
@@ -319,10 +319,11 @@ class SOS_WestVirtualArsenal {
             "BasicItems",
             "AdvancedItems",
             "Rangefinders",
+            "LaserDesignators",
             "BasicMedical",
             "NightVisionGoggles",
             "ShortRangeRadios",
-            "Berets",
+            "BasicBerets",
             "Goggles",
             "ShortRangeOptics",
             "MidRangeOptics",
@@ -332,12 +333,11 @@ class SOS_WestVirtualArsenal {
         magazines[] = {
             "Thrown",
             "AssaultRifles",
-            "GL",
-            "Pistols"
+            "Pistols",
+            "LaserDesignators"
         };
         weapons[] = {
-            "AssaultRifles",
-            "AssaultRiflesGL",
+            "AssaultRiflesC",
             "Pistols"
         };    
     };
@@ -369,7 +369,7 @@ class SOS_WestVirtualArsenal {
             "Pistols"
         };
         weapons[] = {
-            "AssaultRifles",
+            "AssaultRiflesC",
             "Pistols"
         };    
     };
@@ -429,11 +429,11 @@ class SOS_WestVirtualArsenal {
         };
         magazines[] = {
             "Thrown",
-            "AssaultRifles",
+            "AssaultRiflesC",
             "Pistols"
         };
         weapons[] = {
-            "AssaultRifles",
+            "AssaultRiflesC",
             "Pistols"
         };    
     };
@@ -450,7 +450,7 @@ class SOS_WestVirtualArsenal {
             "BasicMedical",
             "NightVisionGoggles",
             "ShortRangeRadios",
-            "Berets",
+            "BasicBerets",
             "Goggles",
             "ShortRangeOptics",
             "MidRangeOptics",
@@ -572,7 +572,7 @@ class SOS_WestVirtualArsenal {
             "BasicMedical",
             "NightVisionGoggles",
             "ShortRangeRadios",
-            "Berets",
+            "AdvancedBerets",
             "Goggles",
             "ShortRangeOptics",
             "Attachments"
@@ -580,12 +580,10 @@ class SOS_WestVirtualArsenal {
         magazines[] = {
             "Thrown",
             "AssaultRifles",
-            "SubMachineGuns",
             "Pistols"
         };
         weapons[] = {
             "AssaultRiflesC",
-            "SubMachineGuns",
             "Pistols"
         }; 
     };
@@ -607,12 +605,10 @@ class SOS_WestVirtualArsenal {
         magazines[] = {
             "Thrown",
             "AssaultRifles",
-            "SubMachineGuns",
             "Pistols"
         };
         weapons[] = {
             "AssaultRiflesC",
-            "SubMachineGuns",
             "Pistols"
         }; 
     };
@@ -634,12 +630,10 @@ class SOS_WestVirtualArsenal {
         magazines[] = {
             "Thrown",
             "AssaultRifles",
-            "SubMachineGuns",
             "Pistols"
         };
         weapons[] = {
             "AssaultRiflesC",
-            "SubMachineGuns",
             "Pistols"
         }; 
     };
@@ -656,19 +650,17 @@ class SOS_WestVirtualArsenal {
             "BasicMedical",
             "NightVisionGoggles",
             "ShortRangeRadios",
-            "Berets",
+            "AdvancedBerets",
             "Goggles",
             "ShortRangeOptics",
             "Attachments"
         };
         magazines[] = {
             "Thrown",
-            "AssaultRifles",
             "SubMachineGuns",
             "Pistols"
         };
         weapons[] = {
-            "AssaultRiflesC",
             "SubMachineGuns",
             "Pistols"
         }; 
@@ -691,12 +683,10 @@ class SOS_WestVirtualArsenal {
         };
         magazines[] = {
             "Thrown",
-            "AssaultRifles",
             "SubMachineGuns",
             "Pistols"
         };
         weapons[] = {
-            "AssaultRiflesC",
             "SubMachineGuns",
             "Pistols"
         }; 
@@ -721,12 +711,10 @@ class SOS_WestVirtualArsenal {
         };
         magazines[] = {
             "Thrown",
-            "AssaultRifles",
             "SubMachineGuns",
             "Pistols"
         };
         weapons[] = {
-            "AssaultRiflesC",
             "SubMachineGuns",
             "Pistols"
         }; 
@@ -743,7 +731,7 @@ class SOS_WestVirtualArsenal {
             "BasicMedical",
             "NightVisionGoggles",
             "ShortRangeRadios",
-            "Berets",
+            "AdvancedBerets",
             "Goggles",
             "ShortRangeOptics",
             "Attachments"

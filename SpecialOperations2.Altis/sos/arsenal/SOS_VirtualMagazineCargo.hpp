@@ -28,7 +28,7 @@ class SOS_WestVirtualMagazineCargo {
             "10Rnd_338_Mag",
             "20Rnd_762x51_Mag",
             "10Rnd_93x64_DMR_05_Mag",
-            "20Rnd_762x51_Mag"          
+            "20Rnd_762x51_Mag"         
         };
     };    
     class SubMachineGuns {
@@ -111,5 +111,10 @@ class SOS_WestVirtualMagazineCargo {
             "9Rnd_45ACP_Mag",
             "16Rnd_9x21_Mag"
         };
-    };  	
+    };
+    class LaserDesignators {
+        items[] = {           
+            "Laserbatteries"
+        };
+    }; 
 };
