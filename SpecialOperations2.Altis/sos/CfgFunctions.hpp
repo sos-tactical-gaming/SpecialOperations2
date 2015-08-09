@@ -62,6 +62,7 @@ class SOS_Functions {
         class taskDestroyAAA {};
         class taskDestroyAmmoCache {};
         class taskDestroyArtilleryTank {};
+        class taskDestroyRelayStation {};
         class taskDestroyFPB {};        
         class taskDestroyRadar {};        
         class taskEliminateHVT {};        
