@@ -35,10 +35,12 @@ if (!isDedicated) then {
     [sos_spawn1, "Basic", position sos_spawn_position1, direction sos_spawn_position1, _radius, _delay, []] call SOS_fnc_addVehicleSpawn;
     [sos_spawn1, "Advanced", position sos_spawn_position1, direction sos_spawn_position1, _radius, _delay, ["PlatoonLeader", "GhostLeader", "GhostReconLeader"]] call SOS_fnc_addVehicleSpawn;
     [sos_spawn1, "Armor", position sos_spawn_position1, direction sos_spawn_position1, _radius, _delay, ["AnvilCommander"]] call SOS_fnc_addVehicleSpawn;
+    [sos_spawn1, "GroundUAV", position sos_spawn_position1, direction sos_spawn_position1, _radius, _delay, ["GhostReconLeader"], true] call SOS_fnc_addVehicleSpawn;
     
     [sos_spawn2, "Basic", position sos_spawn_position2, direction sos_spawn_position2, _radius, _delay, []] call SOS_fnc_addVehicleSpawn;
     [sos_spawn2, "Advanced", position sos_spawn_position2, direction sos_spawn_position2, _radius, _delay, ["PlatoonLeader", "GhostLeader", "GhostReconLeader"]] call SOS_fnc_addVehicleSpawn;
     [sos_spawn2, "Armor", position sos_spawn_position2, direction sos_spawn_position2, _radius, _delay, ["AnvilCommander"]] call SOS_fnc_addVehicleSpawn;
+    [sos_spawn2, "GroundUAV", position sos_spawn_position2, direction sos_spawn_position2, _radius, _delay, ["GhostReconLeader"], true] call SOS_fnc_addVehicleSpawn;
 
     [sos_spawn3, "Basic", position sos_spawn_position3, direction sos_spawn_position3, _radius, _delay, []] call SOS_fnc_addVehicleSpawn;
     [sos_spawn3, "TransportHelo", position sos_spawn_position3, direction sos_spawn_position3, _radius, _delay, ["ReaperPilot"]] call SOS_fnc_addVehicleSpawn;
@@ -49,7 +51,7 @@ if (!isDedicated) then {
     
     [sos_spawn6, "Basic", position sos_spawn_position6, direction sos_spawn_position6, _radius, _delay, []] call SOS_fnc_addVehicleSpawn;
     [sos_spawn6, "FixedWing", position sos_spawn_position6, direction sos_spawn_position6, _radius, _delay, ["HavocPilot"], true] call SOS_fnc_addVehicleSpawn;    
-    [sos_spawn6, "UAV", position sos_spawn_position6, direction sos_spawn_position6, _radius, _delay, ["GhostReconLeader"], true] call SOS_fnc_addVehicleSpawn;    
+    [sos_spawn6, "AirUAV", position sos_spawn_position6, direction sos_spawn_position6, _radius, _delay, ["GhostReconLeader"], true] call SOS_fnc_addVehicleSpawn;    
 };
 
 // mission generator 
