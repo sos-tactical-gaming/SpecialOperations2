@@ -40,13 +40,13 @@ class DestroyAAA : SideTask {
     limit           = 1;
     chance          = 0.5;
 };
-/*
-class DestroyCommsTower : SideTask {
-    title           = "Destroy Comms Tower";
+class DestroyRelayStation : SideTask {
+    title           = "Destroy Relay Station";
     description     = "Description about task.";
-    marker          = "DESTROY COMMS TOWER";
-    limit           = 2;
+    marker          = "DESTROY RELAY STATION";
+    limit           = 1;
 };
+/*
 class DestroyRadar : SideTask {
     title           = "Destroy Radar";
     description     = "Description about task.";
