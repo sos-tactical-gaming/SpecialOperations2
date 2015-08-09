@@ -52,10 +52,16 @@ class SOS_VehicleSpawn {
             "I_MBT_03_cannon_F"
         };        
     };
-    class UAV {
+    class AirUAV {
         vehicles[] = {
             "B_UAV_02_F",
             "B_UAV_02_CAS_F"
+        };
+    };
+    class GroundUAV {
+        vehicles[] = {
+            "B_UGV_01_F",
+            "B_UGV_01_rcws_F"
         };
     };
 };
