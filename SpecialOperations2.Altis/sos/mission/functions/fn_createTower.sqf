@@ -39,7 +39,6 @@ _roofIndexes = [0, 1];
     _ai setUnitPos "UP";
     _ai setDir random 360.0;
 } forEach _roofIndexes;
-doStop (units _group);
 
 _zone = [position _tower, [120.0, 120.0]] call SOS_fnc_createZone;
 

@@ -19,11 +19,11 @@ SOS_MISSION_DEFENSES                = [];
 SOS_MISSION_FOBS                    = [];
 SOS_MISSION_FOB_MARKERS             = [];
 SOS_MISSION_FOB_COUNT               = 3;
-SOS_MISSION_FOB_DISTANCE            = 1400.0;
+SOS_MISSION_FOB_DISTANCE            = 1800.0;
 SOS_MISSION_FOB_RADIUS              = 1200.0;
 SOS_MISSION_BLACKLIST               = [];
 SOS_MISSION_TASKS                   = [];
-SOS_MISSION_TASK_COUNT              = 5;
+SOS_MISSION_TASK_COUNT              = 6;
 
 // gaia settings
 GAIA_CACHE_STAGE_1                  = 1000;

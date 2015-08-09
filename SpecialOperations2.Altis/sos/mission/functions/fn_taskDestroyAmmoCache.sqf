@@ -88,7 +88,6 @@ if (_inside) then {
         _ai setUnitPos "UP";
         _ai setDir random 360.0;
     } forEach _groundIndexes;
-    doStop (units _group);
 
     // create patrols
     _position = [position _building, 20.0, 60.0, 2.0, 2.0] call SOS_fnc_findSafePosition;
@@ -164,7 +163,7 @@ _task = ["DestroyAmmoCache", position _cache] call SOS_fnc_addTask;
         sleep (random 1.0);
     };
     
-    [_task] call SOS_fnc_completeTask;
+    [_task] call SOS_fnc_completeTask;    
 };
 
 _cache

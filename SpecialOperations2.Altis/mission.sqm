@@ -1409,10 +1409,10 @@ class Mission
 				class Item0
 				{
 					position[]={15180.328,17.903902,17307.4};
-					azimut=136.01146;
+					azimut=136.011;
 					id=43;
 					side="WEST";
-					vehicle="B_crew_F";
+					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
@@ -1425,10 +1425,10 @@ class Mission
 				class Item1
 				{
 					position[]={15177.705,17.900667,17304.908};
-					azimut=136.01146;
+					azimut=136.011;
 					id=44;
 					side="WEST";
-					vehicle="B_crew_F";
+					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=1;
@@ -1439,10 +1439,10 @@ class Mission
 				class Item2
 				{
 					position[]={15175.059,17.903576,17302.377};
-					azimut=136.01146;
+					azimut=136.011;
 					id=45;
 					side="WEST";
-					vehicle="B_crew_F";
+					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=1;
