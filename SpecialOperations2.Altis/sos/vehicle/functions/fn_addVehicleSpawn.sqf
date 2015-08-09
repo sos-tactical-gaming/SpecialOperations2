@@ -38,7 +38,7 @@ _unit enableSimulationGlobal false;
 
 {
     // check the whitelist if its not empty
-    if (player getVariable "sos_inventory_role" in _whitelist || count _whitelist == 0 && (_member && [] call SOS_fnc_isMember) || !_member) then {
+    if ((player getVariable "sos_inventory_role" in _whitelist || count _whitelist == 0) && ((_member && [] call SOS_fnc_isMember) || !_member)) then {
         _unit addAction [format ["Spawn %1", getText (configFile >> "CfgVehicles" >> _x >> "displayName")], {
             _unit       = _this select 0;
             _name       = _this select 3 select 0;
