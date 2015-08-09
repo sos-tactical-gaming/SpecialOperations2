@@ -61,6 +61,6 @@ if (!isDedicated) then {
 if (isServer) then {
     [] call SOS_fnc_setTime;
     [] call SOS_fnc_setWeather; 
-    [false] spawn SOS_fnc_initMissionGenerator;       
+    [true] spawn SOS_fnc_initMissionGenerator;       
 };
  

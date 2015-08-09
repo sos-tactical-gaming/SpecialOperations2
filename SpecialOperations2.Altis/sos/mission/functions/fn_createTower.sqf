@@ -30,15 +30,14 @@ _tower = "Land_Cargo_Patrol_V3_F" createVehicle _position;
 _tower setDir ([_position, position _fob] call BIS_fnc_dirTo) + ([-45.0, 45.0] call BIS_fnc_randomNum);
 [position _tower, 400.0] call SOS_fnc_blacklistArea;
 
-_group          = createGroup east;
-_roofIndexes    = [0, 1];
+_roofIndexes = [0, 1];
 
 // create roof units
 {    
-    _ai = _group createUnit ["O_Soldier_F", [0.0, 0.0, 0.0], [], 0, "CAN_COLLIDE"];
+    _ai = createGroup east createUnit ["O_Soldier_F", [0.0, 0.0, 0.0], [], 0, "CAN_COLLIDE"];
     _ai setPosATL (_tower buildingPos _x);
     _ai setUnitPos "UP";
-    _ai allowFleeing 0;
+    _ai setDirection random 360.0;
 } forEach _roofIndexes;
 doStop (units _group);
 

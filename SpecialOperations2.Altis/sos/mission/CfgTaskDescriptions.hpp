@@ -33,6 +33,13 @@ class DestroyArtilleryTank : SideTask {
     limit           = 1;
     chance          = 0.5;
 };
+class DestroyAAA : SideTask {    
+    title           = "Destroy AAA";
+    description     = "Description about task.";
+    marker          = "DESTROY AAA";
+    limit           = 1;
+    chance          = 0.5;
+};
 /*
 class DestroyCommsTower : SideTask {
     title           = "Destroy Comms Tower";
