@@ -30,4 +30,16 @@ _vehicle = createVehicle [_name, _position, [], _radius, "NONE"];
 _vehicle setDir _direction;
 [[_vehicle], "SOS_fnc_initVehicle", true, true, true] call BIS_fnc_MP;
 
+// assembles uavs
+_uavs = [
+    "B_UAV_01_F",
+    "B_UAV_02_F",
+    "B_UAV_02_CAS_F",
+    "B_UGV_01_F",
+    "B_UGV_01_rcws_F"
+];
+if (_name in _uavs) then {
+    createVehicleCrew _vehicle;
+};
+
 _vehicle
