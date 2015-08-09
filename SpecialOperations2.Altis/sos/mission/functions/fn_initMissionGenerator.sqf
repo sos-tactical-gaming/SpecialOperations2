@@ -119,4 +119,4 @@ waitUntil {
 };
 
 // end the mission
-[] call SOS_fnc_endMission;
+[[], "SOS_fnc_endMission", true, true] call BIS_fnc_MP;
