@@ -575,7 +575,8 @@ class SOS_WestVirtualArsenal {
             "AdvancedBerets",
             "Goggles",
             "ShortRangeOptics",
-            "Attachments"
+            "Attachments",
+            "Tools"
         };
         magazines[] = {
             "Thrown",
@@ -600,7 +601,8 @@ class SOS_WestVirtualArsenal {
             "ShortRangeRadios",
             "Goggles",
             "ShortRangeOptics",
-            "Attachments"
+            "Attachments",
+            "Tools"
         };
         magazines[] = {
             "Thrown",
@@ -625,7 +627,8 @@ class SOS_WestVirtualArsenal {
             "ShortRangeRadios",
             "Goggles",
             "ShortRangeOptics",
-            "Attachments"
+            "Attachments",
+            "Tools"
         };
         magazines[] = {
             "Thrown",
