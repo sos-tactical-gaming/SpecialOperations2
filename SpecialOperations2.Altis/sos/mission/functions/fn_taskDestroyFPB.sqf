@@ -32,7 +32,7 @@ _roofIndexes    = [[4, 5, 6, 7, 8], 4] call SOS_fnc_arrayPickRandom;
     _ai = createGroup east createUnit ["O_Soldier_F", [0.0, 0.0, 0.0], [], 0, "CAN_COLLIDE"];
     _ai setPosATL (_fob buildingPos _x);
     _ai setUnitPos "UP";
-    _ai setDirection random 360.0;
+    _ai setDir random 360.0;
 } forEach _groundIndexes;
 
 // create roof units
@@ -40,7 +40,7 @@ _roofIndexes    = [[4, 5, 6, 7, 8], 4] call SOS_fnc_arrayPickRandom;
     _ai = createGroup east createUnit ["O_Soldier_F", [0.0, 0.0, 0.0], [], 0, "CAN_COLLIDE"];
     _ai setPosATL (_fob buildingPos _x);
     _ai setUnitPos "UP";
-    _ai setDirection random 360.0;
+    _ai setDir random 360.0;
 } forEach _roofIndexes;
 
 // create defense

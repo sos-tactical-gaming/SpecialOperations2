@@ -86,7 +86,7 @@ if (_inside) then {
         _ai = createGroup east createUnit ["O_Soldier_F", [0.0, 0.0, 0.0], [], 0, "CAN_COLLIDE"];
         _ai setPosATL (_building buildingPos _x);
         _ai setUnitPos "UP";
-        _ai setDirection random 360.0;
+        _ai setDir random 360.0;
     } forEach _groundIndexes;
     doStop (units _group);
 
