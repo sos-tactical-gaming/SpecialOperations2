@@ -40,7 +40,7 @@ class SOS_Functions {
     class Logistics {
         file = "sos\logistics\functions";
         class addLogisticsSpawn {};
-        class spawnBox {};
+        class spawnCrate {};
     };
     class Mission {
         file = "sos\mission\functions"; 

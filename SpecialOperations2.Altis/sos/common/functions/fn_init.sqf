@@ -53,8 +53,8 @@ if (!isDedicated) then {
     [sos_spawn6, "FixedWing", position sos_spawn_position6, direction sos_spawn_position6, _radius, _delay, ["HavocPilot"], true] call SOS_fnc_addVehicleSpawn;    
     [sos_spawn6, "AirUAV", position sos_spawn_position6, direction sos_spawn_position6, _radius, _delay, ["GhostReconLeader"], true] call SOS_fnc_addVehicleSpawn;
     
-    [sos_logistics_spawn1, "AmmoDrop", position sos_spawn_logistics_position1, _radius, _delay, ["PlatoonLeader", "GhostLeader", "GhostReconLeader", "ReaperPilot"]] call SOS_fnc_addLogisticsSpawn;
-    [sos_logistics_spawn1, "MedicSupplyDrop", position sos_spawn_logistics_position1, _radius, _delay, ["PlatoonLeader", "GhostLeader", "GhostReconLeader", "ReaperPilot"]] call SOS_fnc_addLogisticsSpawn;
+    [sos_logistics_spawn1, "AmmoCrate", position sos_spawn_logistics_position1, direction sos_spawn_logistics_position1, _radius, _delay, ["PlatoonLeader", "GhostLeader", "GhostReconLeader", "ReaperPilot"]] call SOS_fnc_addLogisticsSpawn;
+    [sos_logistics_spawn1, "MedicalCrate", position sos_spawn_logistics_position1, direction sos_spawn_logistics_position1, _radius, _delay, ["PlatoonLeader", "GhostLeader", "GhostReconLeader", "ReaperPilot"]] call SOS_fnc_addLogisticsSpawn;
 };
 
 // mission generator 

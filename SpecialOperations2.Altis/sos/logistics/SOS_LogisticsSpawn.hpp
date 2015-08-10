@@ -1,6 +1,6 @@
 class SOS_LogisticsSpawn {    
-    class AmmoDrop {
-        contents[] = {
+    class AmmoCrate {
+        inventory[] = {
             {"30Rnd_65x39_caseless_mag",            50,     "MAGAZINE"},
             {"30Rnd_65x39_caseless_mag_Tracer",     50,     "MAGAZINE"},
             {"30Rnd_556x45_Stanag",                 50,     "MAGAZINE"},
@@ -38,17 +38,6 @@ class SOS_LogisticsSpawn {
             {"arifle_MX_Black_F",                   10,     "WEAPON"},
             {"launch_NLAW_F",                       5,      "WEAPON"},
             {"ACE_EarPlugs",                        25,     "ITEM"},
-            {"ACE_fieldDressing",                   100,    "ITEM"},
-            {"ACE_packingBandage",                  100,    "ITEM"},
-            {"ACE_tourniquet",                      50,     "ITEM"},
-            {"ACE_morphine",                        50,     "ITEM"},
-            {"ACE_epinephrine",                     50,     "ITEM"},
-            {"ACE_atropine",                        25,     "ITEM"},
-            {"ACE_plasmaIV_250",                    25,     "ITEM"},
-            {"ACE_salineIV_250",                    25,     "ITEM"},
-            {"ACE_personalAidKit",                  10,     "ITEM"},
-            {"ACE_surgicalKit",                     10,     "ITEM"},
-            {"ACE_bodyBag",                         25,     "ITEM"},
             {"ACE_wirecutter",                      5,      "ITEM"},
             {"optic_Arco",                          20,     "ITEM"},
             {"muzzle_snds_H",                       25,     "ITEM"},
@@ -56,12 +45,12 @@ class SOS_LogisticsSpawn {
             {"muzzle_snds_B",                       25,     "ITEM"},
             {"muzzle_snds_L",                       25,     "ITEM"}
         };
-        name = "Ammo Drop";
-        box = "I_CargoNet_01_ammo_F";
+        name = "Ammo Crate";
+        crate = "I_CargoNet_01_ammo_F";
     };
     
-    class MedicSupplyDrop {
-        contents[] = {
+    class MedicalCrate {
+        inventory[] = {
             {"ACE_fieldDressing",                   200,    "ITEM"},
             {"ACE_packingBandage",                  200,    "ITEM"},
             {"ACE_tourniquet",                      100,    "ITEM"},
@@ -74,7 +63,7 @@ class SOS_LogisticsSpawn {
             {"ACE_surgicalKit",                     20,     "ITEM"},
             {"ACE_bodyBag",                         50,     "ITEM"}
         };
-        name = "Medic Supply Drop";
-        box = "O_CargoNet_01_ammo_F";
+        name = "Medical Crate";
+        crate = "O_CargoNet_01_ammo_F";
     };
 };
