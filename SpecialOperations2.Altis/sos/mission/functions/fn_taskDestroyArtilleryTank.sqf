@@ -12,9 +12,9 @@
 private ["_position", "_tank", "_zone", "_task"];
  
 _position = [
-    position ([] call SOS_fnc_getRandomFOB),
-    200.0,
-    SOS_MISSION_FOB_RADIUS * 0.5,
+    SOS_MISSION_AO_POSITION,
+    0.0,
+    SOS_MISSION_AO_RADIUS,
     2.0,
     2.0
 ] call SOS_fnc_findSafePosition;
@@ -24,8 +24,15 @@ _tank = ([_position, random 360.0, "O_MBT_02_arty_F", east] call BIS_fnc_spawnVe
 _tank setFuel 0.0;
 
 // set zone to entire ao
-_zone = 1;
-group _tank setVariable ["GAIA_ZONE_INTEND", [format ["%1", _zone], "MOVE"]];
+group _tank setVariable ["GAIA_ZONE_INTEND", [format ["%1", 1], "MOVE"]];
+
+// create zone
+_zone = [position _tank, [120.0, 120.0]] call SOS_fnc_createZone;
+
+// create patrols
+_position = [position _tank, 40.0, 120.0, 2.0, 2.0] call SOS_fnc_findSafePosition;
+_group = [_position, EAST, (configfile >> "CfgGroups" >> "East" >> "OPF_F" >> "Infantry" >> "OIA_InfTeam")] call BIS_fnc_spawnGroup;
+_group setVariable ["GAIA_ZONE_INTEND", [format ["%1", _zone], "NOFOLLOW"]];
 
 // create task
 _task = ["DestroyArtilleryTank", position _tank] call SOS_fnc_addTask;

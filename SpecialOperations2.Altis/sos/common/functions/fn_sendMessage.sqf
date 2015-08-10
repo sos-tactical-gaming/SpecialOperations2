@@ -15,6 +15,7 @@
 
 private ["_message"];
 
+if (isNil "SOS_MISSION_DEBUG") exitWith {};
 if !(SOS_MISSION_DEBUG) exitWith {};
 
 _message    = _this select 0;
