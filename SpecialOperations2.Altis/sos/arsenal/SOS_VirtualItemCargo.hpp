@@ -98,7 +98,11 @@ class SOS_WestVirtualItemCargo {
     class Rangefinders {
         items[] = {
             "Rangefinder",
-            "ACE_Vector",
+            "ACE_Vector"
+        };
+    };
+    class MarksmanItems {
+        items[] = {
             "ACE_Kestrel4500",
             "ACE_RangeCard"
         };
