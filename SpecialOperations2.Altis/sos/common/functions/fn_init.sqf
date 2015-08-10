@@ -16,12 +16,6 @@ if (!isDedicated) then {
     [] call SOS_fnc_initInventory;
 	[] call SOS_fnc_initSafeZone;
     
-    // add rearm points
-    [position sos_rearm_point1, [5.5, 5.5], "Helicopter"] call SOS_fnc_addServicePoint;
-    [position sos_rearm_point2, [5.5, 5.5], "Helicopter"] call SOS_fnc_addServicePoint;
-    [position sos_rearm_point3, [5.5, 5.5], "Plane"] call SOS_fnc_addServicePoint;
-    [position sos_rearm_point4, [5.5, 5.5], "LandVehicle"] call SOS_fnc_addServicePoint;
-
     // virtual arsenal
     [sos_ammo1] call SOS_fnc_addVirtualArsenal;
     [sos_ammo2] call SOS_fnc_addVirtualArsenal;
