@@ -26,11 +26,4 @@ if !(isNull _unit) then {
     _unit setVariable ["sos_inventory_role", _role, true];     
 };
 
-// add rearm points
-[position sos_rearm_point1, [5.5, 5.5], "Helicopter"] call SOS_fnc_addServicePoint;
-[position sos_rearm_point2, [5.5, 5.5], "Helicopter"] call SOS_fnc_addServicePoint;
-[position sos_rearm_point3, [5.5, 5.5], "Plane"] call SOS_fnc_addServicePoint;
-[position sos_rearm_point4, [5.5, 5.5], "LandVehicle"] call SOS_fnc_addServicePoint;
-
-
 [] call SOS_fnc_roleProtection;
