@@ -35,8 +35,13 @@ class SOS_Functions {
     };
     class Inventory {
         file = "sos\inventory\functions";
-        class initInventory {};        
-    };    
+        class initInventory {};
+    };
+    class Logistics {
+        file = "sos\logistics\functions";
+        class addLogisticsSpawn {};
+        class spawnCrate {};
+    };
     class Mission {
         file = "sos\mission\functions"; 
         class addTask {};        

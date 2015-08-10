@@ -3,6 +3,7 @@
 #include                    "sos\vehicle\SOS_VehicleProtection.hpp"
 #include                    "sos\vehicle\SOS_VehicleTypes.hpp"
 #include                    "sos\common\SOS_ProtectedRoles.hpp"
+#include                    "sos\logistics\SOS_LogisticsSpawn.hpp"
 
 onLoadName                  = "Special Operations 2";
 onLoadMission               = "New Tactical Gaming!";
