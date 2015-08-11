@@ -84,7 +84,6 @@ class SOS_WestVirtualArsenal {
             "ShortRangeOptics",
             "MidRangeOptics",
             "LongRangeOptics",
-            "ThermalOptics",
             "Bipods",
             "Suppressors",
             "Attachments"
@@ -392,7 +391,6 @@ class SOS_WestVirtualArsenal {
             "ShortRangeOptics",
             "MidRangeOptics",
             "LongRangeOptics",
-            "ThermalOptics",
             "Bipods",
             "Suppressors",
             "Attachments"

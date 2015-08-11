@@ -883,7 +883,7 @@ class Mission
 						};
 						class Item1
 						{
-							value="30";
+							value="8";
 							parentCls="ACE_ModuleBlueForceTracking";
 							typeName="Interval";
 						};
@@ -2525,7 +2525,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=2;
+		items=1;
 		class Item0
 		{
 			position[]={15273.517,18.826187,17071.211};
@@ -2533,18 +2533,8 @@ class Mission
 			markerType="ELLIPSE";
 			type="Empty";
 			colorName="ColorWEST";
-			fillName="Border";
 			a=400;
 			b=400;
-			drawBorder=1;
-		};
-		class Item1
-		{
-			position[]={15121.809,17.91,16982.146};
-			name="HeliSpawn_3";
-			text="DLC Heli Spawn";
-			type="b_air";
-			colorName="ColorWEST";
 		};
 	};
 };

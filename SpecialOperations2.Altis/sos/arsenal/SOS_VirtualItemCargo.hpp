@@ -232,7 +232,7 @@ class SOS_WestVirtualItemCargo {
     };    
     class LongRangeOptics {
         items[] = {
-            "optic_SOS",
+            "optic_NVS",
             "optic_DMS",
             "optic_LRPS",
             "optic_AMS",
