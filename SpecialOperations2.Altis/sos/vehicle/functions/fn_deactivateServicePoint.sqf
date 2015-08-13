@@ -15,7 +15,7 @@
  
 private ["_actionId"];
 
-_actionId = driver vehicle player getVariable ["sos_vehicle_service_action_id", nil];
+_actionId = player getVariable ["sos_vehicle_service_action_id", nil];
 
 if !(isNil "_actionId") then {
     player removeAction _actionId;
