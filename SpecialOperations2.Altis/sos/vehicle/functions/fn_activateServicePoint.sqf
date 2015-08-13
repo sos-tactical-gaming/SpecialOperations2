@@ -19,9 +19,10 @@ private ["_vehicle", "_actionName", "_actionId"];
 _vehicle = vehicle player;
 
 //Checks for damage, fuel and touching ground (cant move people out of flying choppers, also ammo later on)
+    
 
 if (((damage _vehicle) > 0) or ((fuel _vehicle) < 1)) then {
-    _actionId = _vehicle addAction [
+    _actionId = driver _vehicle addAction [
         format["Service %1", getText (configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayName")],
         SOS_fnc_serviceVehicle,
         "",
@@ -31,9 +32,5 @@ if (((damage _vehicle) > 0) or ((fuel _vehicle) < 1)) then {
         "",
         "(_target == vehicle player) and (isTouchingGround vehicle player) and (Player == driver vehicle player)"
     ];
-    _vehicle setVariable ["sos_vehicle_service_action_id", _actionId];
+    player setVariable ["sos_vehicle_service_action_id", _actionId];
 };
-
-
-
-

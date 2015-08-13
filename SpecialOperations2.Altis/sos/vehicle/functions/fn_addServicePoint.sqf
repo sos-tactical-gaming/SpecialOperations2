@@ -21,13 +21,18 @@
  *
  */
 
-private ["_position", "_size", "_vehicleType", "_trigger"];
+private ["_position", "_size", "_vehicleType", "_trigger", "_driver"];
 
 _position = _this select 0;
 _size = if (count _this > 1) then {_this select 1} else {[5.5, 5.5]};
 _vehicleType = if (count _this > 2) then {_this select 2} else {"LandVehicle"};
+_driver = driver vehicle player;
 
 _trigger = createTrigger ["EmptyDetector", _position, false];
 _trigger setTriggerArea[_size select 0, _size select 1, 0, false];
 _trigger setTriggerActivation["ANY", "PRESENT", true]; // Must be side any due to use of AAF Vehicles.
-_trigger setTriggerStatements["vehicle player in thisList",format ["if ((vehicle player isKindOf ""%1"") and (hasInterface)) then {[player] call SOS_fnc_activateServicePoint};",_vehicleType], "[player] call SOS_fnc_deactivateServicePoint"];
+_trigger setTriggerStatements[
+    "vehicle player in thisList",
+    format ["if ((vehicle player isKindOf ""%1"") and (Player == driver vehicle player)) then {[""%2""] call SOS_fnc_activateServicePoint};",_vehicleType, _driver],
+    "[player] call SOS_fnc_deactivateServicePoint"
+];

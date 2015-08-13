@@ -13,12 +13,11 @@
  *
  */
  
-private ["_vehicle", "_actionId"];
+private ["_actionId"];
 
-_vehicle = vehicle player;
-_actionId = _vehicle getVariable ["sos_vehicle_service_action_id", nil];
+_actionId = driver vehicle player getVariable ["sos_vehicle_service_action_id", nil];
 
 if !(isNil "_actionId") then {
-    _vehicle removeAction _actionId;
+    driver vehicle player removeAction _actionId;
 };
 
