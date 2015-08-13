@@ -58,7 +58,7 @@ if (!(isTouchingGround _vehicle)) then {
     };    
     //Rearming.    
     hint "REARMING...";	    
-    if  _vehicle isKindOf "Helicopter"(_vehicle isKindOf "Plane" || _vehicle isKindOf "Tank") then {    
+    if  (_vehicle isKindOf "Helicopter" || _vehicle isKindOf "Plane" || _vehicle isKindOf "Tank") then {    
             sleep 15;_vehicle setVehicleAmmo 1;    
         } else {        
             sleep 7.5;_vehicle setVehicleAmmo 1;        
