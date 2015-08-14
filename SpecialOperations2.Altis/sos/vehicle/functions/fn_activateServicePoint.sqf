@@ -14,15 +14,13 @@
  *
  */
 
-private ["_actionName", "_actionId"];
-
-
-//Checks for damage, fuel and touching ground (cant move people out of flying choppers, also ammo later on)
+private ["_actionCheck", "_actionId"];
+ 
+_actionCheck = player getVariable ["sos_vehicle_service_action_id", nil];
     
-
-if (((damage _vehicle) > 0) or ((fuel _vehicle) < 1)) then {
+if (isNil "_actionCheck") then {
     _actionId = player addAction [
-        format["Service %1", getText (configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayName")],
+        format["Service %1", getText (configFile >> "CfgVehicles" >> (typeOf vehicle player) >> "displayName")],
         SOS_fnc_serviceVehicle,
         "",
         1,
