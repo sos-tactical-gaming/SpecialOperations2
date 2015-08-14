@@ -64,12 +64,12 @@ if(count _allBases == 0) exitWith {};
 
 _base = _allBases call BIS_fnc_selectRandom;
 
-//Sets the % of buildings needed to occupy. And sets the % of how many AI will occupy the same building
-_buildingCoverage = 50;
-_occupyNumber = 5; // the higher this number is, the smaller the number of AI that will occupy the same building. This number is being used as a divident against the amount of positions
-_maxPatrols = 3; //4 man patrols
-if(count _base <= 5) then {_occupyNumber = 3; _maxPatrols = 1; _buildingCoverage = 100;}; //Small base
-if(count _base > 5 && count _base <= 10) then {_occupyNumber = 4; _maxPatrols = 2; _buildingCoverage = 75;}; //Medium base
+//Sets the % of buildings needed to occupy. And sets the % of how many AI will occupy the same building. Default settings are for a big base
+_buildingCoverage = 60;
+_occupyNumber = 4; // the higher this number is, the smaller the number of AI that will occupy the same building. This number is being used as a divident against the amount of positions
+_maxPatrols = 2; //4 man patrols
+if(count _base <= 8) then {_occupyNumber = 2; _maxPatrols = 1; _buildingCoverage = 100;}; //Small base
+if(count _base > 8 && count _base <= 15) then {_occupyNumber = 3; _maxPatrols = 2; _buildingCoverage = 80;}; //Medium base
 
 //Spawn units inside buildings
 _unitCount = 0;
@@ -119,10 +119,13 @@ _centerZ = floor ((_beginPos select 2));
 _pos = [_centerX, _centerY, _centerZ];
 
 //Create zone and patrols
+_radius = _radius + 20;
+
 _zone = [_pos, [_radius, _radius]] call SOS_fnc_createZone;
+_groups = ["OIA_InfTeam_AT", "OIA_InfTeam", "OIA_InfTeam_AA"];
 for [{_i = 0}, {_i < _maxPatrols}, {_i = _i + 1}] do {
     _position = [_pos, 0.0, 50.0, 2.0, 2.0] call SOS_fnc_findSafePosition;
-    _group = [_position, EAST, (configfile >> "CfgGroups" >> "East" >> "OPF_F" >> "Infantry" >> "OIA_InfTeam")] call BIS_fnc_spawnGroup;
+    _group = [_position, EAST, (configfile >> "CfgGroups" >> "East" >> "OPF_F" >> "Infantry" >> _groups call BIS_fnc_selectRandom)] call BIS_fnc_spawnGroup;
     _group setVariable ["GAIA_ZONE_INTEND", [format ["%1", _zone], "NOFOLLOW"]];
 };
 
