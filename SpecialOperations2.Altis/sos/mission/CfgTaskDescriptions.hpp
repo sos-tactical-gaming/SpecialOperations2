@@ -46,6 +46,12 @@ class DestroyRelayStation : SideTask {
     marker          = "DESTROY RELAY STATION";
     limit           = 1;
 };
+class CaptureCompound : SideTask {
+    title           = "Capture Compound";
+    description     = "Description about task.";
+    marker          = "CAPTURE COMPOUND";
+    limit           = 1;
+};
 /*
 class DestroyRadar : SideTask {
     title           = "Destroy Radar";

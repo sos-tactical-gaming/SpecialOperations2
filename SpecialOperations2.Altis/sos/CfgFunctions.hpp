@@ -64,6 +64,7 @@ class SOS_Functions {
         class initMissionGenerator {};
         class isMissionComplete {}; 
         class isTaskLimitReached {};
+        class taskCaptureCompound {};
         class taskDestroyAAA {};
         class taskDestroyAmmoCache {};
         class taskDestroyArtilleryTank {};
@@ -72,7 +73,7 @@ class SOS_Functions {
         class taskDestroyRadar {};        
         class taskEliminateHVT {};        
         class taskExfiltration {};        
-        class taskInvestigateCrashSite {};        
+        class taskInvestigateCrashSite {};
     };    
     class Respawn {
         file = "sos\respawn\functions";
