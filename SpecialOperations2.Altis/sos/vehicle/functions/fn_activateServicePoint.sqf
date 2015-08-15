@@ -14,10 +14,8 @@
  *
  */
 
-private ["_vehicle", "_actionId"];
- 
-_vehicle = vehicle player;
-   
+private ["_actionId"];
+
 _actionId = player addAction [
     format["Service %1", getText (configFile >> "CfgVehicles" >> (typeOf vehicle player) >> "displayName")],
     SOS_fnc_serviceVehicle,
