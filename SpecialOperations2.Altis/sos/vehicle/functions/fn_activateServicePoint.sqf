@@ -14,20 +14,18 @@
  *
  */
 
-private ["_actionCheck", "_actionId"];
+private ["_vehicle", "_actionId"];
  
-_actionCheck = player getVariable ["sos_vehicle_service_action_id", nil];
-    
-if (isNil "_actionCheck") then {
-    _actionId = player addAction [
-        format["Service %1", getText (configFile >> "CfgVehicles" >> (typeOf vehicle player) >> "displayName")],
-        SOS_fnc_serviceVehicle,
-        "",
-        1,
-        true,
-        true,
-        "",
-        "(isTouchingGround vehicle player) and (Player == driver vehicle player)"
-    ];
-    player setVariable ["sos_vehicle_service_action_id", _actionId];
-};
+_vehicle = vehicle player;
+   
+_actionId = player addAction [
+    format["Service %1", getText (configFile >> "CfgVehicles" >> (typeOf vehicle player) >> "displayName")],
+    SOS_fnc_serviceVehicle,
+    "",
+    1,
+    true,
+    true,
+    "",
+    "(isTouchingGround vehicle player) and (Player == driver vehicle player)"
+];
+player setVariable ["sos_vehicle_service_action_id", _actionId];
