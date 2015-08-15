@@ -21,7 +21,7 @@
  *
  */
 
-private ["_position", "_size", "_vehicleType", "_trigger", "_driver"];
+private ["_position", "_size", "_vehicleType", "_trigger"];
 
 _position = _this select 0;
 _size = if (count _this > 1) then {_this select 1} else {[5.5, 5.5]};
