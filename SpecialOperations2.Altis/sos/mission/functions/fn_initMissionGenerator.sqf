@@ -10,14 +10,16 @@
  *
  */
  
-private ["_debug", "_hq", "_location", "_fob", "_defense", "_position", "_i"];
+private ["_hq", "_location", "_fob", "_defense", "_position", "_i"];
 
-SOS_MISSION_DEBUG                   = if (count _this > 0) then {_this select 0} else {false};
+SOS_MISSION_BASE_POSITION           = if (count _this > 0) then {_this select 0} else {[]};
+SOS_MISSION_BASE_RADIUS             = if (count _this > 1) then {_this select 1} else {0.0};
+SOS_MISSION_DEBUG                   = if (count _this > 2) then {_this select 2} else {false};
 SOS_MISSION_AO_POSITION             = [];
 SOS_MISSION_AO_RADIUS               = 4000.0;
 SOS_MISSION_DEFENSES                = [];
 SOS_MISSION_FOBS                    = [];
-SOS_MISSION_FOB_MARKERS             = [];
+SOS_MISSION_FOB_POSITIONS           = [];
 SOS_MISSION_FOB_COUNT               = 3;
 SOS_MISSION_FOB_DISTANCE            = 1800.0;
 SOS_MISSION_FOB_RADIUS              = 1200.0;
@@ -40,11 +42,13 @@ sleep 1.0;
 ["Creating Mission"] call SOS_fnc_sendMessage;
 _hq = createCenter east;
 
+// Lock all starting vehicles
+[east] call SOS_fnc_lockSideVehicles;
+
 sleep 1.0;
 while {true} do {
-    _location = [] call SOS_fnc_getRandomLocation;
-    [locationPosition _location] call SOS_fnc_createAO;
-    [format ["Created AO @%1", locationPosition _location]] call SOS_fnc_sendMessage;
+    _position = [] call SOS_fnc_createAO;
+    [format ["Created AO @%1", _position]] call SOS_fnc_sendMessage;
     
     // we are only planning where the fobs will be for future construction
     for [{_i = 0}, {_i < SOS_MISSION_FOB_COUNT}, {_i = _i + 1}] do {
@@ -52,12 +56,17 @@ while {true} do {
     };
     
     // failed to meet fob count so we clear the map
-    if (count SOS_MISSION_FOB_MARKERS != SOS_MISSION_FOB_COUNT) then {
-        SOS_MISSION_AO_POSITION = [];        
-        deleteMarker "sos_mission_ao_marker";
-        {deleteMarker _x} forEach SOS_MISSION_FOB_MARKERS;        
-        SOS_MISSION_FOB_MARKERS = [];        
-        SOS_MISSION_UNIQUE_ZONE_ID = 0;        
+    if (count SOS_MISSION_FOB_POSITIONS != SOS_MISSION_FOB_COUNT) then {
+        SOS_MISSION_AO_POSITION     = [];        
+        SOS_MISSION_FOB_POSITIONS   = [];       
+        SOS_MISSION_ZONE_ID         = 0;
+        
+        // delete markers
+        for [{_i = 1}, {_i <= SOS_MISSION_MARKER_ID}, {_i = _i + 1}] do {
+            deleteMarker (format ["sos_mission_marker%1", _i]);
+        };
+        SOS_MISSION_MARKER_ID = 0;
+        
         ["AO Failed"] call SOS_fnc_sendMessage;
     };
     
@@ -67,14 +76,16 @@ while {true} do {
 
 // create ao zone
 [SOS_MISSION_AO_POSITION, [SOS_MISSION_AO_RADIUS, SOS_MISSION_AO_RADIUS]] call SOS_fnc_createZone;
+
+// clear the blacklist
 SOS_MISSION_BLACKLIST = [];
 
 // create fobs at planned locations
 {
-    _fob = [getMarkerPos _x] call SOS_fnc_taskDestroyFPB;
+    _fob = [_x] call SOS_fnc_taskDestroyFPB;
     SOS_MISSION_FOBS pushBack _fob;
-    [format ["Created FOB @%1", _position]] call SOS_fnc_sendMessage;  
-} forEach SOS_MISSION_FOB_MARKERS;
+    [format ["Created FOB @%1", position _fob]] call SOS_fnc_sendMessage;  
+} forEach SOS_MISSION_FOB_POSITIONS;
 
 sleep 1.0;
 ["Creating Tasks"] call SOS_fnc_sendMessage;
@@ -83,6 +94,9 @@ sleep 1.0;
 for [{_i = 0}, {_i < SOS_MISSION_TASK_COUNT}, {_i = _i + 1}] do {
     [] call SOS_fnc_createTask;
 };
+
+// clear the blacklist
+SOS_MISSION_BLACKLIST = [];
 
 sleep 1.0;
 ["Creating Defenses"] call SOS_fnc_sendMessage;
@@ -94,6 +108,9 @@ sleep 1.0;
         SOS_MISSION_DEFENSES pushBack _defense;
     };
 } forEach SOS_MISSION_FOBS;
+
+// Lock all new vehicles
+[east] call SOS_fnc_lockSideVehicles;
 
 sleep 1.0;
 ["Done"] call SOS_fnc_sendMessage;

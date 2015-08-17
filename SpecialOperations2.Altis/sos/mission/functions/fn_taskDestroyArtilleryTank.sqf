@@ -14,14 +14,21 @@ private ["_position", "_tank", "_zone", "_task"];
 _position = [
     SOS_MISSION_AO_POSITION,
     0.0,
-    SOS_MISSION_AO_RADIUS,
+    SOS_MISSION_AO_RADIUS * 0.5,
     2.0,
-    2.0
+    2.0,
+    0,
+    0.0,
+    0.0,
+    SOS_MISSION_BLACKLIST
 ] call SOS_fnc_findSafePosition;
 
 // create tank
 _tank = ([_position, random 360.0, "O_MBT_02_arty_F", east] call BIS_fnc_spawnVehicle) select 0;
 _tank setFuel 0.0;
+
+// blacklist area
+[position _tank, 600.0] call SOS_fnc_blacklistArea;
 
 // set zone to entire ao
 group _tank setVariable ["GAIA_ZONE_INTEND", [format ["%1", 1], "MOVE"]];

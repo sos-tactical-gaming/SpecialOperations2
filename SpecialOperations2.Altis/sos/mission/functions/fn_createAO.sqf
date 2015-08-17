@@ -1,31 +1,39 @@
 /*
  * Author: Legman [S.O.S. Major]
+ * Finds an AO that does not intersect the NATO base.
  *
  * Arguments:
- * 0: location <OBJECT>
  *
  * Return Value:
  * result <BOOLEAN>
  *
  * Example:
- * [_position, 2000.0] call SOS_fnc_createAO;
+ * [] call SOS_fnc_createAO;
  *
  */
 
-private ["_position", "_radius", "_result"];
+private ["_position"];
 
-_position   = _this select 0;
-_result     = false;
-
-if (count SOS_MISSION_AO_POSITION == 0) then {
+SOS_MISSION_AO_POSITION = [];
+if (count SOS_MISSION_BASE_POSITION > 0) then {
+    // make sure the ao doesn't intersect the base...
+    while {count SOS_MISSION_AO_POSITION == 0} do {
+        _position = locationPosition ([] call SOS_fnc_getRandomLocation);    
+        if (_position distance SOS_MISSION_BASE_POSITION > SOS_MISSION_BASE_RADIUS + SOS_MISSION_AO_RADIUS) then {
+            SOS_MISSION_AO_POSITION = _position;
+        };
+    }; 
+} else {
+    // or take the first one we get
+    _position = locationPosition ([] call SOS_fnc_getRandomLocation);
     SOS_MISSION_AO_POSITION = _position;
-    _result = true;
-    
-    _marker = createMarker ["sos_mission_ao_marker", _position];
-    _marker setMarkerShape "ELLIPSE";
-    _marker setMarkerBrush "Border";
-    _marker setMarkerSize [SOS_MISSION_AO_RADIUS, SOS_MISSION_AO_RADIUS];
-    _marker setMarkerColor "ColorOPFOR";    
 };
 
-_result
+// create marker
+_marker = createMarker [[] call SOS_fnc_getMarkerName, _position];
+_marker setMarkerShape "ELLIPSE";
+_marker setMarkerBrush "Border";
+_marker setMarkerSize [SOS_MISSION_AO_RADIUS, SOS_MISSION_AO_RADIUS];
+_marker setMarkerColor "ColorOPFOR";
+
+_position

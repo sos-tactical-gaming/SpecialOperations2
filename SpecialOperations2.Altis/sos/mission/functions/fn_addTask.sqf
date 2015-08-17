@@ -34,4 +34,11 @@ SOS_MISSION_TASKS pushBack [
     "Attack"
 ] call BIS_fnc_taskCreate;
 
+// create marker
+if (typeName _destination == "ARRAY") then {  
+    _marker = createMarker [[] call SOS_fnc_getMarkerName, _destination];
+    _marker setMarkerType getText (missionConfigFile >> "CfgTaskDescriptions" >> _name >> "markerType");
+    _marker setMarkerColor getText (missionConfigFile >> "CfgTaskDescriptions" >> _name >> "markerColor");   
+};
+
 _id

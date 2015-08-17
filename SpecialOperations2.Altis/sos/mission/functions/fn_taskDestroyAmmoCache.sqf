@@ -103,8 +103,12 @@ if (_inside) then {
         0.4,
         3,
         120.0,
-        200.0
+        200.0,
+        SOS_MISSION_BLACKLIST
     ] call SOS_fnc_findSafePosition;
+    
+    if (count _position == 0) exitWith {};
+    
     _building = createVehicle ["CamoNet_OPFOR_big_F", _position, [], 0.0, "NONE"];
     _building setDir random 360.0;
     
@@ -138,6 +142,11 @@ if (_inside) then {
     _group = [_position, EAST, (configfile >> "CfgGroups" >> "East" >> "OPF_F" >> "Infantry" >> "OIA_InfTeam")] call BIS_fnc_spawnGroup;
     _group setVariable ["GAIA_ZONE_INTEND", [format ["%1", _zone], "NOFOLLOW"]];
 };
+
+if (isNil "_cache") exitWith {objNull};
+
+// blacklist area
+[position _cache, 600.0] call SOS_fnc_blacklistArea;
 
 // create task
 _task = ["DestroyAmmoCache", position _cache] call SOS_fnc_addTask;

@@ -1,10 +1,12 @@
 class BaseTask {
-    title       = "";
-    description = "";
-    marker      = "";
-    limit       = -1;
-    chance      = 1.0;
-    optional    = 0;    
+    title           = "";
+    description     = "";
+    marker          = "";
+    limit           = -1;
+    chance          = 1.0;
+    optional        = 0;
+    markerType      = "b_unknown";
+    markerColor     = "ColorOPFOR"
 };
 class SideTask : BaseTask {};
 
@@ -13,6 +15,7 @@ class DestroyFPB : BaseTask {
     title           = "Destroy FPB";
     description     = "Description about task.";
     marker          = "DESTROY FPB";
+    markerType      = "o_hq";
 };
 class Exfiltrate : BaseTask {
     title           = "Exfiltrate";
@@ -25,6 +28,7 @@ class DestroyAmmoCache : SideTask {
     title           = "Destroy Ammo Cache";
     description     = "Description about task.";
     marker          = "DESTROY AMMO CACHE";
+    markerType      = "o_support";
 };
 class DestroyArtilleryTank : SideTask {    
     title           = "Destroy Artillery Tank";
@@ -32,6 +36,7 @@ class DestroyArtilleryTank : SideTask {
     marker          = "DESTROY ARTILLERY TANK";
     limit           = 1;
     chance          = 0.5;
+    markerType      = "o_art";
 };
 class DestroyAAA : SideTask {    
     title           = "Destroy AAA";
@@ -39,12 +44,14 @@ class DestroyAAA : SideTask {
     marker          = "DESTROY AAA";
     limit           = 1;
     chance          = 0.5;
+    markerType      = "o_armor";
 };
 class DestroyRelayStation : SideTask {
     title           = "Destroy Relay Station";
     description     = "Description about task.";
     marker          = "DESTROY RELAY STATION";
     limit           = 1;
+    markerType      = "o_service";
 };
 /*
 class DestroyRadar : SideTask {

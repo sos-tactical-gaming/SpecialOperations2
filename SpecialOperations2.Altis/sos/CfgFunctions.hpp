@@ -18,14 +18,15 @@ class SOS_Functions {
         class activateSafeZone {};
         class deactivateSafeZone {};
         class initSafeZone {};
+        class spawnLight {};
     };    
     class Common {
         file = "sos\common\functions";
-        class init {};
-        class initUnit {};
-        class sendMessage {};
-        class isMember {};
         class checkRole {};
+        class init {};
+        class initUnit {};        
+        class isMember {};
+        class sendMessage {};
         class showHint {};
     };
     class Environment {        
@@ -36,6 +37,8 @@ class SOS_Functions {
     class Inventory {
         file = "sos\inventory\functions";
         class initInventory {};
+        class initRadio {};
+        class resetRadio {};
     };
     class Logistics {
         file = "sos\logistics\functions";
@@ -55,12 +58,12 @@ class SOS_Functions {
         class endMission {};
         class findFOB {};
         class findSafePosition {};
+        class getMarkerName {};
         class getRandomFOB {};
         class getRandomLocation {};
         class getRoadDirection {};
-        class getTaskName {};
-        class getUniqueMarkerId {};
-        class getUniqueZoneId {};
+        class getTaskName {};        
+        class getZoneName {};
         class initMissionGenerator {};
         class isMissionComplete {}; 
         class isTaskLimitReached {};
@@ -85,13 +88,15 @@ class SOS_Functions {
     };    
     class Vehicle {
         file = "sos\vehicle\functions";
-        class initVehicle {};
-        class spawnVehicle {};
-        class addVehicleSpawn {};        
+        class activateServicePoint {};
+        class addServicePoint {};
+        class addVehicleSpawn {};
         class canDriveVehicle {};
-        class addServicePoint {};		
-        class activateServicePoint {};      
-        class serviceVehicle {};
         class deactivateServicePoint {};
+        class initVehicle {};
+        class lockGroupVehicles {};
+        class lockSideVehicles {};
+        class serviceVehicle {};
+        class spawnVehicle {};       
     };
 };

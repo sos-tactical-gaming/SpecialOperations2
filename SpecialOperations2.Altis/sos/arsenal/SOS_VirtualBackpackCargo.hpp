@@ -24,7 +24,10 @@ class SOS_WestVirtualBackpackCargo {
     class LongRangeRadios {
         items[] = {
             "tf_rt1523g",
-            "tf_rt1523g_big"
+            "tf_rt1523g_big",
+            "tf_rt1523g_black",
+            "tf_rt1523g_big_rhs",
+            "tf_rt1523g_big_bwmod"
         };
     };    
     class WeaponBackpacks {

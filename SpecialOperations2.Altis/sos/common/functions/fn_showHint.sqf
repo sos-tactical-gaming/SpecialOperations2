@@ -16,24 +16,24 @@
  */
 private ["_message", "_type", "_sound"];
 
-_message = _this select 0;
-_type = if (count _this > 1) then {_this select 1} else {"INFO"};
-_sound = if (count _this > 2) then {_this select 2} else {nil};
+_message    = _this select 0;
+_type       = if (count _this > 1) then {_this select 1} else {"INFO"};
+_sound      = if (count _this > 2) then {_this select 2} else {nil};
 
-switch(_type) do {
-	case "SILENT": {
+switch (_type) do {
+	case "SILENT" : {
 		hintSilent _message;
 	};
 	
-	case "INFO": {
+	case "INFO" : {
 		hint _message;
 	};
 	
-	case "WARNING": {
+	case "WARNING" : {
 		hintC _message;
 	};
 };
 
-if(!isNil "_sound") then {
+if (!isNil "_sound") then {
 	playSound _sound;
 };
