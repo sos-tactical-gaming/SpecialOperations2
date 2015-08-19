@@ -103,7 +103,7 @@ group _ai setVariable ["GAIA_ZONE_INTEND", [format ["%1", _zone], "NOFOLLOW"]];
 // truck
 _position = [position _fob, 200.0, 400.0, 2.0, 2.0] call SOS_fnc_findSafePosition;
 _ai = ([_position, random 360.0, "O_Truck_02_transport_F", east] call BIS_fnc_spawnVehicle) select 0;
-group _ai setVariable ["GAIA_ZONE_INTEND", [format ["%1", _zone], "NOFOLLOW"]];
+group _ai setVariable ["GAIA_ZONE_INTEND", [format ["%1", _zone], "FOLLOW"]];
 
 // chance to spawn ifrit or btr or tank
 if (random 1.0 < 0.8) then {

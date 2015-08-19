@@ -42,7 +42,7 @@ class SOS_WestVirtualArsenal {
         };
         items[] = {
             "BasicHelmets",
-            "MedicHelmets",
+            "CoolHats",
             "BasicUniforms",
             "Vests",
             "BasicItems",
@@ -180,12 +180,12 @@ class SOS_WestVirtualArsenal {
         magazines[] = {
             "Thrown",
             "AssaultRifles",
-            "Launchers",
+            "ATLaunchers",
             "Pistols"
         };
         weapons[] = {
             "AssaultRifles",
-            "Launchers",
+            "ATLaunchers",
             "Pistols"
         };    
     };
@@ -217,7 +217,8 @@ class SOS_WestVirtualArsenal {
         };
         weapons[] = {
             "AssaultRifles",
-            "Pistols"
+            "Pistols",
+            "DisposableLaunchers"
         };    
     };    
     class GhostAutorifleman {
@@ -274,7 +275,8 @@ class SOS_WestVirtualArsenal {
         };
         weapons[] = {
             "AssaultRifles",
-            "Pistols"
+            "Pistols",
+            "DisposableLaunchers"
         };    
     };
     class GhostMedic {
@@ -283,7 +285,7 @@ class SOS_WestVirtualArsenal {
         };
         items[] = {
             "BasicHelmets",
-            "MedicHelmets",
+            "CoolHats",
             "BasicUniforms",
             "Vests",
             "BasicItems",
@@ -411,7 +413,7 @@ class SOS_WestVirtualArsenal {
         };
         items[] = {
             "ReconHelmets",
-            "MedicHelmets",
+            "CoolHats",
             "ReconUniforms",
             "GhillieUniforms",
             "Vests",
@@ -549,12 +551,12 @@ class SOS_WestVirtualArsenal {
         magazines[] = {
             "Thrown",
             "AssaultRifles",
-            "Launchers",
+            "ATLaunchers",
             "Pistols"
         };
         weapons[] = {
             "AssaultRifles",
-            "Launchers",
+            "ATLaunchers",
             "Pistols"
         };    
     };
@@ -564,6 +566,7 @@ class SOS_WestVirtualArsenal {
         };
         items[] = {
             "AnvilHelmets",
+            "CoolHats",
             "BasicUniforms",
             "Vests",
             "BasicItems",
@@ -592,6 +595,7 @@ class SOS_WestVirtualArsenal {
         };
         items[] = {
             "AnvilHelmets",
+            "CoolHats",
             "BasicUniforms",
             "Vests",
             "BasicItems",
@@ -618,6 +622,7 @@ class SOS_WestVirtualArsenal {
         };
         items[] = {
             "AnvilHelmets",
+            "CoolHats",
             "BasicUniforms",
             "Vests",
             "BasicItems",
@@ -700,6 +705,7 @@ class SOS_WestVirtualArsenal {
         };
         items[] = {
             "ReaperHelmets",
+            "CoolHats",
             "ReaperUniforms",
             "ReaperVests",
             "BasicItems",

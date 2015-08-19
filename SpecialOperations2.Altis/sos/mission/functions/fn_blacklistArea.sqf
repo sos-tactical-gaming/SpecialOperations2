@@ -21,5 +21,12 @@ private ["_position", "_radius"];
 _position   = _this select 0;
 _radius     = _this select 1;
 
+_marker = createMarker [[] call SOS_fnc_getMarkerName, _position];
+_marker setMarkerShape "ELLIPSE";
+_marker setMarkerBrush "Solid";
+_marker setMarkerAlpha (if (SOS_MISSION_DEBUG) then {0.5} else {0.0});
+_marker setMarkerSize [_radius * 0.5, _radius * 0.5];
+_marker setMarkerColor "ColorRed"; 
+
 SOS_MISSION_BLACKLIST pushBack [_position, _radius];
 SOS_MISSION_BLACKLIST

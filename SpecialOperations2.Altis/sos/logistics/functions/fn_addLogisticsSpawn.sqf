@@ -1,7 +1,7 @@
 /*
  * Author: EnquiringStone [S.O.S. Captain]
  * Adds spawn ammo actions to a unit.
- * Thanks to: Legman [S.O.S. Mayor]
+ * Thanks to: Legman [S.O.S. Major]
  *
  * Arguments:
  * 0: unit <OBJECT>
@@ -23,11 +23,19 @@
 if (isDedicated) exitWith {};
 waitUntil {!isNull player};
 
-private ["_unit", "_configName", "_position", "_direction", "_radius", "_delay", "_whitelist"];
+private [
+    "_unit",
+    "_configName",
+    "_position",
+    "_direction",
+    "_radius",
+    "_delay",
+    "_whitelist"
+];
 
-_unit = _this select 0;
-_configName = _this select 1;
-_position = _this select 2;
+_unit           = _this select 0;
+_configName     = _this select 1;
+_position       = _this select 2;
 _direction      = if (count _this > 3) then {_this select 3} else {0.0};
 _radius         = if (count _this > 4) then {_this select 4} else {2.0};
 _delay          = if (count _this > 5) then {_this select 5} else {20.0};
@@ -48,7 +56,7 @@ if (player getVariable "sos_inventory_role" in _whitelist || count _whitelist ==
         _radius     = _this select 3 select 2;        
         _delay      = _this select 3 select 3; 
         _direction  = _this select 3 select 4;
-        _inventory   = _this select 3 select 5;
+        _inventory  = _this select 3 select 5;
         
         // is delay finished?
         if (_unit getVariable ["sos_logistics_spawn_delay", 0.0] <= 0.0) then {
@@ -71,10 +79,11 @@ if (player getVariable "sos_inventory_role" in _whitelist || count _whitelist ==
                 };
             };            
         } else {
-            [format ["Please wait %1 seconds before you spawn another crate", (_unit getVariable ["sos_logistics_spawn_delay", 0.0])], 
+            [
+                format ["Please wait %1 seconds before you spawn another crate", (_unit getVariable ["sos_logistics_spawn_delay", 0.0])], 
                 "SILENT", 
-                "sos_warning"] call SOS_fnc_showHint;
-        };
-        
-    }, [_crate, _position, _radius, _delay, _direction, _inventory], 2.0, true, true];
+                "sos_warning"
+            ] call SOS_fnc_showHint;
+        };        
+    }, [_crate, _position, _radius, _delay, _direction, _inventory], 8.0, true, true];
 };

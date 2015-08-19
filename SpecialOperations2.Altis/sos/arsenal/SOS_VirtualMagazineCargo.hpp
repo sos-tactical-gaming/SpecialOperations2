@@ -68,13 +68,10 @@ class SOS_WestVirtualMagazineCargo {
             "ACE_HuntIR_M203"
         };
     };
-    class Launchers {
-        items[] = {        
-            "NLAW_F",
+    class ATLaunchers {
+        items[] = {
             "Titan_AT",
-            "Titan_AP",
-            "RPG32_F",
-            "RPG32_HE_F"
+            "Titan_AP"
         };
     };
     class Thrown {

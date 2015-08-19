@@ -29,12 +29,6 @@ _position = [
 if (count _position == 0) exitWith {[]};
 
 [_position, SOS_MISSION_FOB_DISTANCE] call SOS_fnc_blacklistArea;
-
-_marker = createMarker [format ["sos_mission_fob_marker%1", ([] call SOS_fnc_getUniqueMarkerId)], _position];
-_marker setMarkerColor "ColorOPFOR";
-_marker setMarkerType "o_hq";
-_marker setMarkerText format ["FPB %1", toUpper ([count SOS_MISSION_FOB_MARKERS] call SOS_fnc_numberPhonetic)];
-_marker setMarkerAlpha 0.0;
-SOS_MISSION_FOB_MARKERS pushBack _marker;  
+SOS_MISSION_FOB_POSITIONS pushBack _position;  
 
 _position

@@ -63,13 +63,16 @@ class SOS_WestVirtualWeaponCargo {
             "SMG_01_F"
         };
     };    
-    class Launchers {
+    class ATLaunchers {
+        items[] = {
+            "launch_B_Titan_short_F"
+        };
+    };
+    class DisposableLaunchers {
         items[] = {
             "launch_NLAW_F",
-            "launch_B_Titan_short_F",
-            "launch_RPG32_F"
         };
-    };    
+    };
     class Pistols {
         items[] = {
             "hgun_ACPC2_F",

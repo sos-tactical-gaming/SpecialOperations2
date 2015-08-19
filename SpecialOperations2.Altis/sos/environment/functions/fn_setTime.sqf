@@ -10,7 +10,7 @@ private ["_randomParam", "_timeAcceleration", "_randomValue", "_startingTimeHour
 if (isServer) then {
     _randomParam = ["RandomTime", 0] call BIS_fnc_getParamValue;
     _timeAcceleration = ["TimeAcceleration", 1] call BIS_fnc_getParamValue;
-    _randomValue = [5, 6, 7, 8, 12, 17, 19, 20] call BIS_fnc_selectRandom;
+    _randomValue = [5, 6, 7, 8, 12, 17, 19] call BIS_fnc_selectRandom;
     _startingTimeHour = ["MissionTime", _randomValue] call BIS_fnc_getParamValue;
     if (_randomParam == 1) then {_startingTimeHour = _randomValue};
    

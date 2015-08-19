@@ -5,18 +5,22 @@ class SOS_WestVirtualItemCargo {
             "H_HelmetB_camo",
             "H_HelmetB_black"
         };
-    };    
-    class MedicHelmets {
+    };
+    class CoolHats {
         items[] = {
-            "H_Cap_headphones"
+            "H_Cap_headphones",
+            "H_Cap_khaki_specops_UK",
+            "H_Cap_usblack",
+            "H_Cap_oli_hs"
         };
-    };    
+    };
     class ReconHelmets {
         items[] = {
             "H_Shemag_olive_hs",
             "H_ShemagOpen_tan",
             "H_ShemagOpen_khk",
-            "H_Watchcap_blk"
+            "H_Watchcap_blk",
+            "H_Watchcap_khk"
         };
     };    
     class AnvilHelmets {

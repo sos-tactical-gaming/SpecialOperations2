@@ -1,10 +1,12 @@
 #include                    "sos\arsenal\SOS_VirtualArsenal.hpp"
-#include                    "sos\vehicle\SOS_VehicleSpawn.hpp"
-#include                    "sos\vehicle\SOS_VehicleProtection.hpp"
-#include                    "sos\vehicle\SOS_VehicleTypes.hpp"
 #include                    "sos\common\SOS_ProtectedRoles.hpp"
+#include                    "sos\inventory\SOS_RadioSettings.hpp"
 #include                    "sos\logistics\SOS_LogisticsSpawn.hpp"
 #include                    "sos\mission\CfgBuildings.hpp"
+#include                    "sos\vehicle\SOS_VehicleLocked.hpp"
+#include                    "sos\vehicle\SOS_VehicleProtection.hpp"
+#include                    "sos\vehicle\SOS_VehicleSpawn.hpp"
+#include                    "sos\vehicle\SOS_VehicleTypes.hpp"
 
 onLoadName                  = "Special Operations 2";
 onLoadMission               = "New Tactical Gaming!";
