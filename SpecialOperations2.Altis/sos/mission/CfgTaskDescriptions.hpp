@@ -53,16 +53,18 @@ class DestroyRelayStation : SideTask {
     limit           = 1;
     markerType      = "o_service";
 };
+class EliminateHVT : SideTask {
+    title           = "Eliminate HVT";
+    description     = "Description about task.";
+    marker          = "ELIMINATE HVT";
+    limit           = 1;
+    markerType      = "o_inf";
+};
 /*
 class DestroyRadar : SideTask {
     title           = "Destroy Radar";
     description     = "Description about task.";
     marker          = "DESTROY RADAR";
-};
-class EliminateHVT : SideTask {
-    title           = "Eliminate HVT";
-    description     = "Description about task.";
-    marker          = "ELIMINATE HVT";
 };
 class InvestigateCrashSite : SideTask {
     title           = "Investigate Crash Site";
