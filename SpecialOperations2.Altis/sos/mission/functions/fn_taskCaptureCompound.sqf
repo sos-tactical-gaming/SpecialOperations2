@@ -174,4 +174,4 @@ _markerId = SOS_MISSION_MARKER_ID;
 _trg = createTrigger ["EmptyDetector", _pos, false];
 _trg setTriggerArea [_radius, _radius, 0, false];
 _trg setTriggerActivation ["EAST", "PRESENT", true];
-_trg setTriggerStatements ["{alive _x} count thisList > 5", "", format["[%1] call SOS_fnc_completeTask;", _task] + format["'sos_mission_marker%1' setMarkerColor 'ColorWEST';", _markerId]];
+_trg setTriggerStatements ["{alive _x} count thisList > 3", "", format["[%1] call SOS_fnc_completeTask;", _task] + format["'sos_mission_marker%1' setMarkerColor 'ColorWEST';", _markerId]];
