@@ -2,7 +2,7 @@
 #include                    "sos\common\SOS_ProtectedRoles.hpp"
 #include                    "sos\inventory\SOS_RadioSettings.hpp"
 #include                    "sos\logistics\SOS_LogisticsSpawn.hpp"
-#include                    "sos\mission\CfgBuildings.hpp"
+#include                    "sos\mission\SOS_BuildingPositions.hpp"
 #include                    "sos\vehicle\SOS_VehicleLocked.hpp"
 #include                    "sos\vehicle\SOS_VehicleProtection.hpp"
 #include                    "sos\vehicle\SOS_VehicleSpawn.hpp"

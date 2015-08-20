@@ -6,7 +6,9 @@ class BaseTask {
     chance          = 1.0;
     optional        = 0;
     markerType      = "b_unknown";
-    markerColor     = "ColorOPFOR"
+    markerColor     = "ColorOPFOR";
+    markerShape     = "ICON";
+    markerSize[]    = {};
 };
 class SideTask : BaseTask {};
 
@@ -58,6 +60,8 @@ class CaptureCompound : SideTask {
     description     = "Description about task.";
     marker          = "CAPTURE COMPOUND";
     limit           = 1;
+    markerShape     = "ELLIPSE";
+    markerSize[]    = {120, 120};
 };
 /*
 class DestroyRadar : SideTask {
