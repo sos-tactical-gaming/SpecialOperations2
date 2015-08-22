@@ -35,10 +35,17 @@ SOS_MISSION_TASKS pushBack [
 ] call BIS_fnc_taskCreate;
 
 // create marker
-if (typeName _destination == "ARRAY") then {  
+if (typeName _destination == "ARRAY") then {
     _marker = createMarker [[] call SOS_fnc_getMarkerName, _destination];
-    _marker setMarkerType getText (missionConfigFile >> "CfgTaskDescriptions" >> _name >> "markerType");
-    _marker setMarkerColor getText (missionConfigFile >> "CfgTaskDescriptions" >> _name >> "markerColor");   
+    _marker setMarkerColor getText (missionConfigFile >> "CfgTaskDescriptions" >> _name >> "markerColor");
+    
+    _markerShape = getText (missionConfigFile >> "CfgTaskDescriptions" >> _name >> "markerShape");  
+    if(_markerShape == "ICON") then {
+        _marker setMarkerType getText (missionConfigFile >> "CfgTaskDescriptions" >> _name >> "markerType");
+    } else {
+        _marker setMarkerShape _markerShape;
+        _marker setMarkerSize getArray (missionConfigFile >> "CfgTaskDescriptions" >> _name >> "markerSize");
+    };
 };
 
 _id
