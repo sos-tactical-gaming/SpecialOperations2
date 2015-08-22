@@ -71,6 +71,6 @@ if (isServer) then {
     [] call SOS_fnc_setTime;
     [] call SOS_fnc_setWeather;   
        
-    //[getMarkerPos "sos_base", getMarkerSize "sos_base" select 0, false] spawn SOS_fnc_initMissionGenerator;    
+    [getMarkerPos "sos_base", getMarkerSize "sos_base" select 0, false] spawn SOS_fnc_initMissionGenerator;    
 };
  

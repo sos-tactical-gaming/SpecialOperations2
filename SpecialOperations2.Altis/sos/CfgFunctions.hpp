@@ -36,6 +36,7 @@ class SOS_Functions {
     };
     class Inventory {
         file = "sos\inventory\functions";
+        class addResetRadioAction {};
         class initInventory {};
         class initRadio {};
         class resetRadio {};

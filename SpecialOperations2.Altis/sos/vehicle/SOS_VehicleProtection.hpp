@@ -26,7 +26,10 @@ class SOS_VehicleProtection {
             "B_Heli_Transport_01_F",
             "B_Heli_Transport_01_camo_F",
             "B_Heli_Transport_03_F",
-            "B_Heli_Transport_03_black_F"
+            "B_Heli_Transport_03_black_F",
+            "I_Heli_light_03_F",
+            "I_Heli_light_03_unarmed_F",
+            "I_Heli_Transport_02_F"
         };
         roles[] = {
             "ReaperPilot"
@@ -46,6 +49,8 @@ class SOS_VehicleProtection {
     class Havoc {
         vehicles[] = {
             "B_Plane_CAS_01_F",
+            "I_Plane_Fighter_03_CAS_F",
+            "I_Plane_Fighter_03_AA_F"
         };
         roles[] = {
             "HavocPilot"

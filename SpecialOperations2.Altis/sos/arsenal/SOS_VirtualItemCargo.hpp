@@ -207,15 +207,28 @@ class SOS_WestVirtualItemCargo {
             "G_Bandanna_oli",
             "G_Bandanna_shades"
         };
-    };    
-    class Tools {
-        items[] = {
-            "ACE_Clacker",
-            "ACE_DefusalKit",
-            "ACE_wirecutter",
-            "ToolKit"
+    };
+    class BasicTools {        
+        items[] = {                 
+            "ToolKit"            
         };
-    };    
+    };
+    class AdvancedTools {        
+        items[] = {           
+            "ACE_DefusalKit",
+            "ACE_wirecutter"         
+        };
+    };
+    class BasicDetonators {
+        items[] = {           
+            "ACE_Clacker"
+        };                
+    };
+    class AdvancedDetonators {  
+        items[] = {           
+            "ACE_M26_Clacker"
+        };       
+    };
     class UAVTerminals {
         items[] = {
             "B_UavTerminal"

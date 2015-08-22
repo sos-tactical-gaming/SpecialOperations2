@@ -22,13 +22,15 @@ class SOS_WestVirtualArsenal {
             "ShortRangeOptics",
             "MidRangeOptics",
             "Suppressors",
-            "Attachments"
+            "Attachments",
+            "BasicDetonators"
         };
         magazines[] = {
             "Thrown",
             "AssaultRifles",
             "GL",
-            "Pistols"
+            "Pistols",
+            "BasicExplosives"
         };
         weapons[] = {
             "AssaultRifles",
@@ -38,7 +40,9 @@ class SOS_WestVirtualArsenal {
     };
     class PlatoonMedic {
         backpacks[] = {
-            "AssaultBackpacks"
+            "AssaultBackpacks",
+            "FieldPacks",
+            "TacticalBackpacks"
         };
         items[] = {
             "BasicHelmets",
@@ -86,12 +90,14 @@ class SOS_WestVirtualArsenal {
             "LongRangeOptics",
             "Bipods",
             "Suppressors",
-            "Attachments"
+            "Attachments",
+            "BasicDetonators"
         };
         magazines[] = {
             "Thrown",
             "MarksmanRifles",
-            "Pistols"
+            "Pistols",
+            "BasicExplosives"
         };
         weapons[] = {
             "MarksmanRifles",
@@ -117,13 +123,15 @@ class SOS_WestVirtualArsenal {
             "ShortRangeOptics",
             "MidRangeOptics",
             "Suppressors",
-            "Attachments"
+            "Attachments",
+            "BasicDetonators"
         };
         magazines[] = {
             "Thrown",
             "AssaultRifles",
             "GL",
-            "Pistols"
+            "Pistols",
+            "BasicExplosives"
         };
         weapons[] = {
             "AssaultRifles",
@@ -147,12 +155,14 @@ class SOS_WestVirtualArsenal {
             "ShortRangeOptics",
             "MidRangeOptics",
             "Bipods",
-            "Attachments"
+            "Attachments",
+            "BasicDetonators"
         };
         magazines[] = {
             "Thrown",
             "MachineGuns",
-            "Pistols"
+            "Pistols",
+            "BasicExplosives"
         };
         weapons[] = {
             "MachineGuns",
@@ -161,7 +171,9 @@ class SOS_WestVirtualArsenal {
     };
     class GhostAT {
         backpacks[] = {
-            "AssaultBackpacks"            
+            "AssaultBackpacks",
+            "FieldPacks",
+            "TacticalBackpacks"            
         };
         items[] = {
             "BasicHelmets",
@@ -175,13 +187,15 @@ class SOS_WestVirtualArsenal {
             "ShortRangeOptics",
             "MidRangeOptics",
             "Suppressors",
-            "Attachments"
+            "Attachments",
+            "BasicDetonators"
         };
         magazines[] = {
             "Thrown",
             "AssaultRifles",
             "ATLaunchers",
-            "Pistols"
+            "Pistols",
+            "BasicExplosives"
         };
         weapons[] = {
             "AssaultRifles",
@@ -192,7 +206,10 @@ class SOS_WestVirtualArsenal {
     class GhostCombatEngineer {
         backpacks[] = {
             "AssaultBackpacks",
-            "CarryallBackpacks"
+            "FieldPacks",
+            "TacticalBackpacks",
+            "CarryallBackpacks",
+            "Kitbags"
         };
         items[] = {
             "BasicHelmets",
@@ -203,7 +220,10 @@ class SOS_WestVirtualArsenal {
             "NightVisionGoggles",
             "ShortRangeRadios",
             "Goggles",
-            "Tools",
+            "BasicTools",
+            "AdvancedTools",
+            "BasicDetonators",
+            "AdvancedDetonators",
             "ShortRangeOptics",
             "MidRangeOptics",
             "Suppressors",
@@ -212,7 +232,8 @@ class SOS_WestVirtualArsenal {
         magazines[] = {
             "Thrown",
             "AssaultRifles",
-            "Explosives",
+            "BasicExplosives",
+            "AdvancedExplosives",
             "Pistols"
         };
         weapons[] = {
@@ -223,7 +244,9 @@ class SOS_WestVirtualArsenal {
     };    
     class GhostAutorifleman {
         backpacks[] = {
-            "AssaultBackpacks"            
+            "AssaultBackpacks",
+            "FieldPacks",
+            "TacticalBackpacks"            
         };
         items[] = {
             "BasicHelmets",
@@ -237,12 +260,14 @@ class SOS_WestVirtualArsenal {
             "ShortRangeOptics",
             "MidRangeOptics",
             "Bipods",
-            "Attachments"
+            "Attachments",
+            "BasicDetonators"
         };
         magazines[] = {
             "Thrown",
             "Autorifles",
-            "Pistols"
+            "Pistols",
+            "BasicExplosives"
         };
         weapons[] = {
             "Autorifles",
@@ -252,7 +277,10 @@ class SOS_WestVirtualArsenal {
     class GhostAssistantMachinegunner {
         backpacks[] = {
             "AssaultBackpacks",
-            "CarryallBackpacks"
+            "FieldPacks",
+            "TacticalBackpacks",
+            "CarryallBackpacks",
+            "Kitbags"
         };
         items[] = {
             "BasicHelmets",
@@ -266,12 +294,14 @@ class SOS_WestVirtualArsenal {
             "ShortRangeOptics",
             "MidRangeOptics",
             "Suppressors",
-            "Attachments"
+            "Attachments",
+            "BasicDetonators"
         };
         magazines[] = {
             "Thrown",
             "AssaultRifles",
-            "Pistols"
+            "Pistols",
+            "BasicExplosives"
         };
         weapons[] = {
             "AssaultRifles",
@@ -281,7 +311,9 @@ class SOS_WestVirtualArsenal {
     };
     class GhostMedic {
         backpacks[] = {
-            "AssaultBackpacks"
+            "AssaultBackpacks",
+            "FieldPacks",
+            "TacticalBackpacks"
         };
         items[] = {
             "BasicHelmets",
@@ -329,13 +361,15 @@ class SOS_WestVirtualArsenal {
             "ShortRangeOptics",
             "MidRangeOptics",
             "Suppressors",
-            "Attachments"
+            "Attachments",
+            "BasicDetonators"
         };
         magazines[] = {
             "Thrown",
             "AssaultRifles",
             "Pistols",
-            "LaserDesignators"
+            "LaserDesignators",
+            "BasicExplosives"
         };
         weapons[] = {
             "AssaultRiflesC",
@@ -362,12 +396,14 @@ class SOS_WestVirtualArsenal {
             "MidRangeOptics",
             "Suppressors",
             "Attachments",
-            "UAVTerminals"
+            "UAVTerminals",
+            "BasicDetonators"
         };
         magazines[] = {
             "Thrown",
             "AssaultRifles",
-            "Pistols"
+            "Pistols",
+            "BasicExplosives"
         };
         weapons[] = {
             "AssaultRiflesC",
@@ -395,12 +431,14 @@ class SOS_WestVirtualArsenal {
             "LongRangeOptics",
             "Bipods",
             "Suppressors",
-            "Attachments"
+            "Attachments",
+            "BasicDetonators"
         };
         magazines[] = {
             "Thrown",
             "MarksmanRifles",
-            "Pistols"
+            "Pistols",
+            "BasicExplosives"
         };
         weapons[] = {
             "MarksmanRifles",
@@ -409,7 +447,8 @@ class SOS_WestVirtualArsenal {
     };
     class GhostReconMedic {
         backpacks[] = {
-            "AssaultBackpacks"
+            "AssaultBackpacks",
+            "FieldPacks"
         };
         items[] = {
             "ReconHelmets",
@@ -456,13 +495,15 @@ class SOS_WestVirtualArsenal {
             "ShortRangeOptics",
             "MidRangeOptics",
             "Suppressors",
-            "Attachments"
+            "Attachments",
+            "BasicDetonators"
         };
         magazines[] = {
             "Thrown",
             "AssaultRifles",
             "GL",
-            "Pistols"
+            "Pistols",
+            "BasicExplosives"
         };
         weapons[] = {
             "AssaultRifles",
@@ -473,7 +514,8 @@ class SOS_WestVirtualArsenal {
     class HWTStaticOperator {
         backpacks[] = {
             "WeaponBackpacks",
-            "CarryallBackpacks"
+            "CarryallBackpacks",
+            "Kitbags"
         };
         items[] = {
             "BasicHelmets",
@@ -488,12 +530,14 @@ class SOS_WestVirtualArsenal {
             "ShortRangeOptics",
             "MidRangeOptics",
             "Suppressors",
-            "Attachments"
+            "Attachments",
+            "BasicDetonators"
         };
         magazines[] = {
             "Thrown",
             "AssaultRifles",
-            "Pistols"
+            "Pistols",
+            "BasicExplosives"
         };
         weapons[] = {
             "AssaultRifles",
@@ -503,7 +547,8 @@ class SOS_WestVirtualArsenal {
     class HWTStaticAssistant {
         backpacks[] = {
             "WeaponBackpacks",
-            "CarryallBackpacks"
+            "CarryallBackpacks",
+            "Kitbags"            
         };
         items[] = {
             "BasicHelmets",
@@ -518,12 +563,14 @@ class SOS_WestVirtualArsenal {
             "ShortRangeOptics",
             "MidRangeOptics",
             "Suppressors",
-            "Attachments"
+            "Attachments",
+            "BasicDetonators"
         };
         magazines[] = {
             "Thrown",
             "AssaultRifles",
-            "Pistols"
+            "Pistols",
+            "BasicExplosives"
         };
         weapons[] = {
             "AssaultRifles",
@@ -532,7 +579,9 @@ class SOS_WestVirtualArsenal {
     };
     class HWTMissileSpecialist {
         backpacks[] = {
-            "AssaultBackpacks"            
+            "AssaultBackpacks",
+            "FieldPacks",
+            "TacticalBackpacks"
         };
         items[] = {
             "BasicHelmets",
@@ -546,13 +595,15 @@ class SOS_WestVirtualArsenal {
             "ShortRangeOptics",
             "MidRangeOptics",
             "Suppressors",
-            "Attachments"
+            "Attachments",
+            "BasicDetonators"
         };
         magazines[] = {
             "Thrown",
             "AssaultRifles",
             "ATLaunchers",
-            "Pistols"
+            "Pistols",
+            "BasicExplosives"
         };
         weapons[] = {
             "AssaultRifles",
@@ -562,7 +613,7 @@ class SOS_WestVirtualArsenal {
     };
     class AnvilCommander {
         backpacks[] = {
-            "LongRangeRadios"            
+            "AssaultBackpacks"
         };
         items[] = {
             "AnvilHelmets",
@@ -578,7 +629,7 @@ class SOS_WestVirtualArsenal {
             "Goggles",
             "ShortRangeOptics",
             "Attachments",
-            "Tools"
+            "BasicTools"
         };
         magazines[] = {
             "Thrown",
@@ -591,7 +642,8 @@ class SOS_WestVirtualArsenal {
         }; 
     };
     class AnvilDriver {
-        backpacks[] = {            
+        backpacks[] = {
+            "AssaultBackpacks"
         };
         items[] = {
             "AnvilHelmets",
@@ -605,7 +657,7 @@ class SOS_WestVirtualArsenal {
             "Goggles",
             "ShortRangeOptics",
             "Attachments",
-            "Tools"
+            "BasicTools"
         };
         magazines[] = {
             "Thrown",
@@ -618,7 +670,8 @@ class SOS_WestVirtualArsenal {
         }; 
     };
     class AnvilGunner {
-        backpacks[] = {            
+        backpacks[] = {
+            "AssaultBackpacks"
         };
         items[] = {
             "AnvilHelmets",
@@ -632,7 +685,7 @@ class SOS_WestVirtualArsenal {
             "Goggles",
             "ShortRangeOptics",
             "Attachments",
-            "Tools"
+            "BasicTools"
         };
         magazines[] = {
             "Thrown",
@@ -646,8 +699,6 @@ class SOS_WestVirtualArsenal {
     };
     class ReaperPilot {
         backpacks[] = {
-            "LongRangeRadios",
-            "Parachutes"
         };
         items[] = {
             "ReaperHelmets",
@@ -673,8 +724,7 @@ class SOS_WestVirtualArsenal {
         }; 
     };
     class ReaperCrew {
-        backpacks[] = {   
-            "Parachutes"		
+        backpacks[] = {		
         };
         items[] = {
             "ReaperHelmets",
@@ -700,8 +750,7 @@ class SOS_WestVirtualArsenal {
     };
     class ReaperMedic {
         backpacks[] = { 
-            "AssaultBackpacks",		
-            "Parachutes"		
+            "AssaultBackpacks"		
         };
         items[] = {
             "ReaperHelmets",
@@ -729,7 +778,6 @@ class SOS_WestVirtualArsenal {
     };
     class HavocPilot {
         backpacks[] = {
-            "LongRangeRadios",
             "Parachutes"
         };
         items[] = {

@@ -17,11 +17,6 @@ private ["_vehicle"];
 
 _vehicle = _this select 0;
 
-clearMagazineCargoGlobal    _vehicle;
-clearWeaponCargoGlobal      _vehicle;
-clearItemCargoGlobal        _vehicle;
-clearBackpackCargoGlobal    _vehicle;
-
 _vehicle setVariable ["sos_vehicle_can_drive", [_this select 0] call SOS_fnc_canDriveVehicle];
 _vehicle addEventHandler ["GetIn", {
     _vehicle    = _this select 0;
@@ -45,7 +40,7 @@ _vehicle addEventHandler ["Fired", {
         if(_unit == vehicle player) then {
             _inArea = [getPosATL player, _x] call CBA_fnc_inArea;
             _flying = getPosATL player select 2 > 5;
-            if(_inArea && !_flying) then {
+            if (_inArea && !_flying) then {
                 deleteVehicle (_this select 6);
                 ["DO NOT FIRE IN BASE", "INFO", "sos_warning"] call SOS_fnc_showHint;
             };
@@ -53,7 +48,7 @@ _vehicle addEventHandler ["Fired", {
     } forEach SOS_MISSION_SAFE_ZONES;
 }];
 
-if((typeOf _vehicle) in (getArray(missionConfigFile >> format ["SOS_VehicleTypes"] >> "TransportHelicopters" >> "vehicles"))) then {
+if ((typeOf _vehicle) in (getArray(missionConfigFile >> format ["SOS_VehicleTypes"] >> "TransportHelicopters" >> "vehicles"))) then {
 	_vehicle addAction ["Parachute", {
 		_heli = _this select 0;
 		_unit = _this select 1;

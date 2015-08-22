@@ -2,15 +2,33 @@ class SOS_WestVirtualBackpackCargo {
     class AssaultBackpacks {
         items[] = {
             "B_AssaultPack_khk",
-            "B_AssaultPack_dgtl",
             "B_AssaultPack_rgr",
-            "B_AssaultPack_sgg",
             "B_AssaultPack_blk",
             "B_AssaultPack_cbr",
-            "B_AssaultPack_mcamo",
-            "B_AssaultPack_ocamo"
+            "B_AssaultPack_mcamo"
         };
-    };    
+    };
+    class FieldPacks {
+        items[] = {
+            "B_FieldPack_cbr",
+            "B_FieldPack_khk",
+            "B_FieldPack_oli"
+        };        
+    };
+    class Kitbags {
+        items[] = {
+            "B_Kitbag_cbr",
+            "B_Kitbag_rgr",
+            "B_Kitbag_mcamo"            
+        };        
+    };
+    class TacticalBackpacks {
+        items[] = {
+            "B_TacticalPack_blk",
+            "B_TacticalPack_mcamo",
+            "B_TacticalPack_oli"            
+        };        
+    };
     class CarryallBackpacks {
         items[] = {
             "B_Carryall_ocamo",

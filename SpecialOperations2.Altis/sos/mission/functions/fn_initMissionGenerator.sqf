@@ -10,7 +10,15 @@
  *
  */
  
-private ["_hq", "_location", "_fob", "_defense", "_position", "_i"];
+private [
+    "_hq",
+    "_location",
+    "_fob",
+    "_defense",
+    "_position",
+    "_i",
+    "_attempts"
+];
 
 SOS_MISSION_BASE_POSITION           = if (count _this > 0) then {_this select 0} else {[]};
 SOS_MISSION_BASE_RADIUS             = if (count _this > 1) then {_this select 1} else {0.0};
@@ -91,8 +99,13 @@ sleep 1.0;
 ["Creating Tasks"] call SOS_fnc_sendMessage;
 
 // create tasks
-for [{_i = 0}, {_i < SOS_MISSION_TASK_COUNT}, {_i = _i + 1}] do {
-    [] call SOS_fnc_createTask;
+_i          = 0;
+_attempts   = 100;
+while {_i < SOS_MISSION_TASK_COUNT && _attempts > 0} do {
+    if !(isNull (call SOS_fnc_createTask)) then {
+        _i = _i + 1;
+    };
+    _attempts = _attempts - 1;
 };
 
 // clear the blacklist

@@ -24,6 +24,8 @@ _unit addEventHandler ["Fired", {
         ["DO NOT FIRE IN BASE", "WARNING", "sos_warning"] call SOS_fnc_showHint;  
         
         // punishment
-        [[[player, "AmovPercMstpSnonWnonDnon_exercisePushup"], {(_this select 0) playMove (_this select 1);}], "BIS_fnc_spawn", player, false] call BIS_fnc_mp;
+        if (vehicle player == player) then {
+            [[[player, "AmovPercMstpSnonWnonDnon_exercisePushup"], {(_this select 0) playMove (_this select 1);}], "BIS_fnc_spawn", player, false] call BIS_fnc_mp;
+        };
     };
 }];
