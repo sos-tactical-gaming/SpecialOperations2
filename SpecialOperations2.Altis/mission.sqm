@@ -85,7 +85,7 @@ class Mission
 	randomSeed=11045919;
 	class Intel
 	{
-		briefingName="Special Operations 2 (v0.1.3)";
+		briefingName="Special Operations 2 (v0.1.4)";
 		startWeather=0.29999998;
 		startWind=0.099999994;
 		startWaves=0.099999994;
@@ -122,7 +122,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="sos_platoon_leader";
-					init="[this, ""Platoon Lead"", ""PlatoonLeader""] call SOS_fnc_initUnit; [this, 0, 0] call SOS_fnc_initRadio;";
+					init="[this, ""Platoon Lead"", ""PlatoonLeader""] call SOS_fnc_initUnit; [this, 5, 0] call SOS_fnc_initRadio;";
 					description="Platoon Leader";
 				};
 				class Item1
@@ -135,7 +135,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="sos_platoon_medic";
-					init="[this, ""Platoon Lead"", ""PlatoonMedic""] call SOS_fnc_initUnit; [this, 0, 0] call SOS_fnc_initRadio;";
+					init="[this, ""Platoon Lead"", ""PlatoonMedic""] call SOS_fnc_initUnit; [this, 5, 0] call SOS_fnc_initRadio;";
 					description="Platoon Medic";
 				};
 				class Item2
@@ -148,7 +148,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="sos_platoon_marksman";
-					init="[this, ""Platoon Lead"", ""PlatoonMarksman""] call SOS_fnc_initUnit; [this, 0, 0] call SOS_fnc_initRadio;";
+					init="[this, ""Platoon Lead"", ""PlatoonMarksman""] call SOS_fnc_initUnit; [this, 5, 0] call SOS_fnc_initRadio;";
 					description="Platoon Marksman";
 				};
 			};
@@ -1112,7 +1112,7 @@ class Mission
 					rank="SERGEANT";
 					skill=1;
 					text="sos_ghost1_leader";
-					init="[this, ""Ghost 1"", ""GhostLeader""] call SOS_fnc_initUnit; [this, 1, 0] call SOS_fnc_resetRadio;";
+					init="[this, ""Ghost 1"", ""GhostLeader""] call SOS_fnc_initUnit; [this, 0, 0] call SOS_fnc_initRadio;";
 					description="Ghost 1 - Section Commander";
 				};
 				class Item1
@@ -1126,7 +1126,7 @@ class Mission
 					player="PLAY CDG";
 					skill=1;
 					text="sos_ghost1_autorifleman";
-					init="[this, ""Ghost 1"", ""GhostAutorifleman""] call SOS_fnc_initUnit; [this, 1, 0] call SOS_fnc_resetRadio;";
+					init="[this, ""Ghost 1"", ""GhostAutorifleman""] call SOS_fnc_initUnit; [this, 0, 0] call SOS_fnc_initRadio;";
 					description="Ghost 1 - Autorifleman";
 				};
 				class Item2
@@ -1140,7 +1140,7 @@ class Mission
 					player="PLAY CDG";
 					skill=1;
 					text="sos_ghost1_at";
-					init="[this, ""Ghost 1"", ""GhostAT""] call SOS_fnc_initUnit; [this, 1, 0] call SOS_fnc_resetRadio;";
+					init="[this, ""Ghost 1"", ""GhostAT""] call SOS_fnc_initUnit; [this, 0, 0] call SOS_fnc_initRadio;";
 					description="Ghost 1 - AT Rifleman";
 				};
 				class Item3
@@ -1154,7 +1154,7 @@ class Mission
 					player="PLAY CDG";
 					skill=1;
 					text="sos_ghost1_combat_engineer";
-					init="[this, ""Ghost 1"", ""GhostCombatEngineer""] call SOS_fnc_initUnit;";
+					init="[this, ""Ghost 1"", ""GhostCombatEngineer""] call SOS_fnc_initUnit; [this, 0, 0] call SOS_fnc_initRadio;";
 					description="Ghost 1 - Combat Engineer";
 					syncId=0;
 					synchronizations[]={0};
@@ -1171,7 +1171,7 @@ class Mission
 					rank="CORPORAL";
 					skill=1;
 					text="sos_ghost1_grenadier";
-					init="[this, ""Ghost 1"", ""GhostLeader""] call SOS_fnc_initUnit;";
+					init="[this, ""Ghost 1"", ""GhostLeader""] call SOS_fnc_initUnit; [this, 0, 0] call SOS_fnc_initRadio;";
 					description="Ghost 1 - Team Leader (2nd in Command)";
 				};
 				class Item5
@@ -1185,7 +1185,7 @@ class Mission
 					player="PLAY CDG";
 					skill=1;
 					text="sos_ghost1_machinegunner";
-					init="[this, ""Ghost 1"", ""GhostMachinegunner""] call SOS_fnc_initUnit;";
+					init="[this, ""Ghost 1"", ""GhostMachinegunner""] call SOS_fnc_initUnit; [this, 0, 0] call SOS_fnc_initRadio;";
 					description="Ghost 1 - Machinegunner";
 				};
 				class Item6
@@ -1199,7 +1199,7 @@ class Mission
 					player="PLAY CDG";
 					skill=1;
 					text="sos_ghost1_assistant_machinegunner";
-					init="[this, ""Ghost 1"", ""GhostAssistantMachinegunner""] call SOS_fnc_initUnit;";
+					init="[this, ""Ghost 1"", ""GhostAssistantMachinegunner""] call SOS_fnc_initUnit; [this, 0, 0] call SOS_fnc_initRadio;";
 					description="Ghost 1 - Assistant Machinegunner";
 				};
 				class Item7
@@ -1213,7 +1213,7 @@ class Mission
 					player="PLAY CDG";
 					skill=1;
 					text="sos_ghost1_medic";
-					init="[this, ""Ghost 1"", ""GhostMedic""] call SOS_fnc_initUnit;";
+					init="[this, ""Ghost 1"", ""GhostMedic""] call SOS_fnc_initUnit; [this, 0, 0] call SOS_fnc_initRadio;";
 					description="Ghost 1 - Medic";
 				};
 			};
@@ -1237,7 +1237,7 @@ class Mission
 					rank="SERGEANT";
 					skill=1;
 					text="sos_ghost2_leader";
-					init="[this, ""Ghost 2"", ""GhostLeader""] call SOS_fnc_initUnit;";
+					init="[this, ""Ghost 2"", ""GhostLeader""] call SOS_fnc_initUnit; [this, 1, 0] call SOS_fnc_initRadio;";
 					description="Ghost 2 - Section Commander";
 				};
 				class Item1
@@ -1251,7 +1251,7 @@ class Mission
 					player="PLAY CDG";
 					skill=1;
 					text="sos_ghost2_autorifleman";
-					init="[this, ""Ghost 2"", ""GhostAutorifleman""] call SOS_fnc_initUnit;";
+					init="[this, ""Ghost 2"", ""GhostAutorifleman""] call SOS_fnc_initUnit; [this, 1, 0] call SOS_fnc_initRadio;";
 					description="Ghost 2 - Machinegunner 1";
 				};
 				class Item2
@@ -1265,7 +1265,7 @@ class Mission
 					player="PLAY CDG";
 					skill=1;
 					text="sos_ghost2_at";
-					init="[this, ""Ghost 2"", ""GhostAT""] call SOS_fnc_initUnit;";
+					init="[this, ""Ghost 2"", ""GhostAT""] call SOS_fnc_initUnit; [this, 1, 0] call SOS_fnc_initRadio;";
 					description="Ghost 2 - AT Rifleman";
 				};
 				class Item3
@@ -1279,7 +1279,7 @@ class Mission
 					player="PLAY CDG";
 					skill=1;
 					text="sos_ghost2_combat_engineer";
-					init="[this, ""Ghost 2"", ""GhostCombatEngineer""] call SOS_fnc_initUnit;";
+					init="[this, ""Ghost 2"", ""GhostCombatEngineer""] call SOS_fnc_initUnit; [this, 1, 0] call SOS_fnc_initRadio;";
 					description="Ghost 2 - Combat Engineer";
 				};
 				class Item4
@@ -1294,7 +1294,7 @@ class Mission
 					rank="CORPORAL";
 					skill=1;
 					text="sos_ghost2_grenadier";
-					init="[this, ""Ghost 2"", ""GhostLeader""] call SOS_fnc_initUnit;";
+					init="[this, ""Ghost 2"", ""GhostLeader""] call SOS_fnc_initUnit; [this, 1, 0] call SOS_fnc_initRadio;";
 					description="Ghost 2 - Team Leader (2nd in Command)";
 				};
 				class Item5
@@ -1308,7 +1308,7 @@ class Mission
 					player="PLAY CDG";
 					skill=1;
 					text="sos_ghost2_machinegunner";
-					init="[this, ""Ghost 2"", ""GhostMachinegunner""] call SOS_fnc_initUnit;";
+					init="[this, ""Ghost 2"", ""GhostMachinegunner""] call SOS_fnc_initUnit; [this, 1, 0] call SOS_fnc_initRadio;";
 					description="Ghost 2 - Machinegunner";
 				};
 				class Item6
@@ -1322,7 +1322,7 @@ class Mission
 					player="PLAY CDG";
 					skill=1;
 					text="sos_ghost2_assistant_machinegunner";
-					init="[this, ""Ghost 2"", ""GhostAssistantMachinegunner""] call SOS_fnc_initUnit;";
+					init="[this, ""Ghost 2"", ""GhostAssistantMachinegunner""] call SOS_fnc_initUnit; [this, 1, 0] call SOS_fnc_initRadio;";
 					description="Ghost 2 - Assistant Machinegunner";
 				};
 				class Item7
@@ -1336,7 +1336,7 @@ class Mission
 					player="PLAY CDG";
 					skill=1;
 					text="sos_ghost2_medic";
-					init="[this, ""Ghost 2"", ""GhostMedic""] call SOS_fnc_initUnit;";
+					init="[this, ""Ghost 2"", ""GhostMedic""] call SOS_fnc_initUnit; [this, 1, 0] call SOS_fnc_initRadio;";
 					description="Ghost 2 - Medic";
 				};
 			};
@@ -1360,7 +1360,7 @@ class Mission
 					rank="SERGEANT";
 					skill=1;
 					text="sos_ghost_recon_leader";
-					init="[this, ""Ghost Recon"", ""GhostReconLeader""] call SOS_fnc_initUnit;";
+					init="[this, ""Ghost Recon"", ""GhostReconLeader""] call SOS_fnc_initUnit; [this, 3, 0] call SOS_fnc_initRadio;";
 					description="Ghost Recon - Team Leader";
 				};
 				class Item1
@@ -1375,7 +1375,7 @@ class Mission
 					rank="CORPORAL";
 					skill=1;
 					text="sos_ghost_recon_scout";
-					init="[this, ""Ghost Recon"", ""GhostReconScout""] call SOS_fnc_initUnit;";
+					init="[this, ""Ghost Recon"", ""GhostReconScout""] call SOS_fnc_initUnit; [this, 3, 0] call SOS_fnc_initRadio;";
 					description="Ghost Recon - Scout";
 				};
 				class Item2
@@ -1389,7 +1389,7 @@ class Mission
 					player="PLAY CDG";
 					skill=1;
 					text="sos_ghost_recon_marksman";
-					init="[this, ""Ghost Recon"", ""GhostReconMarksman""] call SOS_fnc_initUnit;";
+					init="[this, ""Ghost Recon"", ""GhostReconMarksman""] call SOS_fnc_initUnit; [this, 3, 0] call SOS_fnc_initRadio;";
 					description="Ghost Recon - Marksman";
 				};
 				class Item3
@@ -1403,7 +1403,7 @@ class Mission
 					player="PLAY CDG";
 					skill=1;
 					text="sos_ghost_recon_medic";
-					init="[this, ""Ghost Recon"", ""GhostReconMedic""] call SOS_fnc_initUnit;";
+					init="[this, ""Ghost Recon"", ""GhostReconMedic""] call SOS_fnc_initUnit; [this, 3, 0] call SOS_fnc_initRadio;";
 					description="Ghost Recon - Paramedic";
 				};
 			};
@@ -1427,7 +1427,7 @@ class Mission
 					rank="SERGEANT";
 					skill=1;
 					text="sos_anvil_commander";
-					init="[this, ""Anvil 1"", ""AnvilCommander""] call SOS_fnc_initUnit;";
+					init="[this, ""Anvil 1"", ""AnvilCommander""] call SOS_fnc_initUnit; [this, 4, 0] call SOS_fnc_initRadio;";
 					description="Anvil 1 - Commander (S.O.S members only)";
 				};
 				class Item1
@@ -1441,7 +1441,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=1;
 					text="sos_anvil_driver";
-					init="[this, ""Anvil 1"", ""AnvilDriver""] call SOS_fnc_initUnit;";
+					init="[this, ""Anvil 1"", ""AnvilDriver""] call SOS_fnc_initUnit; [this, 4, 0] call SOS_fnc_initRadio;";
 					description="Anvil 1 - Driver (S.O.S members only)";
 				};
 				class Item2
@@ -1455,7 +1455,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=1;
 					text="sos_anvil_gunner";
-					init="[this, ""Anvil 1"", ""AnvilGunner""] call SOS_fnc_initUnit;";
+					init="[this, ""Anvil 1"", ""AnvilGunner""] call SOS_fnc_initUnit; [this, 4, 0] call SOS_fnc_initRadio;";
 					description="Anvil 1 - Gunner (S.O.S members only)";
 					syncId=1;
 					synchronizations[]={1};
@@ -1480,7 +1480,7 @@ class Mission
 					rank="SERGEANT";
 					skill=1;
 					text="sos_reaper1_pilot";
-					init="[this, ""Reaper 1"", ""ReaperPilot""] call SOS_fnc_initUnit;";
+					init="[this, ""Reaper 1"", ""ReaperPilot""] call SOS_fnc_initUnit; [this, 6, 0] call SOS_fnc_initRadio;";
 					description="Reaper 1 - Helicopter Pilot";
 					syncId=2;
 					synchronizations[]={2};
@@ -1496,7 +1496,7 @@ class Mission
 					rank="SERGEANT";
 					skill=1;
 					text="sos_reaper1_copilot";
-					init="[this, ""Reaper 1"", ""ReaperCopilot""] call SOS_fnc_initUnit;";
+					init="[this, ""Reaper 1"", ""ReaperCopilot""] call SOS_fnc_initUnit; [this, 6, 0] call SOS_fnc_initRadio;";
 					description="Reaper 1 - Helicopter Copilot";
 					syncId=3;
 					synchronizations[]={3};
@@ -1521,7 +1521,7 @@ class Mission
 					rank="SERGEANT";
 					skill=1;
 					text="sos_reaper2_pilot";
-					init="[this, ""Reaper 2"", ""ReaperPilot""] call SOS_fnc_initUnit;";
+					init="[this, ""Reaper 2"", ""ReaperPilot""] call SOS_fnc_initUnit; [this, 6, 0] call SOS_fnc_initRadio;";
 					description="Reaper 2 - Helicopter Pilot";
 				};
 				class Item1
@@ -1535,7 +1535,7 @@ class Mission
 					rank="SERGEANT";
 					skill=1;
 					text="sos_reaper2_copilot";
-					init="[this, ""Reaper 2"", ""ReaperCopilot""] call SOS_fnc_initUnit;";
+					init="[this, ""Reaper 2"", ""ReaperCopilot""] call SOS_fnc_initUnit; [this, 6, 0] call SOS_fnc_initRadio;";
 					description="Reaper 2 - Helicopter Copilot";
 				};
 			};
@@ -1549,7 +1549,7 @@ class Mission
 				class Item0
 				{
 					position[]={15210.861,17.91,16818.316};
-					azimut=226.39709;
+					azimut=226.397;
 					id=50;
 					side="WEST";
 					vehicle="B_Pilot_F";
@@ -1558,7 +1558,7 @@ class Mission
 					rank="SERGEANT";
 					skill=1;
 					text="sos_havoc1_pilot";
-					init="[this, ""Havoc1"", ""HavocPilot""] call SOS_fnc_initUnit;";
+					init="[this, ""Havoc1"", ""HavocPilot""] call SOS_fnc_initUnit; [this, 6, 0] call SOS_fnc_initRadio;";
 					description="Havoc 1 - Jet Pilot (S.O.S members only)";
 				};
 			};
@@ -1855,7 +1855,7 @@ class Mission
 			leader=1;
 			lock="LOCKED";
 			skill=0.60000002;
-			init="this allowDamage false; clearMagazineCargoGlobal this;  clearWeaponCargoGlobal this;  clearItemCargoGlobal this;  clearBackpackCargoGlobal this;";
+			init="this allowDamage false; clearMagazineCargoGlobal this;  clearWeaponCargoGlobal this;  clearItemCargoGlobal this;  clearBackpackCargoGlobal this; this enableRopeAttach false;";
 		};
 		class Item18
 		{
@@ -1867,7 +1867,7 @@ class Mission
 			leader=1;
 			lock="LOCKED";
 			skill=0.60000002;
-			init="this allowDamage false; clearMagazineCargoGlobal this;  clearWeaponCargoGlobal this;  clearItemCargoGlobal this;  clearBackpackCargoGlobal this;";
+			init="this allowDamage false; clearMagazineCargoGlobal this;  clearWeaponCargoGlobal this;  clearItemCargoGlobal this;  clearBackpackCargoGlobal this; this enableRopeAttach false;";
 		};
 		class Item19
 		{
@@ -2403,7 +2403,7 @@ class Mission
 			leader=1;
 			lock="LOCKED";
 			skill=0.60000002;
-			init="this allowDamage false;";
+			init="this allowDamage false; this enableRopeAttach false;";
 		};
 		class Item66
 		{
@@ -2415,7 +2415,7 @@ class Mission
 			leader=1;
 			lock="LOCKED";
 			skill=0.60000002;
-			init="this allowDamage false;";
+			init="this allowDamage false; this enableRopeAttach false;";
 		};
 		class Item67
 		{
@@ -2431,14 +2431,14 @@ class Mission
 		class Item68
 		{
 			position[]={15112.472,17.784672,17292.684};
-			azimut=328.55997;
+			azimut=328.56;
 			id=123;
 			side="EMPTY";
 			vehicle="Box_NATO_AmmoVeh_F";
 			leader=1;
 			lock="LOCKED";
 			skill=0.60000002;
-			init="this allowDamage false;";
+			init="this allowDamage false; this enableRopeAttach false;";
 		};
 		class Item69
 		{
@@ -2509,14 +2509,14 @@ class Mission
 		class Item75
 		{
 			position[]={15123.331,17.835417,17295.74};
-			azimut=313.44128;
+			azimut=313.44101;
 			id=130;
 			side="EMPTY";
 			vehicle="B_Truck_01_fuel_F";
 			leader=1;
 			lock="LOCKED";
 			skill=0.60000002;
-			init="this allowDamage false; clearMagazineCargoGlobal this;  clearWeaponCargoGlobal this;  clearItemCargoGlobal this;  clearBackpackCargoGlobal this;";
+			init="clearMagazineCargoGlobal this;  clearWeaponCargoGlobal this;  clearItemCargoGlobal this;  clearBackpackCargoGlobal this; this enableRopeAttach false; this allowDamage false; ";
 		};
 		class Item76
 		{
@@ -2558,10 +2558,10 @@ class Mission
 			id=134;
 			side="EMPTY";
 			vehicle="B_Truck_01_medical_F";
-			lock="LOCKED";
+			lock="UNLOCKED";
 			skill=0.60000002;
 			fuel=0;
-			init="this enableRopeAttach false; this allowDamage false;";
+			init="clearMagazineCargoGlobal this;  clearWeaponCargoGlobal this;  clearItemCargoGlobal this;  clearBackpackCargoGlobal this; this enableRopeAttach false; this allowDamage false;";
 			syncId=5;
 			synchronizations[]={4};
 		};
