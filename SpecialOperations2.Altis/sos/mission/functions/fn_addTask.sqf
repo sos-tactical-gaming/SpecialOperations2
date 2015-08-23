@@ -10,7 +10,13 @@
  *
  */
  
-private ["_name", "_destination", "_id"];
+private [
+    "_name",
+    "_destination",
+    "_id",
+    "_marker",
+    "_markerShape"
+];
 
 _name           = _this select 0;
 _destination    = if (count _this > 1) then {_this select 1} else {objNull};
@@ -37,15 +43,9 @@ SOS_MISSION_TASKS pushBack [
 // create marker
 if (typeName _destination == "ARRAY") then {
     _marker = createMarker [[] call SOS_fnc_getMarkerName, _destination];
+    _marker setMarkerType getText (missionConfigFile >> "CfgTaskDescriptions" >> _name >> "markerType");
     _marker setMarkerColor getText (missionConfigFile >> "CfgTaskDescriptions" >> _name >> "markerColor");
-    
-    _markerShape = getText (missionConfigFile >> "CfgTaskDescriptions" >> _name >> "markerShape");  
-    if(_markerShape == "ICON") then {
-        _marker setMarkerType getText (missionConfigFile >> "CfgTaskDescriptions" >> _name >> "markerType");
-    } else {
-        _marker setMarkerShape _markerShape;
-        _marker setMarkerSize getArray (missionConfigFile >> "CfgTaskDescriptions" >> _name >> "markerSize");
-    };
+    _marker setMarkerSize getArray (missionConfigFile >> "CfgTaskDescriptions" >> _name >> "markerSize");
 };
 
 _id

@@ -1,11 +1,14 @@
 /*
  * Author: Legman [S.O.S. Major]
+ * Creates a stationary artillery tank unit.
  *
  * Arguments:
  *
  * Return Value:
+ * success <BOOLEAN>
  *
  * Example:
+ * call SOS_fnc_taskDestroyArtilleryTank;
  *
  */
  
@@ -22,6 +25,8 @@ _position = [
     0.0,
     SOS_MISSION_BLACKLIST
 ] call SOS_fnc_findSafePosition;
+
+if (count _position == 0) exitWith {false};
 
 // create tank
 _tank = ([_position, random 360.0, "O_MBT_02_arty_F", east] call BIS_fnc_spawnVehicle) select 0;
@@ -55,4 +60,4 @@ _task = ["DestroyArtilleryTank", position _tank] call SOS_fnc_addTask;
     [_task] call SOS_fnc_completeTask;
 };
 
-_tank
+true

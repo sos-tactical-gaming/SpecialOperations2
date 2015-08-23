@@ -1,11 +1,14 @@
 /*
  * Author: Legman [S.O.S. Major]
+ * Completes when 60% of the NATO are outside the AO.
  *
  * Arguments:
  *
  * Return Value:
+ * success <BOOLEAN>
  *
  * Example:
+ * call SOS_fnc_taskExfiltration;
  *
  */
 
@@ -29,5 +32,4 @@ _task = ["Exfiltrate"] call SOS_fnc_addTask;
     [_task] call SOS_fnc_completeTask;
 };
 
-_task
-
+true

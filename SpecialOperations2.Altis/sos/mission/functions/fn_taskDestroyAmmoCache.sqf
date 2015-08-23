@@ -1,11 +1,14 @@
 /*
  * Author: Legman [S.O.S. Major]
+ * Creates an ammo cache either inside a specified building or outside.
  *
  * Arguments:
  *
  * Return Value:
+ * success <BOOLEAN>
  *
  * Example:
+ * call SOS_fnc_taskDestroyAmmoCache;
  *
  */
 
@@ -107,7 +110,7 @@ if (_inside) then {
         SOS_MISSION_BLACKLIST
     ] call SOS_fnc_findSafePosition;
     
-    if (count _position == 0) exitWith {};
+    if (count _position == 0) exitWith {false};
     
     _building = createVehicle ["CamoNet_OPFOR_big_F", _position, [], 0.0, "NONE"];
     _building setDir random 360.0;
@@ -143,7 +146,7 @@ if (_inside) then {
     _group setVariable ["GAIA_ZONE_INTEND", [format ["%1", _zone], "NOFOLLOW"]];
 };
 
-if (isNil "_cache") exitWith {objNull};
+if (isNil "_cache") exitWith {false};
 
 // blacklist area
 [position _cache, 600.0] call SOS_fnc_blacklistArea;
@@ -175,4 +178,4 @@ _task = ["DestroyAmmoCache", position _cache] call SOS_fnc_addTask;
     [_task] call SOS_fnc_completeTask;    
 };
 
-_cache
+true

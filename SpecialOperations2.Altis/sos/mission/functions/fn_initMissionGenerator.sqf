@@ -1,12 +1,16 @@
 /*
  * Author: Legman [S.O.S. Major]
+ * Begins the mission making process.
  *
  * Arguments:
+ * 0: basePosition <ARRAY>
+ * 1: baseRadius <ARRAY>
+ * 2: debug <BOOLEAN>
  *
  * Return Value:
- * result <BOOLEAN>
  *
  * Example:
+ * [_position, 600.0, false] call SOS_fnc_initMissionGenerator;
  *
  */
  
@@ -102,7 +106,7 @@ sleep 1.0;
 _i          = 0;
 _attempts   = 100;
 while {_i < SOS_MISSION_TASK_COUNT && _attempts > 0} do {
-    if !(isNull (call SOS_fnc_createTask)) then {
+    if (call SOS_fnc_createTask) then {
         _i = _i + 1;
     };
     _attempts = _attempts - 1;
