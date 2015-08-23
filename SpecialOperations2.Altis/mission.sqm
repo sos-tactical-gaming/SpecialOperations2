@@ -41,7 +41,8 @@ class Mission
 		"A3_Soft_F_MRAP_02",
 		"A3_Modules_F",
 		"A3_Structures_F_Heli_Items_Airport",
-		"A3_Structures_F_EPB_Civ_Camping"
+		"A3_Structures_F_EPB_Civ_Camping",
+		"blastcore_vep"
 	};
 	addOnsAuto[]=
 	{
@@ -69,6 +70,7 @@ class Mission
 		"A3_Structures_F_Mil_Helipads",
 		"A3_Structures_F_Civ_InfoBoards",
 		"A3_Soft_F_Gamma_HEMTT",
+		"blastcore_vep",
 		"A3_Weapons_F_Ammoboxes",
 		"A3_Structures_F_Items_Vessels",
 		"A3_Structures_F_Mil_Shelters",
@@ -571,7 +573,7 @@ class Mission
 						};
 						class Item6
 						{
-							value="0.5";
+							value="0.25";
 							parentCls="ACE_moduleMedicalSettings";
 							typeName="AIDamageThreshold";
 						};
