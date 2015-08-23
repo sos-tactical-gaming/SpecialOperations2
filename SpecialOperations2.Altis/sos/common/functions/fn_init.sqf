@@ -24,10 +24,10 @@ if (!isDedicated) then {
     };
     
     // add rearm points
-    [position sos_rearm_point1, [2.0, 2.0], "Helicopter"]   call SOS_fnc_addServicePoint;
-    [position sos_rearm_point2, [2.0, 2.0], "Helicopter"]   call SOS_fnc_addServicePoint;
-    [position sos_rearm_point3, [2.0, 2.0], "Plane"]        call SOS_fnc_addServicePoint;
-    [position sos_rearm_point4, [2.0, 2.0], "LandVehicle"]  call SOS_fnc_addServicePoint;
+    [position sos_rearm_point1, [4.0, 4.0], "Helicopter"]   call SOS_fnc_addServicePoint;
+    [position sos_rearm_point2, [4.0, 4.0], "Helicopter"]   call SOS_fnc_addServicePoint;
+    [position sos_rearm_point3, [4.0, 4.0], "Plane"]        call SOS_fnc_addServicePoint;
+    [position sos_rearm_point4, [4.0, 4.0], "LandVehicle"]  call SOS_fnc_addServicePoint;
 
     // virtual arsenal
     [sos_ammo1] call SOS_fnc_addVirtualArsenal;
