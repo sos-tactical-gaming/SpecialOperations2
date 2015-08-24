@@ -37,7 +37,7 @@ _chopperPosition = [
 
 _hvtGroup = createGroup east;
 _hvt = _hvtGroup createUnit ["O_officer_F", [0.0, 0.0, 0.0], [], 0, "CAN_COLLIDE"];
-setUnitRank "COLONEL";
+_hvt setUnitRank "COLONEL";
 removeAllWeapons _hvt;
 _hvt addMagazineCargoGlobal ["6Rnd_45ACP_Cylinder", 5];
 _hvt addWeapon "hgun_Pistol_heavy_02_F";
