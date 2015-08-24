@@ -56,6 +56,7 @@ class SOS_Functions {
         class createTower {};
         class createZone {};
         class endMission {};
+        class failedTask {};
         class findFOB {};
         class findSafePosition {};
         class getMarkerName {};
