@@ -37,24 +37,28 @@ _chopperPosition = [
 
 _hvtGroup = createGroup east;
 _hvt = _hvtGroup createUnit ["O_officer_F", [0.0, 0.0, 0.0], [], 0, "CAN_COLLIDE"];
-_hvt setVehicleVarName "HVT";
+_hvt setUnitRank "COLONEL";
+removeAllWeapons _hvt;
+_hvt addMagazineCargoGlobal ["6Rnd_45ACP_Cylinder", 5];
+_hvt addWeapon "hgun_Pistol_heavy_02_F";
  
 // Setpos in FPB
 _hvt setPosATL (_fpb buildingPos (floor random count [0, 1, 2, 3]));
+_hvt setUnitPos "UP";
 
 // create task
 _task = ["EliminateHVT", position _hvt] call SOS_fnc_addTask;
 
 // Complete task 1
-[_fpb, _chopperPosition, _hvt, _task] spawn {    
+[_fpb, _chopperPosition, _hvtGroup, _hvt, _task] spawn {    
     _fpb                = _this select 0;
     _chopperPosition    = _this select 1;
     _hvt                = _this select 2;
     _task               = _this select 3;
     // Fail Task
     while {alive _hvt} do {
-        _detected = _hvt findNearestEnemy _hvt;
         scopeName "officerEscape";
+        _detected = _hvt findNearestEnemy _hvt;
         sleep 0.5;
         // Has he noticed you?
         if (!isNull _detected) then {
@@ -65,14 +69,16 @@ _task = ["EliminateHVT", position _hvt] call SOS_fnc_addTask;
             _waypoint1 setWaypointCombatMode "BLUE";
             // Landing and getting in.
             if (alive _hvt) then {
-                waitUntil {(isTouchingGround _chopper) and ((_chopper distance _hvt) < 250) or (!alive _hvt)};
+                waitUntil {((isTouchingGround _chopper) and ((_chopper distance _hvt) < 250)) or (!alive _hvt)};
                 if (alive _hvt) then {
                     _hvt setBehaviour "CARELESS";
+                    _hvtGroup setSpeedMode "FULL";
+                    _hvt setUnitPos "MIDDLE";
                     _hvt assignAsCargo _chopper;
                     [_hvt] orderGetIn true;
-                } else {[_task] call SOS_fnc_completeTask};
+                } else {breakOut "officerEscape"};
             };        
-            sleep 5; // The sleep is there incase he dies. (because he is assigned to it, it will wait for him before fucking off.)
+            //sleep 5; // The sleep is there incase he dies. (because he is assigned to it, it will wait for him before fucking off.)
             // Evac.
             _waypoint2 = group _chopper addWaypoint [_chopperPosition, 0];
             _waypoint2 setWaypointType "MOVE";
@@ -81,7 +87,7 @@ _task = ["EliminateHVT", position _hvt] call SOS_fnc_addTask;
             waitUntil {(!alive _hvt) or ((_fpb distance _chopper) > 10000)};
             // Finals.
             if (!alive _hvt) then {
-                [_task] call SOS_fnc_completeTask;
+                breakOut "officerEscape";
             // failed task.
             } else {
                 [_task] call SOS_fnc_failedTask;
@@ -93,3 +99,4 @@ _task = ["EliminateHVT", position _hvt] call SOS_fnc_addTask;
     [_task] call SOS_fnc_completeTask;
 };
 _hvt
+
