@@ -84,7 +84,7 @@ _task = ["EliminateHVT", position _hvt] call SOS_fnc_addTask;
                 [_task] call SOS_fnc_completeTask;
             // failed task.
             } else {
-                //[_task] call SOS_fnc_failedTask; need to make.
+                [_task] call SOS_fnc_failedTask;
                 deleteVehicle _chopper;
             };
         };
