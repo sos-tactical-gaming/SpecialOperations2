@@ -91,7 +91,7 @@ _task = ["EliminateHVT", position _hvt] call SOS_fnc_addTask;
                 breakOut "officerEscape"
             // failed task.
             } else {
-                [_task] call SOS_fnc_failedTask;
+                [_task] call SOS_fnc_failTask;
                 deleteVehicle _chopper;
             };
         };
