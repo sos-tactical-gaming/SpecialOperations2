@@ -37,7 +37,7 @@ _chopperPosition = [
 
 _hvtGroup = createGroup east;
 _hvt = _hvtGroup createUnit ["O_officer_F", [0.0, 0.0, 0.0], [], 0, "CAN_COLLIDE"];
-_hvt setUnitRank "COLONEL";
+setUnitRank "COLONEL";
 removeAllWeapons _hvt;
 _hvt addMagazineCargoGlobal ["6Rnd_45ACP_Cylinder", 5];
 _hvt addWeapon "hgun_Pistol_heavy_02_F";
@@ -53,8 +53,9 @@ _task = ["EliminateHVT", position _hvt] call SOS_fnc_addTask;
 [_fpb, _chopperPosition, _hvtGroup, _hvt, _task] spawn {    
     _fpb                = _this select 0;
     _chopperPosition    = _this select 1;
-    _hvt                = _this select 2;
-    _task               = _this select 3;
+    _hvtGroup           = _this select 2;
+    _hvt                = _this select 3;
+    _task               = _this select 4;
     // Fail Task
     while {alive _hvt} do {
         scopeName "officerEscape";
@@ -87,7 +88,7 @@ _task = ["EliminateHVT", position _hvt] call SOS_fnc_addTask;
             waitUntil {(!alive _hvt) or ((_fpb distance _chopper) > 10000)};
             // Finals.
             if (!alive _hvt) then {
-                breakOut "officerEscape";
+                breakOut "officerEscape"
             // failed task.
             } else {
                 [_task] call SOS_fnc_failedTask;
@@ -99,4 +100,3 @@ _task = ["EliminateHVT", position _hvt] call SOS_fnc_addTask;
     [_task] call SOS_fnc_completeTask;
 };
 _hvt
-
