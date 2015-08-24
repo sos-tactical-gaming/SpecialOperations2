@@ -72,21 +72,19 @@ _task = ["EliminateHVT", position _hvt] call SOS_fnc_addTask;
                     [_hvt] orderGetIn true;
                 } else {[_task] call SOS_fnc_completeTask};
             };        
-            sleep 10; // The sleep is there incase he dies. (because he is assigned to it, it will wait for him before fucking off.)
+            sleep 5; // The sleep is there incase he dies. (because he is assigned to it, it will wait for him before fucking off.)
             // Evac.
             _waypoint2 = group _chopper addWaypoint [_chopperPosition, 0];
             _waypoint2 setWaypointType "MOVE";
             _waypoint2 setWaypointCombatMode "BLUE";
             _waypoint2 setWaypointSpeed "FULL";
+            waitUntil {(!alive _hvt) or ((_fpb distance _chopper) > 10000)};
             // Finals.
-            if (alive _hvt) then {
-                waitUntil {(_fpb distance _hvt) > 10000};
-                //[_task] call SOS_fnc_failedTask; need to make.
-                deleteVehicle _chopper;
-                hideObjectGlobal _hvt;
+            if (!alive _hvt) then {
+                [_task] call SOS_fnc_completeTask;
             // failed task.
             } else {
-                waitUntil {(_fpb distance _chopper) > 10000};
+                //[_task] call SOS_fnc_failedTask; need to make.
                 deleteVehicle _chopper;
             };
         };
