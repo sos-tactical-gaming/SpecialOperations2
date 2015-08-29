@@ -16,8 +16,10 @@
 private [
     "_allCompounds",
     "_base",
+    "_bigBuildings",
     "_blacklist",
     "_buildingCoverage",
+    "_buildingType",
     "_buildingTypes",    
     "_center",
     "_compound",
@@ -39,6 +41,7 @@ private [
     "_occupyDivident",
     "_occupyNumber",    
     "_position",
+    "_smallBuildings",
     "_radius",
     "_randomPos",
     "_task",       
@@ -73,16 +76,41 @@ _allCompounds = [];
     _base       = nearestObjects [_position, _buildingTypes, _radius];
     
     if (count _base >= _minBuildings) then {
-        _allCompounds pushBack _base;
+        {
+            _positions = getArray (missionConfigFile >> "SOS_BuildingPositions" >> _configName >> typeOf _x >> "positions");
+            if (count _positions > 8) exitWith {_allCompounds pushBack _base;}; //At least one big building is necessary for the base
+        } forEach _base;
     };
 } forEach _militaryStructures;
 if (count _allCompounds == 0) exitWith {false};
-
 _compound = _allCompounds call BIS_fnc_selectRandom;
+
+// Get middle position of the first and last building inside the base
+_first  = position (_compound select 0);
+_last   = position (_compound select ((count _compound) - 1));
+_center = [
+    floor (((floor(_first select 0)) + (floor (_last select 0))) * 0.5),
+    floor (((floor(_first select 1)) + (floor (_last select 1))) * 0.5),
+    floor ((_first select 2))
+];
+
+// Set the order of buildings to go through
+_bigBuildings = [];
+_smallBuildings = [];
+{
+    _positions = getArray (missionConfigFile >> "SOS_BuildingPositions" >> _configName >> typeOf _x >> "positions");
+    if(count _positions > 8) then {
+        _bigBuildings pushBack [_x, "BIG"];
+    } else {
+        _smallBuildings pushBack [_x, "SMALL"];
+    };
+} foreach _compound;
+
+_compound = _bigBuildings + _smallBuildings; //Sort the array so the big buildings take priority
 
 // Sets the % of buildings needed to occupy. And sets the % of how many AI will occupy the same building. Default settings are for a big base
 _buildingCoverage   = 60;
-_occupyDivident     = 4;    // the higher this number is, the smaller the number of AI that will occupy the same building. This number is being used as a divident against the amount of positions
+_occupyDivident     = 3;    // the higher this number is, the smaller the number of AI that will occupy the same building. This number is being used as a divident against the amount of positions
 _maxPatrols         = 3;    // 4 man patrols
 _vehicles           = ["O_MRAP_02_gmg_F", "O_MRAP_02_hmg_F", "O_APC_Wheeled_02_rcws_F", "O_APC_Tracked_02_cannon_F"];
 
@@ -108,9 +136,10 @@ _units      = getArray (missionConfigFile >> "SOS_BuildingPositions" >> _configN
 {
     if (_unitCount > _maxUnits) exitWith {};
     _blacklist = [];
+    _buildingType = _x select 1;
     
     _occupyBuilding = [0, 100] call BIS_fnc_randomInt;
-    if (_occupyBuilding <= _buildingCoverage) then {
+    if (_buildingType == "BIG" || _occupyBuilding <= _buildingCoverage) then {
         private [
             "_building",
             "_class",
@@ -123,7 +152,7 @@ _units      = getArray (missionConfigFile >> "SOS_BuildingPositions" >> _configN
             "_unoccupiedPos",
             "_randomPos"
         ];
-        _building               = _x;
+        _building               = _x select 0;
         _class                  = typeOf _building;
         _positions              = getArray (missionConfigFile >> "SOS_BuildingPositions" >> _configName >> _class >> "positions");
         _specialUnits           = getArray (missionConfigFile >> "SOS_BuildingPositions" >> _configName >> _class >> "specialUnits");
@@ -159,15 +188,6 @@ _units      = getArray (missionConfigFile >> "SOS_BuildingPositions" >> _configN
     };
 } forEach _compound;
 
-// Get middle position of the first and last building inside the base
-_first  = position (_compound select 0);
-_last   = position (_compound select ((count _compound) - 1));
-_center = [
-    floor (((floor(_first select 0)) + (floor (_last select 0))) * 0.5),
-    floor (((floor(_first select 1)) + (floor (_last select 1))) * 0.5),
-    floor ((_first select 2))
-];
-
 // Create zone, patrols, vehicles and ambience (things you would expect)
 _radius     = _radius + 20;
 _zone       = [_center, [_radius, _radius]] call SOS_fnc_createZone;
@@ -178,9 +198,15 @@ _helipads       = nearestObjects [_center, _helipadTypes, _radius];
 if (count _helipads > 0) then {
     _helicopters    = ["O_Heli_Light_02_F", "O_Heli_Light_02_unarmed_F", "O_Heli_Light_02_v2_F"];
     _helipad        = _helipads call BIS_fnc_selectRandom;
+<<<<<<< HEAD
     _vehicle        = createVehicle [_helicopters call BIS_fnc_selectRandom, getPosATL _helipad,[], 0, "NONE"];
     _vehicle setDir (getDir _helipad);
     createVehicleCrew _vehicle;
+=======
+    _vehicle        = createVehicle [_helicopters call BIS_fnc_selectRandom, getPos _helipad, [], 0, "NONE"];
+    createVehicleCrew _vehicle;
+    
+>>>>>>> e224e803af600b6f6068d145937880d51cfee2f4
     group _vehicle setVariable ["GAIA_ZONE_INTEND", [format ["%1", _zone], "FOLLOW"]];
 };
 
