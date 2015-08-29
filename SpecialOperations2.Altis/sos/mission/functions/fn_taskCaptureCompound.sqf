@@ -52,7 +52,7 @@ private [
 
 _configName         = "Military";
 _configBuildings    = [missionConfigFile >> "SOS_BuildingPositions" >> _configName] call BIS_fnc_returnChildren;
-_radius             = 100;      // Used to see how many military buildings are within the radius. Used to set the marker and trigger radius
+_radius             = 200;      // Used to see how many military buildings are within the radius. Used to set the marker and trigger radius
 _minBuildings       = 4;        // How many buildings are needed within the radius to be a base
 _compound           = [];       // The compound to be captured
 _maxUnits           = 25;       // Amount of units that can spawn inside the different buildings
@@ -178,7 +178,9 @@ _helipads       = nearestObjects [_center, _helipadTypes, _radius];
 if (count _helipads > 0) then {
     _helicopters    = ["O_Heli_Light_02_F", "O_Heli_Light_02_unarmed_F", "O_Heli_Light_02_v2_F"];
     _helipad        = _helipads call BIS_fnc_selectRandom;
-    _vehicle        = ([getPosATL _helipad, getDir _helipad, _helicopters call BIS_fnc_selectRandom, east] call BIS_fnc_spawnVehicle) select 0;
+    _vehicle        = createVehicle [_helicopters call BIS_fnc_selectRandom, getPosATL _helipad,[], 0, "NONE"];
+    _vehicle setDir (getDir _helipad);
+    createVehicleCrew _vehicle;
     group _vehicle setVariable ["GAIA_ZONE_INTEND", [format ["%1", _zone], "FOLLOW"]];
 };
 

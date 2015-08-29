@@ -542,8 +542,8 @@ class WestReaperPilot {
     uniformClass = "U_B_HeliPilotCoveralls";
     backpack = "";
 };
-class WestReaperCrew {
-    displayName = "Reaper Crew";
+class WestReaperCopilot {
+    displayName = "Reaper Copilot";
     icon = "\A3\Ui_f\data\GUI\Cfg\Ranks\private_gs.paa";
     weapons[] = {
         "Binocular"
@@ -591,6 +591,9 @@ class WestReaperMedic {
     uniformClass = "U_B_HeliPilotCoveralls";
     backpack = "";
 };
+class WestReaperReservedPilot   : WestReaperPilot {};
+class WestReaperReservedCopilot : WestReaperCopilot {};
+class WestReaperReservedMedic   : WestReaperMedic {};
 class WestHavocPilot {
     displayName = "Havoc Pilot";
     icon = "\A3\Ui_f\data\GUI\Cfg\Ranks\captain_gs.paa";

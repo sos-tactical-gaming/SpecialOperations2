@@ -9,7 +9,7 @@
  * location <OBJECT>
  *
  * Example:
- * [] call SOS_fnc_getRandomLocation;
+ * call SOS_fnc_getRandomLocation;
  *
  */
 

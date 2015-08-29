@@ -107,7 +107,6 @@ class SOS_BuildingPositions {
         class Land_i_Addon_02_V1_F : HouseAddon {};
         class Land_u_Addon_02_V1_F : HouseAddon {};
         class Land_u_Shed_Ind_F : IndustrialShed {};
-        class Land_i_Shed_Ind_F : IndustrialShed {};
-        
+        class Land_i_Shed_Ind_F : IndustrialShed {};        
     };
 };

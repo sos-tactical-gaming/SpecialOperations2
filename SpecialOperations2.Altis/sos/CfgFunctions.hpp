@@ -54,8 +54,10 @@ class SOS_Functions {
         class createAO {};
         class createDefense {};        
         class createTask {};
-        class createTower {};
         class createZone {};
+        class defenseGunEmplacement {};
+        class defenseTower {};        
+        class defenseMinefield  {};
         class endMission {};
         class findFOB {};
         class findSafePosition {};

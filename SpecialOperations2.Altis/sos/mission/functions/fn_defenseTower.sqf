@@ -1,11 +1,15 @@
 /*
  * Author: Legman [S.O.S. Major]
+ * Creates a small cargo tower facing away from the FPB its defending with a sentry team.
  *
  * Arguments:
+ * 0: fob <OBJECT>
  *
  * Return Value:
+ * Nothing
  *
  * Example:
+ * [_fob] call SOS_fnc_defenseTower;
  *
  */
 
@@ -24,7 +28,7 @@ _position   = [
     SOS_MISSION_BLACKLIST
 ] call SOS_fnc_findSafePosition;
 
-if (count _position == 0) exitWith {objNull};
+if (count _position == 0) exitWith {false};
 
 _tower = "Land_Cargo_Patrol_V3_F" createVehicle _position;
 _tower setDir ([_position, position _fob] call BIS_fnc_dirTo) + ([-45.0, 45.0] call BIS_fnc_randomNum);
@@ -34,10 +38,10 @@ _roofIndexes = [0, 1];
 
 // create roof units
 {    
-    _ai = createGroup east createUnit ["O_Soldier_F", [0.0, 0.0, 0.0], [], 0, "CAN_COLLIDE"];
+    _ai = createGroup east createUnit ["O_soldierU_F", [0.0, 0.0, 0.0], [], 0, "CAN_COLLIDE"];
     _ai setPosATL (_tower buildingPos _x);
     _ai setUnitPos "UP";
-    _ai setDir random 360.0;
+    _ai setFormDir random 360.0;
 } forEach _roofIndexes;
 
 _zone = [position _tower, [120.0, 120.0]] call SOS_fnc_createZone;
@@ -53,4 +57,4 @@ _position = [
 _group = [_position, EAST, (configfile >> "CfgGroups" >> "East" >> "OPF_F" >> "Infantry" >> "OIA_InfSentry")] call BIS_fnc_spawnGroup;
 _group setVariable ["GAIA_ZONE_INTEND", [format ["%1", _zone], "NOFOLLOW"]];
 
-_tower
+true

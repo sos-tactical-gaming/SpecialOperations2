@@ -13,7 +13,16 @@
  *
  */
 
-private ["_position", "_fob", "_zone", "_group", "_ai", "_groundIndexes", "_roofIndexes", "_id"];
+private [
+    "_position",
+    "_fob",
+    "_zone",
+    "_group",
+    "_ai",
+    "_groundIndexes",
+    "_roofIndexes",
+    "_id"
+];
 
 _position   = _this select 0;
 _id         = count SOS_MISSION_FOBS;
@@ -29,18 +38,18 @@ _roofIndexes    = [[4, 5, 6, 7, 8], 4] call SOS_fnc_arrayPickRandom;
 
 // create ground units
 {   
-    _ai = createGroup east createUnit ["O_Soldier_F", [0.0, 0.0, 0.0], [], 0, "CAN_COLLIDE"];
+    _ai = createGroup east createUnit ["O_soldierU_F", [0.0, 0.0, 0.0], [], 0, "CAN_COLLIDE"];
     _ai setPosATL (_fob buildingPos _x);
     _ai setUnitPos "UP";
-    _ai setDir random 360.0;
+    _ai setFormDir random 360.0;
 } forEach _groundIndexes;
 
 // create roof units
 {    
-    _ai = createGroup east createUnit ["O_Soldier_F", [0.0, 0.0, 0.0], [], 0, "CAN_COLLIDE"];
+    _ai = createGroup east createUnit ["O_soldierU_F", [0.0, 0.0, 0.0], [], 0, "CAN_COLLIDE"];
     _ai setPosATL (_fob buildingPos _x);
     _ai setUnitPos "UP";
-    _ai setDir random 360.0;
+    _ai setFormDir random 360.0;
 } forEach _roofIndexes;
 
 // create defense

@@ -1,5 +1,6 @@
 #include                    "sos\arsenal\SOS_VirtualArsenal.hpp"
 #include                    "sos\common\SOS_ProtectedRoles.hpp"
+#include                    "sos\inventory\SOS_RadioDialog.hpp"
 #include                    "sos\inventory\SOS_RadioSettings.hpp"
 #include                    "sos\logistics\SOS_LogisticsSpawn.hpp"
 #include                    "sos\mission\SOS_BuildingPositions.hpp"
@@ -9,8 +10,8 @@
 #include                    "sos\vehicle\SOS_VehicleTypes.hpp"
 
 onLoadName                  = "Special Operations 2";
-onLoadMission               = "New Tactical Gaming!";
-onLoadMissionTime           = 0;
+onLoadMission               = "Visit 'http://sos-tactical-gaming.shivtr.com' if you need help getting set up or if you wish to give us some feedback!";
+onLoadMissionTime           = 1;
 onLoadIntroTime             = 0;
 loadScreen                  = "sos\textures\sos.paa";
 overviewPicture             = "sos\textures\sos.paa";
@@ -30,7 +31,7 @@ forceRotorLibSimulation     = 0;
 
 corpseManagerMode           = 1; 
 corpseLimit                 = 24;
-corpseRemovalMinTime        = 300; 
+corpseRemovalMinTime        = 300;
 corpseRemovalMaxTime        = 1200;
 wreckManagerMode            = 1; 
 wreckLimit                  = 5;
@@ -77,6 +78,7 @@ class CfgTaskDescriptions {
     #include "sos\mission\CfgTaskDescriptions.hpp"
 };
 
+/*
 class CfgTaskEnhancements {
     enable       = 1;
     3d           = 1;
@@ -84,3 +86,4 @@ class CfgTaskEnhancements {
     share        = 1;
     propagate    = 1;
 };
+*/

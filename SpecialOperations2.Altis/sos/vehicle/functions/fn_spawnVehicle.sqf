@@ -34,7 +34,7 @@ clearWeaponCargoGlobal      _vehicle;
 clearItemCargoGlobal        _vehicle;
 clearBackpackCargoGlobal    _vehicle;
 
-[[_vehicle], "SOS_fnc_initVehicle", true, true, true] call BIS_fnc_MP;
+[_vehicle] remoteExecCall ["SOS_fnc_initVehicle", 0, true];
 
 // assembles uavs
 _uavs = [

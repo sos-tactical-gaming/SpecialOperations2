@@ -39,3 +39,36 @@ _unit addMPEventHandler ["MPRespawn", {
         _unit getVariable ["sos_inventory_radio_channellr", -1]
     ] call SOS_fnc_addResetRadioAction;
 }];
+
+// check if player is connected to task force radio correctly
+[] spawn {
+    waitUntil {!isNull player};
+    //if !(call SOS_fnc_isMember) then {
+        _connected = true;
+        
+        sleep 2.0;
+        while {true} do {
+            if (call TFAR_fnc_getTeamSpeakServerName == "S.O.S - Tactical Gaming" && call TFAR_fnc_getTeamSpeakChannelName == "TaskForceRadio" && call TFAR_fnc_isTeamSpeakPluginEnabled) then {            
+                if !(_connected) then {
+                    _connected = true;
+                    0 cutFadeOut 0.4;
+                    findDisplay 5051 closeDisplay 0;	
+                };
+            } else {
+                if (_connected) then {
+                    _connected = false;
+                    cutText ["PLEASE CONNECT TO OUR TEAMSPEAK3 SERVER - 148.251.3.162:9987", "BLACK", 0.4, false];
+                    
+                    _dialog = createDialog "SOS_RadioDialog";
+                    findDisplay 5051 displayAddEventHandler ["KeyDown", {
+                        _keyCode = _this select 1;
+                        if (_keyCode == 1) then {
+                            call BIS_fnc_endMission;
+                        };
+                    }];
+                };
+            };
+            sleep 4.0;
+        };
+    //};
+};

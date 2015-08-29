@@ -86,10 +86,10 @@ if (_inside) then {
 
     // create ground units
     {   
-        _ai = createGroup east createUnit ["O_Soldier_F", [0.0, 0.0, 0.0], [], 0, "CAN_COLLIDE"];
+        _ai = createGroup east createUnit ["O_soldierU_F", [0.0, 0.0, 0.0], [], 0, "CAN_COLLIDE"];
         _ai setPosATL (_building buildingPos _x);
         _ai setUnitPos "UP";
-        _ai setDir random 360.0;
+        _ai setFormDir random 360.0;
     } forEach _groundIndexes;
 
     // create patrols

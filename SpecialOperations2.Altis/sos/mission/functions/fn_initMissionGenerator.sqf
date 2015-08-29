@@ -8,6 +8,7 @@
  * 2: debug <BOOLEAN>
  *
  * Return Value:
+ * Nothing
  *
  * Example:
  * [_position, 600.0, false] call SOS_fnc_initMissionGenerator;
@@ -29,7 +30,6 @@ SOS_MISSION_BASE_RADIUS             = if (count _this > 1) then {_this select 1}
 SOS_MISSION_DEBUG                   = if (count _this > 2) then {_this select 2} else {false};
 SOS_MISSION_AO_POSITION             = [];
 SOS_MISSION_AO_RADIUS               = 4000.0;
-SOS_MISSION_DEFENSES                = [];
 SOS_MISSION_FOBS                    = [];
 SOS_MISSION_FOB_POSITIONS           = [];
 SOS_MISSION_FOB_COUNT               = 3;
@@ -38,6 +38,7 @@ SOS_MISSION_FOB_RADIUS              = 1200.0;
 SOS_MISSION_BLACKLIST               = [];
 SOS_MISSION_TASKS                   = [];
 SOS_MISSION_TASK_COUNT              = 6;
+SOS_MISSION_DEFENSE_COUNT           = 5;
 
 // gaia settings
 GAIA_CACHE_STAGE_1                  = 1000;
@@ -120,10 +121,14 @@ sleep 1.0;
 
 // create defenses
 {
-    for [{_i = 0}, {_i < 5}, {_i = _i + 1}] do {
-        _defense = [_x] call SOS_fnc_createTower;
-        SOS_MISSION_DEFENSES pushBack _defense;
+    _i          = 0;
+    _attempts   = 100;
+    while {_i < SOS_MISSION_DEFENSE_COUNT && _attempts > 0} do {
+        if ([_x] call SOS_fnc_createDefense) then {
+            _i = _i + 1;
+        };
     };
+    _attempts = _attempts - 1;
 } forEach SOS_MISSION_FOBS;
 
 // Lock all new vehicles

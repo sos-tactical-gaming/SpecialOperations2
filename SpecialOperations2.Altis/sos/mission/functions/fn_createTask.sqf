@@ -32,7 +32,7 @@ _arr            = [];
 if (count _arr > 0) then {
     // compile the task name
     _task   = _arr select (floor random count _arr);
-    _result = call compile format ["[] call SOS_fnc_task%1", configName _task];
+    _result = call compile format ["call SOS_fnc_task%1", configName _task];
     _result
 } else {
     false

@@ -62,19 +62,23 @@ class CaptureCompound : SideTask {
     markerType      = "o_hq";
 };
 /*
-class DestroyRadar : SideTask {
-    title           = "Destroy Radar";
+class DestroyAttackHelo : SideTask {
+    title           = "Destroy Attack Helo";
     description     = "Description about task.";
-    marker          = "DESTROY RADAR";
-};
-class EliminateHVT : SideTask {
-    title           = "Eliminate HVT";
-    description     = "Description about task.";
-    marker          = "ELIMINATE HVT";
-};
-class InvestigateCrashSite : SideTask {
-    title           = "Investigate Crash Site";
-    description     = "Description about task.";
-    marker          = "INVESTIGATE CRASH SITE";
+    marker          = "Destroy Attack Helo";
+    limit           = 1;
+    markerType      = "o_air";
 };
 */
+
+// Defenses
+class BaseDefense {
+    chance = 1.0;
+};
+class Tower : BaseDefense {};
+class GunEmplacement : BaseDefense {
+    chance = 0.6;
+};
+class Minefield : BaseDefense {
+    chance = 0.2;
+};

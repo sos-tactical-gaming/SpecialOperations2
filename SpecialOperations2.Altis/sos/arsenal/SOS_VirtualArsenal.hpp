@@ -723,31 +723,7 @@ class SOS_WestVirtualArsenal {
             "Pistols"
         }; 
     };
-    class ReaperCrew {
-        backpacks[] = {		
-        };
-        items[] = {
-            "ReaperHelmets",
-            "ReaperUniforms",
-            "ReaperVests",
-            "BasicItems",
-            "BasicMedical",
-            "NightVisionGoggles",
-            "ShortRangeRadios",
-            "Goggles",
-            "ShortRangeOptics",
-            "Attachments"
-        };
-        magazines[] = {
-            "Thrown",
-            "SubMachineGuns",
-            "Pistols"
-        };
-        weapons[] = {
-            "SubMachineGuns",
-            "Pistols"
-        }; 
-    };
+    class ReaperCopilot : ReaperPilot {};
     class ReaperMedic {
         backpacks[] = { 
             "AssaultBackpacks"		
@@ -776,6 +752,9 @@ class SOS_WestVirtualArsenal {
             "Pistols"
         }; 
     };
+    class ReaperReservedPilot   : ReaperPilot {};
+    class ReaperReservedCopilot : ReaperCopilot {};
+    class ReaperReservedMedic   : ReaperMedic {};
     class HavocPilot {
         backpacks[] = {
             "Parachutes"

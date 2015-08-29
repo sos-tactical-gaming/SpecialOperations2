@@ -32,7 +32,10 @@ class SOS_VehicleProtection {
             "I_Heli_Transport_02_F"
         };
         roles[] = {
-            "ReaperPilot"
+            "ReaperPilot",
+            "ReaperCopilot",
+            "ReaperReservedPilot",
+            "ReaperReservedCopilot"
         };
         member = 0;
     };
@@ -42,7 +45,9 @@ class SOS_VehicleProtection {
         };
         roles[] = {
             "ReaperPilot",
-            "ReaperCopilot"
+            "ReaperCopilot",
+            "ReaperReservedPilot",
+            "ReaperReservedCopilot"
         };
         member = 1;
     };

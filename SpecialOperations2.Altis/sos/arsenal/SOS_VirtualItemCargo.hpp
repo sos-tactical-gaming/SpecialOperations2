@@ -81,7 +81,8 @@ class SOS_WestVirtualItemCargo {
     };    
     class ReaperVests {
         items[] = {
-            "V_Chestrig_rgr"
+            "V_Chestrig_rgr",
+            "V_TacVestCamo_khk"
         };
     };    
     class BasicItems {
