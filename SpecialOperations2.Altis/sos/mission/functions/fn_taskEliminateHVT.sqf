@@ -37,10 +37,10 @@ _chopperPosition = [
 
 _hvtGroup = createGroup east;
 _hvt = _hvtGroup createUnit ["O_officer_F", [0.0, 0.0, 0.0], [], 0, "CAN_COLLIDE"];
+_hvt removeWeapon "arifle_Katiba_C_ACO_F";
+_hvt addMagazineCargo ["6Rnd_45ACP_Cylinder", 3];
 _hvt setUnitRank "COLONEL";
-removeAllWeapons _hvt;
-_hvt addMagazineCargoGlobal ["6Rnd_45ACP_Cylinder", 5];
-_hvt addWeapon "hgun_Pistol_heavy_02_F";
+_hvtGroup allowFleeing 0;
  
 // Setpos in FPB
 _hvt setPosATL (_fpb buildingPos (floor random count [0, 1, 2, 3]));
@@ -91,7 +91,7 @@ _task = ["EliminateHVT", position _hvt] call SOS_fnc_addTask;
                 breakOut "officerEscape"
             // failed task.
             } else {
-                [_task] call SOS_fnc_failTask;
+                [_task] call SOS_fnc_failedTask;
                 deleteVehicle _chopper;
             };
         };
@@ -99,4 +99,4 @@ _task = ["EliminateHVT", position _hvt] call SOS_fnc_addTask;
     waitUntil {!alive _hvt};
     [_task] call SOS_fnc_completeTask;
 };
-_hvt
+_hvt 
