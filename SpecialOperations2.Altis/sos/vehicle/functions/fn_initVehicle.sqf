@@ -23,9 +23,20 @@ _vehicle addEventHandler ["GetIn", {
     _vehicle    = _this select 0;
     _unit       = _this select 2;
     if (_unit == player && !(_vehicle getVariable ["sos_vehicle_can_drive", true])) then {
-        if (_vehicle getCargoIndex player == -1) then {
-            moveOut player;
-            ["YOU ARE NOT AUTHORIZED FOR THIS SEAT", "INFO", "sos_warning"] call SOS_fnc_showHint;
+        if (_vehicle getCargoIndex _unit == -1) then {
+            if (_vehicle emptyPositions "cargo" > 0) then {
+                moveOut _unit;
+                [_unit, _vehicle] spawn {
+                    _unit       = _this select 0;
+                    _vehicle    = _this select 1;                    
+                    sleep 0.1;
+                    _unit moveInCargo _vehicle;
+                };                
+                ["YOU ARE NOT AUTHORIZED FOR THIS SEAT", "INFO", "sos_warning"] call SOS_fnc_showHint;
+            } else {
+                moveOut _unit;
+                ["YOU ARE NOT AUTHORIZED FOR THIS SEAT", "INFO", "sos_warning"] call SOS_fnc_showHint;
+            };           
         };
     };
 }];
@@ -35,9 +46,20 @@ _vehicle addEventHandler ["SeatSwitched", {
     _vehicle    = _this select 0;
     _unit       = _this select 1;
     if (_unit == player && !(_vehicle getVariable ["sos_vehicle_can_drive", true])) then {
-        if (_vehicle getCargoIndex player == -1) then {
-            moveOut player;
-            ["YOU ARE NOT AUTHORIZED FOR THIS SEAT", "INFO", "sos_warning"] call SOS_fnc_showHint;
+        if (_vehicle getCargoIndex _unit == -1) then {
+            if (_vehicle emptyPositions "cargo" > 0) then {
+                moveOut _unit;
+                [_unit, _vehicle] spawn {
+                    _unit       = _this select 0;
+                    _vehicle    = _this select 1;                    
+                    sleep 0.1;
+                    _unit moveInCargo _vehicle;
+                };     
+                ["YOU ARE NOT AUTHORIZED FOR THIS SEAT", "INFO", "sos_warning"] call SOS_fnc_showHint;
+            } else {
+                moveOut _unit;
+                ["YOU ARE NOT AUTHORIZED FOR THIS SEAT", "INFO", "sos_warning"] call SOS_fnc_showHint;
+            };
         };
     };
 }];

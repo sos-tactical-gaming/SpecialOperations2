@@ -61,6 +61,14 @@ class CaptureCompound : SideTask {
     limit           = 1;
     markerType      = "o_hq";
 };
+class EliminateSniperTeam : SideTask {
+    title           = "Eliminate Sniper Team (Optional)";
+    description     = "Description about task.";
+    marker          = "ELIMINATE SNIPER TEAM (OPTIONAL)";
+    limit           = -1;
+    optional        = 1;
+    markerType      = "o_recon";    
+};
 /*
 class DestroyAttackHelo : SideTask {
     title           = "Destroy Attack Helo";

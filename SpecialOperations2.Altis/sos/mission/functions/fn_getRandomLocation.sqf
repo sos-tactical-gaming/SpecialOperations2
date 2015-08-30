@@ -24,8 +24,13 @@ private [
 
 _whitelist  = if (count _this > 0) then {_this select 0} else {[]};
 _children   = [configFile >> "CfgWorlds" >> worldName >> "Names", true, true] call BIS_fnc_returnChildren;
-_config     = _children select random count _children;
-_type       = getText (_config >> "type");
-_position   = getArray (_config >> "position");
-_location   = nearestLocation [_position, _type];
+_location   = nil;
+while {isNil "_location"} do {
+    _config = _children select random count _children;
+    if !(isNil "_config") then {
+        _type       = getText (_config >> "type");
+        _position   = getArray (_config >> "position");
+        _location   = nearestLocation [_position, _type];
+    };    
+};
 _location

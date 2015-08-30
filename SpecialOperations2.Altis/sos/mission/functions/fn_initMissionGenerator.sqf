@@ -158,4 +158,4 @@ waitUntil {
 };
 
 // end the mission
-[[], "SOS_fnc_endMission", true, true] call BIS_fnc_MP;
+remoteExecCall ["SOS_fnc_endMission", 0, true];

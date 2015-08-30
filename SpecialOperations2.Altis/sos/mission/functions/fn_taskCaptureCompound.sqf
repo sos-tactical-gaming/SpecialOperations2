@@ -198,15 +198,9 @@ _helipads       = nearestObjects [_center, _helipadTypes, _radius];
 if (count _helipads > 0) then {
     _helicopters    = ["O_Heli_Light_02_F", "O_Heli_Light_02_unarmed_F", "O_Heli_Light_02_v2_F"];
     _helipad        = _helipads call BIS_fnc_selectRandom;
-<<<<<<< HEAD
-    _vehicle        = createVehicle [_helicopters call BIS_fnc_selectRandom, getPosATL _helipad,[], 0, "NONE"];
+    _vehicle        = createVehicle [_helicopters call BIS_fnc_selectRandom, getPos _helipad,[], 0, "NONE"];
     _vehicle setDir (getDir _helipad);
     createVehicleCrew _vehicle;
-=======
-    _vehicle        = createVehicle [_helicopters call BIS_fnc_selectRandom, getPos _helipad, [], 0, "NONE"];
-    createVehicleCrew _vehicle;
-    
->>>>>>> e224e803af600b6f6068d145937880d51cfee2f4
     group _vehicle setVariable ["GAIA_ZONE_INTEND", [format ["%1", _zone], "FOLLOW"]];
 };
 

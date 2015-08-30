@@ -81,8 +81,10 @@ class SOS_WestVirtualItemCargo {
     };    
     class ReaperVests {
         items[] = {
-            "V_Chestrig_rgr",
-            "V_TacVestCamo_khk"
+            "V_TacVest_blk",
+            "V_TacVest_khk",
+            "V_TacVest_brn",
+            "V_TacVest_oli"
         };
     };    
     class BasicItems {
@@ -132,7 +134,8 @@ class SOS_WestVirtualItemCargo {
             "ACE_morphine",
             "ACE_epinephrine",
             "ACE_elasticBandage",
-            "ACE_quikclot"
+            "ACE_quikclot",
+            "ACE_bodyBag"
         };        
     };    
     class AdvancedMedical {
@@ -148,10 +151,8 @@ class SOS_WestVirtualItemCargo {
             "ACE_salineIV",
             "ACE_salineIV_500",
             "ACE_salineIV_250",
-            "ACE_quikclot",
             "ACE_personalAidKit",
-            "ACE_surgicalKit",
-            "ACE_bodyBag"    
+            "ACE_surgicalKit"    
         };                
     };    
     class ShortRangeRadios {

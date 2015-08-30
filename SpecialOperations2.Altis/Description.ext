@@ -10,7 +10,7 @@
 #include                    "sos\vehicle\SOS_VehicleTypes.hpp"
 
 onLoadName                  = "Special Operations 2";
-onLoadMission               = "Visit 'http://sos-tactical-gaming.shivtr.com' if you need help getting set up or if you wish to give us some feedback!";
+onLoadMission               = "Visit http://sos-tactical-gaming.shivtr.com if you need help getting set up or if you wish to give us some feedback!";
 onLoadMissionTime           = 1;
 onLoadIntroTime             = 0;
 loadScreen                  = "sos\textures\sos.paa";

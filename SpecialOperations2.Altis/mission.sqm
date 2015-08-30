@@ -41,7 +41,8 @@ class Mission
 		"A3_Soft_F_MRAP_02",
 		"A3_Modules_F",
 		"A3_Structures_F_Heli_Items_Airport",
-		"A3_Structures_F_EPB_Civ_Camping"
+		"A3_Structures_F_EPB_Civ_Camping",
+		"3DEN"
 	};
 	addOnsAuto[]=
 	{
@@ -57,6 +58,7 @@ class Mission
 		"ace_weather",
 		"ace_medical",
 		"task_force_radio_items",
+		"3DEN",
 		"a3_modules_f_curator_curator",
 		"ace_sitting",
 		"ace_viewdistance",
@@ -85,7 +87,7 @@ class Mission
 	randomSeed=11045919;
 	class Intel
 	{
-		briefingName="Special Operations 2 (v0.1.4)";
+		briefingName="Special Operations 2 (v0.1.5)";
 		startWeather=0.29999998;
 		startWind=0.099999994;
 		startWaves=0.099999994;
@@ -589,7 +591,7 @@ class Mission
 						};
 						class Item9
 						{
-							value="0";
+							value="1";
 							parentCls="ACE_moduleMedicalSettings";
 							typeName="preventInstaDeath";
 						};
@@ -647,7 +649,7 @@ class Mission
 						};
 						class Item2
 						{
-							value="0";
+							value="1";
 							parentCls="ACE_moduleAdvancedMedicalSettings";
 							typeName="enableVehicleCrashes";
 						};
@@ -2627,7 +2629,7 @@ class Mission
 		class Item82
 		{
 			position[]={15192.841,17.901684,17343.422};
-			azimut=-135.38095;
+			azimut=-133.39246;
 			id=139;
 			side="EMPTY";
 			vehicle="B_MRAP_01_F";

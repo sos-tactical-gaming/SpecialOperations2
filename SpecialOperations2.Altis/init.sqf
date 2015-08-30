@@ -21,13 +21,16 @@ if (hasInterface) then {
     
     [] spawn {
         sleep 4.0;
-        systemChat "Welcome to the S.O.S Tactical Gaming server!";
-        sleep 2.0;
-        systemChat "This mission is still in development so feel free to leave us some feed back at";
-        sleep 2.0;
-        systemChat "http://sos-tactical-gaming.shivtr.com";
-        sleep 4.0;
-        systemChat "Enjoy your stay!";
+        while {true} do {
+            systemChat "Welcome to the S.O.S Tactical Gaming server!";
+            sleep 2.0;
+            systemChat "This mission is still in development so feel free to leave us some feed back at";
+            sleep 2.0;
+            systemChat "http://sos-tactical-gaming.shivtr.com";
+            sleep 4.0;
+            systemChat "Enjoy your stay!";
+            sleep 3600.0;
+        };        
     };    
 };
 
