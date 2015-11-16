@@ -59,7 +59,7 @@ class SOS_Functions {
         class defenseTower {};        
         class defenseMinefield  {};
         class endMission {};
-		class failTask {};
+	class failTask {};
         class findFOB {};
         class findSafePosition {};
         class getMarkerName {};
