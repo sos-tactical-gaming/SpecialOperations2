@@ -36,6 +36,7 @@ class SOS_Functions {
     };
     class Inventory {
         file = "sos\inventory\functions";
+        class addResetRadioAction {};
         class initInventory {};
         class initRadio {};
         class resetRadio {};
@@ -53,10 +54,12 @@ class SOS_Functions {
         class createAO {};
         class createDefense {};        
         class createTask {};
-        class createTower {};
         class createZone {};
+        class defenseGunEmplacement {};
+        class defenseTower {};        
+        class defenseMinefield  {};
         class endMission {};
-        class failTask {};
+		class failTask {};
         class findFOB {};
         class findSafePosition {};
         class getMarkerName {};
@@ -68,15 +71,17 @@ class SOS_Functions {
         class initMissionGenerator {};
         class isMissionComplete {}; 
         class isTaskLimitReached {};
+        class taskCaptureCompound {};
         class taskDestroyAAA {};
         class taskDestroyAmmoCache {};
         class taskDestroyArtilleryTank {};
         class taskDestroyRelayStation {};
         class taskDestroyFPB {};        
         class taskDestroyRadar {};        
-        class taskEliminateHVT {};        
+        class taskEliminateHVT {}; 
+        class taskEliminateSniperTeam {};
         class taskExfiltration {};        
-        class taskInvestigateCrashSite {};        
+        class taskInvestigateCrashSite {};
     };    
     class Respawn {
         file = "sos\respawn\functions";
