@@ -44,7 +44,7 @@ _task = ["EliminateHVT", position _hvt] call SOS_fnc_addTask;
 // Complete task 1
 [_fob, _heloPos, _hvtGroup, _hvt, _task] spawn {    
     _fob                = _this select 0;
-    _heloPos    = _this select 1;
+    _heloPos		= _this select 1;
     _hvtGroup           = _this select 2;
     _hvt                = _this select 3;
     _task               = _this select 4;
