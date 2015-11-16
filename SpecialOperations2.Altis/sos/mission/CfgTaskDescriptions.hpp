@@ -70,11 +70,11 @@ class EliminateSniperTeam : SideTask {
     markerType      = "o_recon";    
 };
 class EliminateHVT : SideTask {
-    title           = "Eliminate HVT";
+    title           = "Eliminate HVT (OPTIONAL)";
     description     = "Description about task.";
-    marker          = "ELIMINATE HVT";
+    marker          = "ELIMINATE HVT (OPTIONAL)";
     limit           = 1;
-	optional        = 1;
+    optional        = 1;
     markerType      = "o_inf";
 };
 /*
