@@ -6,7 +6,8 @@ class BaseTask {
     chance          = 1.0;
     optional        = 0;
     markerType      = "b_unknown";
-    markerColor     = "ColorOPFOR"
+    markerColor     = "ColorOPFOR";
+    markerSize[]    = {1.4, 1.4};
 };
 class SideTask : BaseTask {};
 
@@ -53,22 +54,47 @@ class DestroyRelayStation : SideTask {
     limit           = 1;
     markerType      = "o_service";
 };
+class CaptureCompound : SideTask {
+    title           = "Capture Compound";
+    description     = "Description about task.";
+    marker          = "CAPTURE COMPOUND";
+    limit           = 1;
+    markerType      = "o_hq";
+};
+class EliminateSniperTeam : SideTask {
+    title           = "Eliminate Sniper Team (Optional)";
+    description     = "Description about task.";
+    marker          = "ELIMINATE SNIPER TEAM (OPTIONAL)";
+    limit           = -1;
+    optional        = 1;
+    markerType      = "o_recon";    
+};
 class EliminateHVT : SideTask {
     title           = "Eliminate HVT";
     description     = "Description about task.";
     marker          = "ELIMINATE HVT";
     limit           = 1;
+	optional        = 1;
     markerType      = "o_inf";
 };
 /*
-class DestroyRadar : SideTask {
-    title           = "Destroy Radar";
+class DestroyAttackHelo : SideTask {
+    title           = "Destroy Attack Helo";
     description     = "Description about task.";
-    marker          = "DESTROY RADAR";
-};
-class InvestigateCrashSite : SideTask {
-    title           = "Investigate Crash Site";
-    description     = "Description about task.";
-    marker          = "INVESTIGATE CRASH SITE";
+    marker          = "Destroy Attack Helo";
+    limit           = 1;
+    markerType      = "o_air";
 };
 */
+
+// Defenses
+class BaseDefense {
+    chance = 1.0;
+};
+class Tower : BaseDefense {};
+class GunEmplacement : BaseDefense {
+    chance = 0.6;
+};
+class Minefield : BaseDefense {
+    chance = 0.2;
+};
